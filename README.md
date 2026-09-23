@@ -43,6 +43,25 @@ cada alumno.
 - **Hanzi:** no se tienen en cuenta la puntuación ni los espacios, y
   `28块` = `二十八块`.
 
+### ¿Hace falta instalar un teclado chino?
+
+**No.** Toda la app se puede hacer con el teclado normal del ordenador o del
+móvil:
+
+- **Pinyin:** se escriben las letras y el tono con un número detrás
+  (`hao3` → hǎo) o con los botones ˉ ˊ ˇ ˋ. La ü se escribe con `v`.
+- **Español:** no importan las tildes ni los signos ¿?.
+- **Hanzi** (solo en la traducción de nivel 4) se escriben de una de estas
+  tres maneras:
+  - con **fichas**;
+  - con el **teclado de la app**: se teclea el pinyin sin tonos (`woxiang`)
+    y se elige la palabra (我 → 想). Solo propone palabras del curso;
+  - con el **teclado chino del dispositivo**, si lo tienes instalado.
+
+Dentro de la app, la página **«Cómo escribir pinyin y hanzi»**
+(`#/teclado`) explica paso a paso cómo instalar el teclado chino (pinyin) en
+iPhone/iPad, Android, Windows, Mac, Chromebook y Linux.
+
 ## Audio con voces nativas
 
 La app usa **audios grabados con voces neuronales chinas** (las mismas voces

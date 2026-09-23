@@ -453,7 +453,7 @@
   function pinyinInput(opts) {
     opts = opts || {};
     var inp = h(opts.multiline ? "textarea" : "input", {
-      class: "inp py", type: "text", autocomplete: "off", autocapitalize: "off", spellcheck: "false",
+      class: "inp py", type: "text", autocomplete: "off", autocapitalize: "off", autocorrect: "off", spellcheck: "false",
       placeholder: opts.placeholder || "Escribe en pinyin: nǐ hǎo  ·  o con números: ni3 hao3",
       "aria-label": opts.label || "Respuesta en pinyin"
     });
@@ -480,8 +480,85 @@
         var p = inp.selectionStart == null ? inp.value.length : inp.selectionStart;
         inp.value = inp.value.slice(0, p) + "ü" + inp.value.slice(p); inp.focus(); try { inp.setSelectionRange(p + 1, p + 1); } catch (e) { /* nada */ }
       } }, "ü"),
-      h("span", { class: "hint", text: S.settings.autoTone ? "Tras la sílaba, escribe 1-4 (hao3 → hǎo) o pulsa un tono" : "Pulsa un tono tras escribir la sílaba" }));
+      h("span", { class: "hint" }, S.settings.autoTone ? "Tras la sílaba, escribe 1-4 (hao3 → hǎo) o pulsa un tono · " : "Pulsa un tono tras escribir la sílaba · ",
+        h("a", { href: "#/teclado", tabindex: "-1", text: "ayuda" })));
     return { input: inp, el: h("div", { class: "field" }, inp, bar) };
+  }
+
+  // ======================================================================
+  // teclado de la app: pinyin → hanzi con el vocabulario del curso
+  // ======================================================================
+  var IME_INDEX = null;
+  function imeKey(py) { return C.stripMarks(py.toLowerCase()).replace(/ü/g, "v").replace(/[^a-z]/g, ""); }
+  function imeIndex() {
+    if (IME_INDEX) return IME_INDEX;
+    IME_INDEX = Object.keys(D.dic).map(function (w) {
+      var d = D.dic[w];
+      return { w: w, key: imeKey(d[0]), py: d[0], es: d[1], t: d[2] || 99 };
+    }).filter(function (e) { return e.key; });
+    return IME_INDEX;
+  }
+  function imeCandidates(s) {
+    if (!s) return [];
+    var idx = imeIndex(), out = [], seen = {};
+    function push(e) { if (!seen[e.w]) { seen[e.w] = 1; out.push(e); } }
+    // 1) palabras que empiezan por lo escrito (la exacta primero)
+    idx.filter(function (e) { return e.key.indexOf(s) === 0; })
+      .sort(function (a, b) { return (a.key === s ? 0 : 1) - (b.key === s ? 0 : 1) || a.key.length - b.key.length || a.t - b.t; })
+      .forEach(push);
+    // 2) palabras que son el principio de lo escrito ("woxiang" → 我)
+    idx.filter(function (e) { return s.indexOf(e.key) === 0 && e.key !== s; })
+      .sort(function (a, b) { return b.key.length - a.key.length || a.t - b.t; })
+      .forEach(push);
+    return out.slice(0, 9);
+  }
+
+  /** Escribir hanzi sin instalar nada: se teclea pinyin (sin tonos) y se elige la palabra. */
+  function hanziIME(opts) {
+    var outText = "";
+    var out = h("div", { class: "ime-out zh", "aria-live": "polite" });
+    var inp = h("input", { class: "inp py", type: "text", autocomplete: "off", autocapitalize: "off", autocorrect: "off", spellcheck: "false",
+      placeholder: "Pinyin sin tonos: woxiang…", "aria-label": "Pinyin para convertir en hanzi" });
+    var cands = h("div", { class: "ime-cands" });
+    var list = [];
+    function paintOut() {
+      out.innerHTML = "";
+      if (outText) add(out, outText); else add(out, h("span", { class: "muted", style: "font-size:15px;font-family:var(--font-ui)", text: "Aquí aparece tu frase en hanzi" }));
+      add(out, h("span", { class: "ime-caret" }));
+    }
+    function letters() { return inp.value.toLowerCase().replace(/ü/g, "v").replace(/[^a-z]/g, ""); }
+    function paintCands() {
+      var s = letters();
+      list = imeCandidates(s);
+      cands.innerHTML = "";
+      if (s && !list.length) add(cands, h("span", { class: "muted", style: "font-size:14px", text: "Ninguna palabra del curso empieza así" }));
+      list.forEach(function (e, i) {
+        add(cands, h("button", { type: "button", class: "ime-c", title: e.py + " · " + e.es, onmousedown: function (ev) { ev.preventDefault(); }, onclick: function () { pick(i); } },
+          h("small", { text: i + 1 }), h("span", { class: "zh", text: e.w }), h("em", { text: e.py })));
+      });
+    }
+    function pick(i) {
+      var e = list[i]; if (!e) return;
+      outText += e.w;
+      var s = letters();
+      inp.value = s.indexOf(e.key) === 0 ? s.slice(e.key.length) : "";
+      paintOut(); paintCands(); inp.focus();
+    }
+    inp.addEventListener("input", paintCands);
+    inp.addEventListener("keydown", function (e) {
+      if (e.isComposing) return;
+      if ((e.key === " " || e.key === "Enter") && letters()) { e.preventDefault(); pick(0); return; }
+      if (/^[1-9]$/.test(e.key) && letters()) { e.preventDefault(); pick(+e.key - 1); return; }
+      if (e.key === "Backspace" && !inp.value && outText) { e.preventDefault(); outText = outText.slice(0, -1); paintOut(); return; }
+      if (e.key === "Enter") { e.preventDefault(); if (opts.onEnter) opts.onEnter(); }
+    });
+    paintOut();
+    var el = h("div", { class: "ime" }, out, inp, cands,
+      h("div", { class: "btn-row", style: "margin-top:8px" },
+        h("button", { type: "button", class: "btn soft sm", onclick: function () { outText = outText.slice(0, -1); paintOut(); inp.focus(); } }, "⌫ Borrar un carácter"),
+        h("button", { type: "button", class: "btn soft sm", onclick: function () { outText = ""; inp.value = ""; paintOut(); paintCands(); inp.focus(); } }, "Borrar todo"),
+        h("span", { class: "muted", style: "font-size:13px" }, h("span", { class: "kbd", text: "Espacio" }), " elige la 1.ª · ", h("span", { class: "kbd", text: "1-9" }), " elige otra")));
+    return { el: el, value: function () { return outText + (letters() ? "" : ""); }, focus: function () { inp.focus(); } };
   }
 
   function marksView(marks, ign) {
@@ -599,6 +676,9 @@
           h("span", { class: "n", text: CN_NUM[t.n] }),
           h("div", null, h("b", { text: t.es }), h("span", { class: "zh", text: t.zh })));
       })),
+      h("div", { class: "sec-h" }, h("span", { class: "brush", text: "键盘" }), h("h2", { text: "¿Cómo escribo pinyin y hanzi?" })),
+      h("a", { class: "note", href: "#/teclado", style: "display:block;text-decoration:none;color:var(--ink-2)" },
+        h("b", { text: "No hace falta instalar nada. " }), "El pinyin se escribe con el teclado normal (hao3 → hǎo, o con los botones de tono) y los hanzi, con fichas o con el teclado de la app. Toca aquí si quieres instalar también el teclado chino en tu móvil u ordenador →"),
       h("div", { class: "sec-h" }, h("span", { class: "brush", text: "声音" }), h("h2", { text: "Sobre el audio" })),
       h("div", { class: "note" }, rec
         ? h("span", null, h("b", { text: "Voces nativas grabadas: " }), rec + " audios en cuatro velocidades (muy lento, lento, medio y normal).")
@@ -979,16 +1059,17 @@
         var pin = pinyinInput({ onEnter: function () { checked ? next() : check(); } });
         answerEl = pin.el; focusEl = pin.input; getAnswer = function () { return pin.input.value; };
       } else {
-        // fichas de hanzi o teclado
+        // tres formas de escribir hanzi: fichas, teclado de la app o teclado del sistema
         var words = tileWords(f.zh);
         var distract = shuffle(uniq([].concat.apply([], (TEMA[f.tema].frases).map(function (o) { return tileWords(o.zh); }))).filter(function (w) { return words.indexOf(w) < 0; })).slice(0, 3);
         var bankWords = shuffle(words.concat(distract));
         var chosen = [];
         var ansLine = h("div", { class: "tiles-answer", "aria-label": "Tu frase" });
         var bank = h("div", { class: "tiles-bank" });
-        var kbInput = h("input", { class: "inp zh hidden", type: "text", placeholder: "Escribe con el teclado chino (pinyin → hanzi)", "aria-label": "Respuesta en hanzi" });
-        kbInput.addEventListener("keydown", function (e) { if (e.key === "Enter" && !e.isComposing) { e.preventDefault(); checked ? next() : check(); } });
-        var useKb = false;
+        var submit = function () { checked ? next() : check(); };
+        var ime = hanziIME({ onEnter: submit });
+        var kbInput = h("input", { class: "inp zh", type: "text", lang: "zh-CN", placeholder: "Escribe con el teclado chino de tu dispositivo", "aria-label": "Respuesta en hanzi" });
+        kbInput.addEventListener("keydown", function (e) { if (e.key === "Enter" && !e.isComposing) { e.preventDefault(); submit(); } });
         var paintTiles = function () {
           ansLine.innerHTML = ""; bank.innerHTML = "";
           if (!chosen.length) add(ansLine, h("span", { class: "muted", style: "font-size:14px", text: "Toca las fichas en orden para formar la frase" }));
@@ -1000,16 +1081,32 @@
           });
         };
         paintTiles();
-        var tileWrap = h("div", null, ansLine, bank);
-        var kbToggle = h("button", { type: "button", class: "btn soft sm", style: "margin-top:12px", onclick: function () {
-          useKb = !useKb;
-          tileWrap.classList.toggle("hidden", useKb); kbInput.classList.toggle("hidden", !useKb);
-          this.lastChild.textContent = useKb ? "Usar fichas" : "Usar el teclado chino";
-          if (useKb) kbInput.focus();
-        } }, icon("keyboard", 16), h("span", { text: "Usar el teclado chino" }));
-        answerEl = h("div", null, tileWrap, kbInput, kbToggle);
+        var modes = {
+          fichas: h("div", null, ansLine, bank),
+          app: ime.el,
+          sistema: h("div", null, kbInput, h("p", { class: "muted", style: "font-size:13px;margin:6px 0 0" }, "Necesitas tener instalado el teclado chino (pinyin). ", h("a", { href: "#/teclado" }, "Cómo instalarlo")))
+        };
+        var mode = S.settings.hanziMode || "fichas";
+        var modeChips = h("div", { class: "chips", style: "margin-bottom:12px" });
+        var paintMode = function () {
+          modeChips.innerHTML = "";
+          [["fichas", "Fichas"], ["app", "Pinyin → hanzi (teclado de la app)"], ["sistema", "Teclado chino del dispositivo"]].forEach(function (m) {
+            add(modeChips, h("button", { type: "button", class: "chip" + (mode === m[0] ? " on" : ""), onclick: function () {
+              if (checked) return;
+              mode = m[0]; S.settings.hanziMode = mode; persist(); paintMode();
+            } }, m[1]));
+          });
+          Object.keys(modes).forEach(function (k) { modes[k].classList.toggle("hidden", k !== mode); });
+          if (mode === "app") ime.focus(); else if (mode === "sistema") kbInput.focus();
+        };
+        answerEl = h("div", null, modeChips, modes.fichas, modes.app, modes.sistema);
         focusEl = null;
-        getAnswer = function () { return useKb ? kbInput.value : chosen.map(function (bi) { return bankWords[bi]; }).join(""); };
+        setTimeout(paintMode, 0);
+        getAnswer = function () {
+          if (mode === "app") return ime.value();
+          if (mode === "sistema") return kbInput.value;
+          return chosen.map(function (bi) { return bankWords[bi]; }).join("");
+        };
       }
       var fbBox = h("div");
       var checkBtn = h("button", { class: "btn", type: "button", onclick: function () { check(); } }, "Comprobar");
@@ -1132,6 +1229,55 @@
       q, box));
   }
 
+  // --------------------------------------------------------- cómo escribir
+  function viewTeclado() {
+    function sec(zh, title, body) { return h("div", { class: "card kb-sec" }, h("div", { class: "kb-h" }, h("span", { class: "brush", text: zh }), h("h3", { text: title })), body); }
+    function steps(list) { return h("ol", { class: "steps" }, list.map(function (x) { return h("li", { html: x }); })); }
+    function dev(name, list, sw) { return h("details", { class: "dev" }, h("summary", { text: name }), steps(list), sw ? h("p", { class: "muted", html: sw }) : null); }
+    view("teclado", h("div", { class: "ex-wrap" },
+      pageHead("键盘", "Cómo escribir pinyin y hanzi", "Resumen: <b>no tienes que instalar nada</b>. Con el teclado normal de tu ordenador o móvil puedes hacer toda la app. Instalar el teclado chino es opcional."),
+      h("div", { class: "grid", style: "gap:14px" },
+        sec("拼音", "Pinyin: teclado normal, sin instalar nada", h("div", null,
+          h("p", { html: "Escribe las letras y pon el tono de una de estas tres maneras:" }),
+          h("ul", { class: "steps" },
+            h("li", { html: "<b>Con un número después de la sílaba:</b> <span class='kbd'>hao3</span> se convierte solo en <span class='py'>hǎo</span>. 1 = ā, 2 = á, 3 = ǎ, 4 = à. El tono neutro no lleva número." }),
+            h("li", { html: "<b>Con los botones</b> ˉ ˊ ˇ ˋ que hay debajo de cada casilla: escribe la sílaba y pulsa el tono. Es lo más cómodo en el móvil." }),
+            h("li", { html: "<b>La ü:</b> escribe <span class='kbd'>v</span> (<span class='kbd'>nv3</span> → <span class='py'>nǚ</span>) o pulsa el botón ü." }),
+            h("li", { html: "Puedes escribir las sílabas juntas o separadas (<span class='py'>xuésheng</span> o <span class='py'>xué sheng</span>), en mayúsculas o minúsculas. Si prefieres no preocuparte de los tonos, desactívalos en <a href='#/ajustes'>Ajustes</a>." })))),
+        sec("西班牙语", "Español: teclado normal", h("p", { html: "Las tildes, las mayúsculas y los signos ¿? no cuentan, así que no hace falta cambiar nada del teclado. Los números valen en cifra o en letra (3 = tres)." })),
+        sec("汉字", "Hanzi: tres opciones", h("div", null,
+          h("p", { html: "Solo hace falta escribir hanzi en la <b>traducción de nivel 4</b> (español → hanzi). Allí eliges cómo:" }),
+          h("ul", { class: "steps" },
+            h("li", { html: "<b>Fichas</b> (por defecto): tocas las palabras en orden. No necesita teclado." }),
+            h("li", { html: "<b>Teclado de la app (pinyin → hanzi):</b> escribes el pinyin sin tonos (<span class='kbd'>woxiang</span>) y eliges la palabra en la lista (我 → 想). Funciona en cualquier ordenador o móvil y solo propone palabras del curso." }),
+            h("li", { html: "<b>Teclado chino del dispositivo:</b> el que usan los chinos. Es opcional, pero muy útil si vas a seguir estudiando. Se instala así:" })),
+          dev("iPhone / iPad", [
+            "Ajustes → General → Teclado → Teclados → <b>Añadir teclado…</b>",
+            "Elige <b>Chino (simplificado)</b> → marca <b>Pinyin – QWERTY</b> → OK.",
+            "Para usarlo: en cualquier teclado, toca el <b>globo 🌐</b> hasta que salga 拼音. Escribe <span class='kbd'>nihao</span> y elige 你好."
+          ], "Para volver al español, toca otra vez el globo."),
+          dev("Android (teclado Gboard)", [
+            "Abre los ajustes de Gboard (toca el engranaje ⚙ del teclado, o Ajustes → Sistema → Teclado → Gboard).",
+            "<b>Idiomas → Añadir teclado</b> → busca <b>Chino (simplificado)</b> → elige <b>Pinyin</b> → Hecho.",
+            "Para usarlo: toca el <b>globo 🌐</b> del teclado o mantén pulsada la barra espaciadora y elige 中文."
+          ], "Si tu móvil usa otro teclado (Samsung, etc.), instalar Gboard desde Play Store es lo más sencillo."),
+          dev("Windows 10 / 11", [
+            "Inicio → Configuración → <b>Hora e idioma → Idioma y región</b> (en Windows 10: <b>Idioma</b>).",
+            "<b>Agregar un idioma</b> → <b>Chino (simplificado, China)</b> → Siguiente → Instalar. (Puedes desmarcar «Establecer como idioma de Windows».)",
+            "Queda incluido el teclado <b>Microsoft Pinyin</b>.",
+            "Para cambiar de teclado: <span class='kbd'>Windows</span> + <span class='kbd'>Espacio</span>. Con Microsoft Pinyin, <span class='kbd'>Mayús</span> alterna entre chino (中) e inglés (英)."
+          ]),
+          dev("Mac", [
+            "Menú  → Ajustes del Sistema → <b>Teclado</b> → Fuentes de entrada → <b>Editar…</b>",
+            "Pulsa <b>+</b> → <b>Chino simplificado</b> → <b>Pinyin – Simplificado</b> → Añadir.",
+            "Para cambiar de teclado: <span class='kbd'>Control</span> + <span class='kbd'>Espacio</span> (o la tecla 🌐 / fn)."
+          ], "Truco para pinyin con tonos en el Mac sin la app: añade también la fuente «ABC – Extendido»; con ella, <span class='kbd'>Opción</span> + <span class='kbd'>a</span> y luego la vocal pone el tono 1 (ā), Opción+e → 2, Opción+v → 3, Opción+` → 4."),
+          dev("Chromebook / Linux", [
+            "Chromebook: Configuración → Dispositivo → Teclado → Cambiar configuración de entrada → Métodos de entrada → <b>Añadir</b> → Pinyin.",
+            "Linux (Ubuntu, Vitalinux…): instala <b>ibus-libpinyin</b> (o fcitx-pinyin) y añade «Chinese – Intelligent Pinyin» en Configuración → Teclado. Si no puedes instalar programas, usa el teclado de la app."
+          ]))))));
+  }
+
   // ---------------------------------------------------------------- ajustes
   function viewAjustes() {
     function radio(name, val, title, sub) {
@@ -1153,7 +1299,8 @@
           SPEEDS.map(function (sp) { return radio("speed", sp.k, sp.es + " · " + sp.zh, null); })),
         h("div", { class: "card" }, h("h3", { text: "Escribir pinyin" }),
           h("label", { class: "toggle" }, h("input", { type: "checkbox", checked: S.settings.autoTone, onchange: function (e) { S.settings.autoTone = e.target.checked; persist(); } }),
-            "Convertir números en tonos al escribir (hao3 → hǎo, v → ü)")),
+            "Convertir números en tonos al escribir (hao3 → hǎo, v → ü)"),
+          h("a", { class: "btn soft sm", href: "#/teclado" }, icon("keyboard", 16), "Cómo escribir pinyin y hanzi")),
         h("div", { class: "card" }, h("h3", { text: "Aspecto" }),
           radio("theme", "auto", "Automático", "Como el sistema"), radio("theme", "light", "Claro", null), radio("theme", "dark", "Oscuro", null)),
         h("div", { class: "card" }, h("h3", { text: "Voz" }),
@@ -1181,6 +1328,7 @@
     if (r === "tema") return viewTema(+parts[1]);
     if (r === "vocabulario") return viewVocab();
     if (r === "ajustes") return viewAjustes();
+    if (r === "teclado") return viewTeclado();
     viewHome();
   }
   window.addEventListener("hashchange", route);

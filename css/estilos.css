@@ -560,3 +560,31 @@ rt { font-size: 55%; color: var(--ink-3); font-family: var(--font-py); letter-sp
 footer.foot { text-align: center; color: var(--ink-3); font-size: 13px; padding: 30px 16px 40px; position: relative; z-index: 1; }
 footer.foot .brush { font-size: 22px; color: var(--red); }
 .fade-in { animation: rise .3s ease; }
+
+/* teclado de la app (pinyin → hanzi) */
+.ime { display: flex; flex-direction: column; gap: 10px; }
+.ime-out {
+  min-height: 62px; padding: 10px 14px; border-radius: 14px; border: 2px dashed var(--line);
+  background: var(--paper); font-size: 28px; display: flex; align-items: center; flex-wrap: wrap; letter-spacing: 1px;
+}
+.ime-caret { display: inline-block; width: 2px; height: 30px; background: var(--red); margin-left: 3px; animation: blink 1s steps(1) infinite; }
+@keyframes blink { 50% { opacity: 0; } }
+.ime-cands { display: flex; flex-wrap: wrap; gap: 6px; min-height: 48px; align-items: center; }
+.ime-c {
+  display: inline-flex; align-items: baseline; gap: 6px; padding: 6px 12px; border-radius: 12px; cursor: pointer;
+  border: 1px solid var(--line); border-bottom-width: 3px; background: var(--card);
+}
+.ime-c:hover, .ime-c:first-of-type { border-color: var(--red); }
+.ime-c small { color: var(--ink-3); font-size: 12px; font-weight: 800; }
+.ime-c .zh { font-size: 24px; }
+.ime-c em { font-style: normal; color: var(--ink-3); font-size: 13px; font-family: var(--font-py); }
+/* página de ayuda del teclado */
+.kb-h { display: flex; align-items: center; gap: 12px; margin-bottom: 6px; }
+.kb-h .brush { font-size: 30px; color: var(--red); }
+.kb-h h3 { margin: 0; font-size: 19px; }
+.kb-sec p { margin: 6px 0; }
+.steps { margin: 6px 0; padding-left: 22px; }
+.steps li { margin: 6px 0; }
+.dev { border: 1px solid var(--line); border-radius: 12px; padding: 10px 14px; margin: 8px 0; background: var(--paper); }
+.dev summary { cursor: pointer; font-weight: 800; }
+.dev[open] summary { margin-bottom: 4px; color: var(--red); }
