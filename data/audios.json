@@ -1,0 +1,7048 @@
+{
+ "version": 1,
+ "units": {
+  "d-3faa70ab61": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "你好！"
+    }
+   ]
+  },
+  "d-9a7bd6ed5e": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "您好！"
+    }
+   ]
+  },
+  "d-322b8c2e6f": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "你们好！"
+    }
+   ]
+  },
+  "d-d5b8706ce4": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "对不起！"
+    }
+   ]
+  },
+  "d-ef436016b4": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "没关系！"
+    }
+   ]
+  },
+  "d-a940fdbe08": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "谢谢！"
+    }
+   ]
+  },
+  "d-32bccc84ee": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "不谢！"
+    }
+   ]
+  },
+  "d-3169b09456": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "谢谢你！"
+    }
+   ]
+  },
+  "d-f881cde091": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "不客气！"
+    }
+   ]
+  },
+  "d-de1edbfd42": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "再见！"
+    }
+   ]
+  },
+  "d-be97f872b2": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "你叫什么名字？"
+    }
+   ]
+  },
+  "d-545a816697": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "我叫李月。"
+    }
+   ]
+  },
+  "d-20506bb191": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "你是老师吗？"
+    }
+   ]
+  },
+  "d-2c51555ec9": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "我不是老师，我是学生。"
+    }
+   ]
+  },
+  "d-133d3bb2e3": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "你是中国人吗？"
+    }
+   ]
+  },
+  "d-441d28fcac": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "我不是中国人，我是美国人。"
+    }
+   ]
+  },
+  "d-7adc5443a4": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "我叫李月，我是中国人，我是老师。"
+    }
+   ]
+  },
+  "d-54d0c69717": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "我叫大卫，我是美国人，我是学生。"
+    }
+   ]
+  },
+  "d-b29346d5c2": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "我叫李心。"
+    }
+   ]
+  },
+  "d-4dd630dec2": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "您是老师吗？"
+    }
+   ]
+  },
+  "d-635497974d": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "是，我是老师。"
+    }
+   ]
+  },
+  "d-e8eb9ee0e7": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "你好，我叫大卫。"
+    }
+   ]
+  },
+  "d-1934b9cb1e": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "你是美国人吗？"
+    }
+   ]
+  },
+  "d-1a449585a5": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "不是，我是中国人。"
+    }
+   ]
+  },
+  "d-5825e301bf": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "你是学生吗？"
+    }
+   ]
+  },
+  "d-54d576fe38": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "我不是学生，我是老师。"
+    }
+   ]
+  },
+  "d-49a810d429": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "她是谁？"
+    }
+   ]
+  },
+  "d-2a243d4aaa": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "她是我的汉语老师，她叫李月。"
+    }
+   ]
+  },
+  "d-97d2d33865": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "你是哪国人？"
+    }
+   ]
+  },
+  "d-81fe302b3d": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "我是美国人。你呢？"
+    }
+   ]
+  },
+  "d-6e38d936fa": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "我是中国人。"
+    }
+   ]
+  },
+  "d-c6a84fddf3": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "他是谁？"
+    }
+   ]
+  },
+  "d-3c24ac3257": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "他是我同学。"
+    }
+   ]
+  },
+  "d-5716783da2": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "她呢？她是你同学吗？"
+    }
+   ]
+  },
+  "d-13f8a22b07": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "她不是我同学，她是我朋友。"
+    }
+   ]
+  },
+  "d-1b6405e094": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "他是我同学，他叫大卫。"
+    }
+   ]
+  },
+  "d-01f679d85c": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "不是，她是我的汉语老师。"
+    }
+   ]
+  },
+  "d-499b71ccd4": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "谁是李月？"
+    }
+   ]
+  },
+  "d-a62a404d67": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "她是李月，她是我的中国朋友。"
+    }
+   ]
+  },
+  "d-afc1ad42e1": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "他是你的朋友吗？"
+    }
+   ]
+  },
+  "d-9307719702": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "是，他是我的美国朋友。"
+    }
+   ]
+  },
+  "d-203ca76724": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "你家有几口人？"
+    }
+   ]
+  },
+  "d-4596fff21b": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "我家有三口人。"
+    }
+   ]
+  },
+  "d-085e352345": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "你女儿几岁了？"
+    }
+   ]
+  },
+  "d-fcb35f7181": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "她今年四岁了。"
+    }
+   ]
+  },
+  "d-2bf3d59805": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "李老师多大了？"
+    }
+   ]
+  },
+  "d-2ca117e269": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "她今年五十岁了。"
+    }
+   ]
+  },
+  "d-c2867260f4": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "她女儿呢？"
+    }
+   ]
+  },
+  "d-85d38e5a6b": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "她女儿今年二十岁。"
+    }
+   ]
+  },
+  "d-8c3499a388": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "我家有四口人。"
+    }
+   ]
+  },
+  "d-b696827aca": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "李老师的女儿几岁了？"
+    }
+   ]
+  },
+  "d-7925a5fe4b": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "她今年七岁了。"
+    }
+   ]
+  },
+  "d-baabe9c049": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "他是老师吗？"
+    }
+   ]
+  },
+  "d-198210d716": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "不是，他是学生，他今年二十一岁。"
+    }
+   ]
+  },
+  "d-2ed06c21d2": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "你今年多大了？"
+    }
+   ]
+  },
+  "d-3f5ff48b14": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "我今年三十八岁了。"
+    }
+   ]
+  },
+  "d-6afe0b2ddc": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "你的汉语老师是哪国人？"
+    }
+   ]
+  },
+  "d-920f3d3d9a": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "他是中国人。"
+    }
+   ]
+  },
+  "d-b194278a83": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "你会说汉语吗？"
+    }
+   ]
+  },
+  "d-9815953f89": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "我会说汉语。"
+    }
+   ]
+  },
+  "d-538cb79636": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "你妈妈会说汉语吗？"
+    }
+   ]
+  },
+  "d-7439a1eac8": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "她不会说。"
+    }
+   ]
+  },
+  "d-3e95715ba8": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "中国菜好吃吗？"
+    }
+   ]
+  },
+  "d-5fece88d86": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "中国菜很好吃。"
+    }
+   ]
+  },
+  "d-6a2aa5e6a0": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "你会做中国菜吗？"
+    }
+   ]
+  },
+  "d-2d549e188a": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "我不会做。"
+    }
+   ]
+  },
+  "d-8acebe502e": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "你会写汉字吗？"
+    }
+   ]
+  },
+  "d-5e36cc12d6": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "我会写。"
+    }
+   ]
+  },
+  "d-7efd8d244a": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "这个字怎么写？"
+    }
+   ]
+  },
+  "d-f9358ce58a": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "对不起，这个字我会读，不会写。"
+    }
+   ]
+  },
+  "d-9bea09c2f9": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "你妈妈会做中国菜吗？"
+    }
+   ]
+  },
+  "d-7c5947418b": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "这个汉字怎么写？"
+    }
+   ]
+  },
+  "d-6e286454d5": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "李老师会说汉语吗？"
+    }
+   ]
+  },
+  "d-5430ebe81f": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "会，李老师是中国人。"
+    }
+   ]
+  },
+  "d-96ba3c6477": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "我会说汉语，不会写汉字。"
+    }
+   ]
+  },
+  "d-6726bcb416": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "请问，今天几号？"
+    }
+   ]
+  },
+  "d-915842b2e6": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "今天九月一号。"
+    }
+   ]
+  },
+  "d-4fb1a28804": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "今天星期几？"
+    }
+   ]
+  },
+  "d-46b4d811fb": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "星期三。"
+    }
+   ]
+  },
+  "d-fe308f7ded": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "昨天是几月几号？"
+    }
+   ]
+  },
+  "d-020116e183": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "昨天是八月三十一号，星期二。"
+    }
+   ]
+  },
+  "d-0bcc93619d": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "明天呢？"
+    }
+   ]
+  },
+  "d-23c380dc05": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "明天是九月二号，星期四。"
+    }
+   ]
+  },
+  "d-09120ec751": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "明天星期六，你去学校吗？"
+    }
+   ]
+  },
+  "d-8a5d292a06": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "我去学校。"
+    }
+   ]
+  },
+  "d-6996a445c4": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "你去学校做什么？"
+    }
+   ]
+  },
+  "d-e01b6a3924": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "我去学校看书。"
+    }
+   ]
+  },
+  "d-9790386f9c": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "今天星期日。"
+    }
+   ]
+  },
+  "d-43ea84abfc": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "今天是几月几号？"
+    }
+   ]
+  },
+  "d-f110ba2933": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "今天是十月五号。"
+    }
+   ]
+  },
+  "d-e486f4997a": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "你的汉语老师多大了？"
+    }
+   ]
+  },
+  "d-7d25bde4ac": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "她二十九岁。"
+    }
+   ]
+  },
+  "d-bda42b7e55": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "明天你做什么？"
+    }
+   ]
+  },
+  "d-3cf0452198": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "我去同学家看书。"
+    }
+   ]
+  },
+  "d-320d94af94": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "我不会，我爸爸会。"
+    }
+   ]
+  },
+  "d-70f2dcd8e3": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "你想喝什么？"
+    }
+   ]
+  },
+  "d-27dec609be": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "我想喝茶。"
+    }
+   ]
+  },
+  "d-ef4b2c45dc": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "你想吃什么？"
+    }
+   ]
+  },
+  "d-55410cae71": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "我想吃米饭。"
+    }
+   ]
+  },
+  "d-b7b8b8e7e4": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "下午你想做什么？"
+    }
+   ]
+  },
+  "d-1ee398f29f": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "下午我想去商店。"
+    }
+   ]
+  },
+  "d-bc7bac6e5d": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "你想买什么？"
+    }
+   ]
+  },
+  "d-a8c886f684": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "我想买一个杯子。"
+    }
+   ]
+  },
+  "d-e371c4d216": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "你好！这个杯子多少钱？"
+    }
+   ]
+  },
+  "d-70cfd8d4ac": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "二十八块。"
+    }
+   ]
+  },
+  "d-270e410dc2": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "那个杯子多少钱？"
+    }
+   ]
+  },
+  "d-c1280de775": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "那个杯子十八块钱。"
+    }
+   ]
+  },
+  "d-0781913cc6": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "请问，这个杯子多少钱？"
+    }
+   ]
+  },
+  "d-ee59d042b1": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "二十五块。"
+    }
+   ]
+  },
+  "d-d500637e4e": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "我喝茶，谢谢。"
+    }
+   ]
+  },
+  "d-fff73a413d": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "你好，这个菜多少钱？"
+    }
+   ]
+  },
+  "d-264a9e4895": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "这个菜十八块。"
+    }
+   ]
+  },
+  "d-5efc399eaa": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "下午你想去哪儿？"
+    }
+   ]
+  },
+  "d-255b4c9fb4": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "我想去商店买个杯子。"
+    }
+   ]
+  },
+  "d-11e42266db": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "明天你去学校吗？"
+    }
+   ]
+  },
+  "d-b5f745ff11": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "不去，明天我去朋友家。"
+    }
+   ]
+  },
+  "d-fa25f9a510": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "小猫在哪儿？"
+    }
+   ]
+  },
+  "d-eed0560467": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "小猫在那儿。"
+    }
+   ]
+  },
+  "d-4a26a8c3f4": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "小狗在哪儿？"
+    }
+   ]
+  },
+  "d-f17e74f4e5": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "小狗在椅子下面。"
+    }
+   ]
+  },
+  "d-751accb34b": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "你在哪儿工作？"
+    }
+   ]
+  },
+  "d-29c2329e46": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "我在学校工作。"
+    }
+   ]
+  },
+  "d-c73b257df9": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "你儿子在哪儿工作？"
+    }
+   ]
+  },
+  "d-0e1cec3bd2": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "我儿子在医院工作，他是医生。"
+    }
+   ]
+  },
+  "d-35e3a2f588": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "你爸爸在家吗？"
+    }
+   ]
+  },
+  "d-2f0a4d55a6": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "不在家。"
+    }
+   ]
+  },
+  "d-b7d3eedbf8": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "他在哪儿呢？"
+    }
+   ]
+  },
+  "d-e7c5aee214": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "他在医院。"
+    }
+   ]
+  },
+  "d-7de7331f38": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "我是学生，我不工作。"
+    }
+   ]
+  },
+  "d-19a696f4d5": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "我的小狗在哪儿？"
+    }
+   ]
+  },
+  "d-a31c28666e": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "在那儿，椅子下面。"
+    }
+   ]
+  },
+  "d-0fface1270": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "我的杯子呢？"
+    }
+   ]
+  },
+  "d-aa343ebbbf": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "杯子在这儿。"
+    }
+   ]
+  },
+  "d-c4c4771c5b": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "你女儿在哪儿工作？"
+    }
+   ]
+  },
+  "d-50708ad9ca": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "她是老师，在学校工作。"
+    }
+   ]
+  },
+  "d-853ca915df": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "请问，李老师在吗？"
+    }
+   ]
+  },
+  "d-06b0de6076": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "不在，李老师在医院。"
+    }
+   ]
+  },
+  "d-a6bbb5ba64": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "桌子上有什么？"
+    }
+   ]
+  },
+  "d-daddc964e3": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "桌子上有一个电脑和一本书。"
+    }
+   ]
+  },
+  "d-1f832aa557": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "杯子在哪儿？"
+    }
+   ]
+  },
+  "d-15c007a650": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "杯子在桌子里。"
+    }
+   ]
+  },
+  "d-6588196f64": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "前面那个人叫什么名字？"
+    }
+   ]
+  },
+  "d-1796051f56": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "她叫王方，在医院工作。"
+    }
+   ]
+  },
+  "d-dd3ff9985a": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "后面那个人呢？他叫什么名字？"
+    }
+   ]
+  },
+  "d-5a2672eb2e": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "他叫谢朋，在商店工作。"
+    }
+   ]
+  },
+  "d-ffe231babe": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "这儿有人吗？"
+    }
+   ]
+  },
+  "d-c440c30bca": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "没有。"
+    }
+   ]
+  },
+  "d-9154088a9b": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "我能坐这儿吗？"
+    }
+   ]
+  },
+  "d-94987681bb": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "请坐。"
+    }
+   ]
+  },
+  "d-45e047f088": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "你的桌子上面有什么？"
+    }
+   ]
+  },
+  "d-dd0a39a279": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "你的椅子下面有什么？"
+    }
+   ]
+  },
+  "d-9eaac726b2": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "你好，我能坐这儿吗？"
+    }
+   ]
+  },
+  "d-9808951299": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "好，请坐。"
+    }
+   ]
+  },
+  "d-6cc9236503": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "你的杯子呢？"
+    }
+   ]
+  },
+  "d-6969675de2": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "在那儿，桌子里面。"
+    }
+   ]
+  },
+  "d-299a250972": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "你的桌子上有什么？"
+    }
+   ]
+  },
+  "d-b6b544a280": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "一个电脑和一本书。"
+    }
+   ]
+  },
+  "d-3abfc1cb60": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "你后面那个人是谁？"
+    }
+   ]
+  },
+  "d-4314987bef": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "她叫李月，是我的汉语老师。"
+    }
+   ]
+  },
+  "d-bacd3b7d09": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "你前面那个人是李朋吗？"
+    }
+   ]
+  },
+  "d-2533a59b0e": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "不是，我后面那个人是李朋。"
+    }
+   ]
+  },
+  "d-7af2e1a07b": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "现在几点？"
+    }
+   ]
+  },
+  "d-54c0b5a892": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "现在十点十分。"
+    }
+   ]
+  },
+  "d-2162ae539e": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "中午几点吃饭？"
+    }
+   ]
+  },
+  "d-a99f54d231": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "十二点吃饭。"
+    }
+   ]
+  },
+  "d-13130ddd61": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "爸爸什么时候回家？"
+    }
+   ]
+  },
+  "d-7ba5b07d66": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "下午五点。"
+    }
+   ]
+  },
+  "d-d16f8f6651": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "我们什么时候去看电影？"
+    }
+   ]
+  },
+  "d-080d509dda": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "六点三十分。"
+    }
+   ]
+  },
+  "d-a4f876bd3f": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "我星期一去北京。"
+    }
+   ]
+  },
+  "d-41f9737fb2": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "你想在北京住几天？"
+    }
+   ]
+  },
+  "d-3f750bf0d7": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "住三天。"
+    }
+   ]
+  },
+  "d-f1e30d4f3e": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "星期五前能回家吗？"
+    }
+   ]
+  },
+  "d-5ce64bae48": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "能。"
+    }
+   ]
+  },
+  "d-2fc7ea4186": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "下午三点你去学校吗？"
+    }
+   ]
+  },
+  "d-6863cadaa7": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "不去学校，我在家。"
+    }
+   ]
+  },
+  "d-17fc4e1736": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "你什么时候回北京？"
+    }
+   ]
+  },
+  "d-166e57001b": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "星期五前。"
+    }
+   ]
+  },
+  "d-c1d9ab7bf3": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "中午你工作吗？"
+    }
+   ]
+  },
+  "d-569a7c0e86": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "不工作，你十二点来吧。"
+    }
+   ]
+  },
+  "d-3837550da9": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "你中午去吃饭吗？"
+    }
+   ]
+  },
+  "d-04caca96a0": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "我不去，没有时间。"
+    }
+   ]
+  },
+  "d-db934c0277": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "大卫去看电影吗？"
+    }
+   ]
+  },
+  "d-29a463548b": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "他不想去。"
+    }
+   ]
+  },
+  "d-ba69f154ce": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "昨天北京的天气怎么样？"
+    }
+   ]
+  },
+  "d-2d615a8a36": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "太热了。"
+    }
+   ]
+  },
+  "d-024cea125e": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "明天呢？明天天气怎么样？"
+    }
+   ]
+  },
+  "d-9cd107ee1d": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "明天天气很好，不冷不热。"
+    }
+   ]
+  },
+  "d-62dd0f116a": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "今天会下雨吗？"
+    }
+   ]
+  },
+  "d-30c5b6bf89": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "今天不会下雨。"
+    }
+   ]
+  },
+  "d-28a6a733bd": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "王小姐今天会来吗？"
+    }
+   ]
+  },
+  "d-6f56e73086": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "不会来，天气太冷了。"
+    }
+   ]
+  },
+  "d-45930cc072": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "你身体怎么样？"
+    }
+   ]
+  },
+  "d-c2ff45bc25": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "我身体不太好。天气太热了，不爱吃饭。"
+    }
+   ]
+  },
+  "d-047e83f8e4": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "你多吃些水果，多喝水。"
+    }
+   ]
+  },
+  "d-dc2c49458a": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "谢谢你，医生。"
+    }
+   ]
+  },
+  "d-d26f0e25bc": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "下午会不会下雨？"
+    }
+   ]
+  },
+  "d-dc10e752fa": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "不会。"
+    }
+   ]
+  },
+  "d-68e4b2f94f": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "昨天天气怎么样？"
+    }
+   ]
+  },
+  "d-1d22add857": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "不冷不热。"
+    }
+   ]
+  },
+  "d-afb1c02775": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "王小姐身体怎么样？"
+    }
+   ]
+  },
+  "d-44e3e32c0c": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "她很好，谢谢。"
+    }
+   ]
+  },
+  "d-0c30d4c1d3": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "你什么时候去学校？"
+    }
+   ]
+  },
+  "d-15bd4c0db9": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "太热了，我一会儿去。"
+    }
+   ]
+  },
+  "d-ca97e0522f": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "医生说什么？"
+    }
+   ]
+  },
+  "d-7959b21e2f": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "多喝水，多吃水果。"
+    }
+   ]
+  },
+  "d-4f6f05869d": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "喂，你在做什么呢？"
+    }
+   ]
+  },
+  "d-f699f36c2c": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "我在看书呢。"
+    }
+   ]
+  },
+  "d-2e15f88727": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "大卫也在看书吗？"
+    }
+   ]
+  },
+  "d-8ed62ee1a2": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "他没看书，他在学做中国菜呢。"
+    }
+   ]
+  },
+  "d-bd2a2f83dd": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "昨天上午你在做什么呢？"
+    }
+   ]
+  },
+  "d-bb3ae5bc46": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "我在睡觉呢。你呢？"
+    }
+   ]
+  },
+  "d-4870e94b50": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "我在家看电视呢。你喜欢看电视吗？"
+    }
+   ]
+  },
+  "d-777398d3a8": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "我不喜欢看电视，我喜欢看电影。"
+    }
+   ]
+  },
+  "d-506cf947b1": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "八二三零四幺五五，这是李老师的电话吗？"
+    }
+   ]
+  },
+  "d-a536138f0a": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "不是。她的电话是八二三零四幺五六。"
+    }
+   ]
+  },
+  "d-7835044e5d": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "好，我现在给她打电话。"
+    }
+   ]
+  },
+  "d-8c0d1d2802": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "她在工作呢，你下午打吧。"
+    }
+   ]
+  },
+  "d-064c4a27da": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "今天我们去哪儿吃饭？"
+    }
+   ]
+  },
+  "d-5cfd65d2e7": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "在家吃吧。"
+    }
+   ]
+  },
+  "d-47b56cc501": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "昨天下午你在家做什么呢？"
+    }
+   ]
+  },
+  "d-2aac1df0d3": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "我和朋友在看书呢。"
+    }
+   ]
+  },
+  "d-2f8511bef5": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "你喜欢喝茶吗？"
+    }
+   ]
+  },
+  "d-af78c987ae": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "我喜欢喝水。"
+    }
+   ]
+  },
+  "d-3214b65a0b": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "今天天气怎么样？"
+    }
+   ]
+  },
+  "d-c1284a0242": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "在下雨呢。"
+    }
+   ]
+  },
+  "d-a57fce9827": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "你在看电视吗？"
+    }
+   ]
+  },
+  "d-5a467abe2b": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "我没看电视，我在学习呢。"
+    }
+   ]
+  },
+  "d-bd97b7f8bb": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "昨天上午你去哪儿了？"
+    }
+   ]
+  },
+  "d-3d65a1f553": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "我去商店买东西了。"
+    }
+   ]
+  },
+  "d-462d0b1f71": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "你买什么了？"
+    }
+   ]
+  },
+  "d-f17f2dbce8": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "我买了一点儿苹果。"
+    }
+   ]
+  },
+  "d-10ceb83f44": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "你看见张先生了吗？"
+    }
+   ]
+  },
+  "d-3e5c2f0d0b": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "看见了，他去学开车了。"
+    }
+   ]
+  },
+  "d-693e55d4fd": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "他什么时候能回来？"
+    }
+   ]
+  },
+  "d-54f71bd87a": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "四十分钟后回来。"
+    }
+   ]
+  },
+  "d-57235590ee": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "王方的衣服太漂亮了！"
+    }
+   ]
+  },
+  "d-1504a5f5c8": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "是啊，她买了不少衣服。"
+    }
+   ]
+  },
+  "d-669364967c": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "我没买，这些都是王方的东西。"
+    }
+   ]
+  },
+  "d-e29a1c6a8b": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "昨天下午你去商店了吗？"
+    }
+   ]
+  },
+  "d-9b038f67af": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "我去了。"
+    }
+   ]
+  },
+  "d-5673e1b7a1": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "我没买水果，你呢？"
+    }
+   ]
+  },
+  "d-418ea15c61": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "你看见小王了吗？"
+    }
+   ]
+  },
+  "d-666ea5ac0d": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "看见了，他开车去学校了。"
+    }
+   ]
+  },
+  "d-35feb23e1d": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "你的衣服太漂亮了！"
+    }
+   ]
+  },
+  "d-49625dd8ff": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "谢谢，我喜欢买漂亮的衣服。"
+    }
+   ]
+  },
+  "d-462284032e": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "这些东西是王老师的吗？"
+    }
+   ]
+  },
+  "d-96204f6b78": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "是，这些都是她的东西。"
+    }
+   ]
+  },
+  "d-b915e2b702": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "你和李小姐是什么时候认识的？"
+    }
+   ]
+  },
+  "d-8d0a9ebf94": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "我们是二零一一年九月认识的。"
+    }
+   ]
+  },
+  "d-9949a1e138": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "你们在哪儿认识的？"
+    }
+   ]
+  },
+  "d-68d2a02549": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "我们是在学校认识的，她是我大学同学。"
+    }
+   ]
+  },
+  "d-11111a8b81": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "你们是怎么来饭店的？"
+    }
+   ]
+  },
+  "d-ef5a1bef03": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "我们是坐出租车来的。"
+    }
+   ]
+  },
+  "d-a9d1f2440c": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "李先生呢？"
+    }
+   ]
+  },
+  "d-da3661d9cd": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "他是和朋友一起开车来的。"
+    }
+   ]
+  },
+  "d-a501132298": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "很高兴认识您！李小姐。"
+    }
+   ]
+  },
+  "d-d20d04c851": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "认识你我也很高兴！"
+    }
+   ]
+  },
+  "d-69bb2024f7": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "听张先生说，您是坐飞机来北京的？"
+    }
+   ]
+  },
+  "d-0b9b627a0e": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "是的。"
+    }
+   ]
+  },
+  "d-307a99304b": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "你们是怎么认识的？"
+    }
+   ]
+  },
+  "d-8e2b78873b": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "我们是大学同学。"
+    }
+   ]
+  },
+  "d-17235efe07": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "你的衣服是在哪儿买的？"
+    }
+   ]
+  },
+  "d-a147e14771": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "在一个小商店买的。"
+    }
+   ]
+  },
+  "d-54aa490277": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "小王回家了吗？"
+    }
+   ]
+  },
+  "d-eda1b5e10e": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "我看见他开车回家了。"
+    }
+   ]
+  },
+  "d-56e0bf2a0b": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "我很高兴你来我们学校。"
+    }
+   ]
+  },
+  "d-4edf1fb1f5": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "我也很高兴。"
+    }
+   ]
+  },
+  "d-38b2005df8": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "你想什么时候去？"
+    }
+   ]
+  },
+  "d-b8706d54de": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "明天吧，小王是今天去的。"
+    }
+   ]
+  },
+  "w-5630b886f9": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "你"
+    }
+   ]
+  },
+  "w-27e4fe4c3f": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "好"
+    }
+   ]
+  },
+  "w-440ee0853a": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "你好"
+    }
+   ]
+  },
+  "w-7a424449a3": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "您"
+    }
+   ]
+  },
+  "w-aa0462f1b0": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "您好"
+    }
+   ]
+  },
+  "w-2fda3d6ec6": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "你们"
+    }
+   ]
+  },
+  "w-567ed4ac61": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "你们好"
+    }
+   ]
+  },
+  "w-0e5fd9ee90": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "对不起"
+    }
+   ]
+  },
+  "w-df96e37ca4": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "没关系"
+    }
+   ]
+  },
+  "w-3d43bc74a6": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "谢谢"
+    }
+   ]
+  },
+  "w-8fa7401e90": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "不"
+    }
+   ]
+  },
+  "w-76d34343d6": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "不谢"
+    }
+   ]
+  },
+  "w-bbc044d7ea": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "不客气"
+    }
+   ]
+  },
+  "w-82202bb725": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "再见"
+    }
+   ]
+  },
+  "w-793f8679d7": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "叫"
+    }
+   ]
+  },
+  "w-1d57c0fe68": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "什么"
+    }
+   ]
+  },
+  "w-364bd1bf05": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "名字"
+    }
+   ]
+  },
+  "w-34f201bc50": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "我"
+    }
+   ]
+  },
+  "w-30160a21b9": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "是"
+    }
+   ]
+  },
+  "w-494f23d624": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "老师"
+    }
+   ]
+  },
+  "w-8c49e4b3ed": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "吗"
+    }
+   ]
+  },
+  "w-b76783d38c": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "学生"
+    }
+   ]
+  },
+  "w-4912771a42": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "人"
+    }
+   ]
+  },
+  "w-101806f57c": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "中国"
+    }
+   ]
+  },
+  "w-bf72e07ef4": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "中国人"
+    }
+   ]
+  },
+  "w-2d10935506": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "美国"
+    }
+   ]
+  },
+  "w-75d9049f88": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "美国人"
+    }
+   ]
+  },
+  "w-7f2fa5ddbe": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "她"
+    }
+   ]
+  },
+  "w-e31b569a0f": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "他"
+    }
+   ]
+  },
+  "w-f0ef38a883": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "谁"
+    }
+   ]
+  },
+  "w-0746bd6249": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "的"
+    }
+   ]
+  },
+  "w-ae341b1780": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "汉语"
+    }
+   ]
+  },
+  "w-cd963c6bfd": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "哪"
+    }
+   ]
+  },
+  "w-f4bba5643a": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "国"
+    }
+   ]
+  },
+  "w-dcf66dcd60": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "呢"
+    }
+   ]
+  },
+  "w-c560c19c26": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "同学"
+    }
+   ]
+  },
+  "w-d490b5fd60": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "朋友"
+    }
+   ]
+  },
+  "w-7de8177ce7": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "家"
+    }
+   ]
+  },
+  "w-fbd5b75066": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "有"
+    }
+   ]
+  },
+  "w-1e7b07e714": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "口"
+    }
+   ]
+  },
+  "w-310c28d318": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "女儿"
+    }
+   ]
+  },
+  "w-68bf29eb00": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "几"
+    }
+   ]
+  },
+  "w-86f13375c1": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "岁"
+    }
+   ]
+  },
+  "w-a5933e2a9e": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "了"
+    }
+   ]
+  },
+  "w-fe9ea3f070": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "今年"
+    }
+   ]
+  },
+  "w-451b1366af": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "多"
+    }
+   ]
+  },
+  "w-0889c34972": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "大"
+    }
+   ]
+  },
+  "w-df373d21bd": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "多大"
+    }
+   ]
+  },
+  "w-e0d763a9ee": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "零"
+    }
+   ]
+  },
+  "w-d274eee8a1": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "一"
+    }
+   ]
+  },
+  "w-1d5639f716": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "二"
+    }
+   ]
+  },
+  "w-49ddb069d5": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "三"
+    }
+   ]
+  },
+  "w-4f88740b34": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "四"
+    }
+   ]
+  },
+  "w-8f07f53d63": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "五"
+    }
+   ]
+  },
+  "w-3d72c724e0": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "六"
+    }
+   ]
+  },
+  "w-7db1eeb5c3": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "七"
+    }
+   ]
+  },
+  "w-2142fb62fd": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "八"
+    }
+   ]
+  },
+  "w-27a2b9f17b": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "九"
+    }
+   ]
+  },
+  "w-aa107f05b6": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "十"
+    }
+   ]
+  },
+  "w-577cfff298": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "会"
+    }
+   ]
+  },
+  "w-be3058692f": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "说"
+    }
+   ]
+  },
+  "w-7d3b2b0ebc": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "妈妈"
+    }
+   ]
+  },
+  "w-7b4bb888fb": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "菜"
+    }
+   ]
+  },
+  "w-d8fcfae4ca": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "中国菜"
+    }
+   ]
+  },
+  "w-74a04cc4bf": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "很"
+    }
+   ]
+  },
+  "w-0b566d5eaa": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "好吃"
+    }
+   ]
+  },
+  "w-715fb2c0ef": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "做"
+    }
+   ]
+  },
+  "w-144d2cba11": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "写"
+    }
+   ]
+  },
+  "w-c06ce2d7fd": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "汉字"
+    }
+   ]
+  },
+  "w-582c50066c": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "字"
+    }
+   ]
+  },
+  "w-6f409884bb": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "怎么"
+    }
+   ]
+  },
+  "w-d001fffdd2": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "读"
+    }
+   ]
+  },
+  "w-24e2acc5f5": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "这个"
+    }
+   ]
+  },
+  "w-18f5d6e11c": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "请"
+    }
+   ]
+  },
+  "w-c0aaf7235e": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "请问"
+    }
+   ]
+  },
+  "w-17e83cc25e": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "今天"
+    }
+   ]
+  },
+  "w-7f5716be5c": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "号"
+    }
+   ]
+  },
+  "w-d9b59879f3": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "月"
+    }
+   ]
+  },
+  "w-e35269378d": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "星期"
+    }
+   ]
+  },
+  "w-58a7d0543a": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "星期几"
+    }
+   ]
+  },
+  "w-dded7a4890": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "星期一"
+    }
+   ]
+  },
+  "w-c80c63617b": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "星期二"
+    }
+   ]
+  },
+  "w-584bd4db56": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "星期三"
+    }
+   ]
+  },
+  "w-712173f550": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "星期四"
+    }
+   ]
+  },
+  "w-9e51ca47a2": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "星期五"
+    }
+   ]
+  },
+  "w-77bef63c55": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "星期六"
+    }
+   ]
+  },
+  "w-d9636d4a90": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "星期日"
+    }
+   ]
+  },
+  "w-c25143d15d": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "星期天"
+    }
+   ]
+  },
+  "w-59c4fcb09e": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "昨天"
+    }
+   ]
+  },
+  "w-b76ce230d3": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "明天"
+    }
+   ]
+  },
+  "w-033fd274f0": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "去"
+    }
+   ]
+  },
+  "w-08610a85a1": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "学校"
+    }
+   ]
+  },
+  "w-5f386ebdbb": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "看"
+    }
+   ]
+  },
+  "w-fe04274cef": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "书"
+    }
+   ]
+  },
+  "w-be89f02d9b": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "看书"
+    }
+   ]
+  },
+  "w-a48f3ad06d": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "想"
+    }
+   ]
+  },
+  "w-9982c5ced1": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "喝"
+    }
+   ]
+  },
+  "w-97a08c17dc": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "茶"
+    }
+   ]
+  },
+  "w-a10d4d5a63": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "吃"
+    }
+   ]
+  },
+  "w-0b0e3a35bf": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "米饭"
+    }
+   ]
+  },
+  "w-1dfaab6548": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "下午"
+    }
+   ]
+  },
+  "w-83eff41a2e": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "商店"
+    }
+   ]
+  },
+  "w-b6c5a7139f": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "买"
+    }
+   ]
+  },
+  "w-f7b2a6ee68": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "个"
+    }
+   ]
+  },
+  "w-d8e3ae229f": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "一个"
+    }
+   ]
+  },
+  "w-a49c409448": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "杯子"
+    }
+   ]
+  },
+  "w-542523173c": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "这"
+    }
+   ]
+  },
+  "w-327049aa37": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "那"
+    }
+   ]
+  },
+  "w-2161f1ab5a": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "那个"
+    }
+   ]
+  },
+  "w-6c999d484a": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "多少"
+    }
+   ]
+  },
+  "w-db4be61875": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "钱"
+    }
+   ]
+  },
+  "w-e44b48e089": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "块"
+    }
+   ]
+  },
+  "w-dce81b4475": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "哪儿"
+    }
+   ]
+  },
+  "w-922517cc73": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "小"
+    }
+   ]
+  },
+  "w-e10bd9f09b": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "猫"
+    }
+   ]
+  },
+  "w-3e5be3b89a": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "小猫"
+    }
+   ]
+  },
+  "w-2fcbe72fbf": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "狗"
+    }
+   ]
+  },
+  "w-e974ae4966": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "小狗"
+    }
+   ]
+  },
+  "w-686b703f41": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "在"
+    }
+   ]
+  },
+  "w-595f74c3ae": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "那儿"
+    }
+   ]
+  },
+  "w-5b2f2ac0a7": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "这儿"
+    }
+   ]
+  },
+  "w-9d08e4010f": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "椅子"
+    }
+   ]
+  },
+  "w-430dcbd9fe": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "下面"
+    }
+   ]
+  },
+  "w-dd9fc2c0a1": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "工作"
+    }
+   ]
+  },
+  "w-7b47d70bc7": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "儿子"
+    }
+   ]
+  },
+  "w-41deb73412": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "医院"
+    }
+   ]
+  },
+  "w-552caeb5bd": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "医生"
+    }
+   ]
+  },
+  "w-c86d164500": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "爸爸"
+    }
+   ]
+  },
+  "w-22b263f45c": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "桌子"
+    }
+   ]
+  },
+  "w-b967ce841a": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "上"
+    }
+   ]
+  },
+  "w-ea8f9dc2e6": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "上面"
+    }
+   ]
+  },
+  "w-ec87a4b867": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "电脑"
+    }
+   ]
+  },
+  "w-9a3eb34097": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "和"
+    }
+   ]
+  },
+  "w-d3cc0cab9c": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "本"
+    }
+   ]
+  },
+  "w-597f7d7862": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "一本"
+    }
+   ]
+  },
+  "w-c5a8f40bc0": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "里"
+    }
+   ]
+  },
+  "w-39bbac3bb4": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "里面"
+    }
+   ]
+  },
+  "w-9c61cc16a8": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "前面"
+    }
+   ]
+  },
+  "w-67404b82a6": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "后面"
+    }
+   ]
+  },
+  "w-8dcff1ebe3": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "没有"
+    }
+   ]
+  },
+  "w-ca0bc5e27c": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "没"
+    }
+   ]
+  },
+  "w-7321380d3c": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "能"
+    }
+   ]
+  },
+  "w-4a1e3b19fa": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "坐"
+    }
+   ]
+  },
+  "w-a511e8442f": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "现在"
+    }
+   ]
+  },
+  "w-1d59ea7cbb": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "点"
+    }
+   ]
+  },
+  "w-0d7416e2e2": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "分"
+    }
+   ]
+  },
+  "w-0c5382c1db": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "中午"
+    }
+   ]
+  },
+  "w-cded745e11": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "饭"
+    }
+   ]
+  },
+  "w-ebc6addab8": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "吃饭"
+    }
+   ]
+  },
+  "w-dd26b2b687": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "时候"
+    }
+   ]
+  },
+  "w-1418b1c645": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "什么时候"
+    }
+   ]
+  },
+  "w-5b722ab415": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "回"
+    }
+   ]
+  },
+  "w-a56342e7f2": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "回家"
+    }
+   ]
+  },
+  "w-0805949359": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "我们"
+    }
+   ]
+  },
+  "w-ba723f5f1d": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "电影"
+    }
+   ]
+  },
+  "w-80b84acecf": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "住"
+    }
+   ]
+  },
+  "w-c3304d1e49": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "天"
+    }
+   ]
+  },
+  "w-073d852840": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "前"
+    }
+   ]
+  },
+  "w-685e151824": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "北京"
+    }
+   ]
+  },
+  "w-89b4aa6364": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "时间"
+    }
+   ]
+  },
+  "w-4b1d6193e4": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "来"
+    }
+   ]
+  },
+  "w-6055fe4b90": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "天气"
+    }
+   ]
+  },
+  "w-91e31a915f": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "怎么样"
+    }
+   ]
+  },
+  "w-d2ff8f7020": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "太"
+    }
+   ]
+  },
+  "w-1aff05b636": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "热"
+    }
+   ]
+  },
+  "w-e2fc60d070": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "冷"
+    }
+   ]
+  },
+  "w-b94ed83e39": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "下雨"
+    }
+   ]
+  },
+  "w-8995b89799": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "雨"
+    }
+   ]
+  },
+  "w-82b78f7fa3": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "小姐"
+    }
+   ]
+  },
+  "w-720c230fe9": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "身体"
+    }
+   ]
+  },
+  "w-7b8ef4b58a": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "爱"
+    }
+   ]
+  },
+  "w-468cbbc2c4": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "些"
+    }
+   ]
+  },
+  "w-c4bed30f02": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "水果"
+    }
+   ]
+  },
+  "w-8ffbf19293": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "水"
+    }
+   ]
+  },
+  "w-133c0e3dfc": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "一会儿"
+    }
+   ]
+  },
+  "w-54c8c607f7": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "喂"
+    }
+   ]
+  },
+  "w-db73d8577b": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "也"
+    }
+   ]
+  },
+  "w-7c7a06f0ea": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "学"
+    }
+   ]
+  },
+  "w-aa89dd63b3": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "学习"
+    }
+   ]
+  },
+  "w-e214ee22dd": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "上午"
+    }
+   ]
+  },
+  "w-6380260a65": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "睡觉"
+    }
+   ]
+  },
+  "w-3258138d98": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "电视"
+    }
+   ]
+  },
+  "w-28aa475a79": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "喜欢"
+    }
+   ]
+  },
+  "w-f39c6b629f": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "电话"
+    }
+   ]
+  },
+  "w-4047e3ddec": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "给"
+    }
+   ]
+  },
+  "w-6919d5be90": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "打"
+    }
+   ]
+  },
+  "w-aab40b7634": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "打电话"
+    }
+   ]
+  },
+  "w-01afc04c9a": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "吧"
+    }
+   ]
+  },
+  "w-949fb2e914": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "东西"
+    }
+   ]
+  },
+  "w-b34e4ca734": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "一点儿"
+    }
+   ]
+  },
+  "w-b38d961e70": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "苹果"
+    }
+   ]
+  },
+  "w-7fd3df7ebc": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "看见"
+    }
+   ]
+  },
+  "w-a6e9f6d970": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "先生"
+    }
+   ]
+  },
+  "w-b4217093bc": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "开"
+    }
+   ]
+  },
+  "w-7c852e1d83": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "车"
+    }
+   ]
+  },
+  "w-cb4aa6e285": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "开车"
+    }
+   ]
+  },
+  "w-7e70076acf": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "回来"
+    }
+   ]
+  },
+  "w-28bf227b9b": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "分钟"
+    }
+   ]
+  },
+  "w-7b55d5a1d4": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "后"
+    }
+   ]
+  },
+  "w-2e34963bf8": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "衣服"
+    }
+   ]
+  },
+  "w-9c7fd1442d": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "漂亮"
+    }
+   ]
+  },
+  "w-925718bec9": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "啊"
+    }
+   ]
+  },
+  "w-fa495b65bd": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "少"
+    }
+   ]
+  },
+  "w-44143271c9": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "不少"
+    }
+   ]
+  },
+  "w-0b6a254af8": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "这些"
+    }
+   ]
+  },
+  "w-3600482315": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "那些"
+    }
+   ]
+  },
+  "w-d51dd8d130": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "都"
+    }
+   ]
+  },
+  "w-b79cb26e1c": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "认识"
+    }
+   ]
+  },
+  "w-6f14c2641c": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "年"
+    }
+   ]
+  },
+  "w-858bb23650": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "大学"
+    }
+   ]
+  },
+  "w-f8a8f08b22": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "饭店"
+    }
+   ]
+  },
+  "w-14534d703d": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "出租车"
+    }
+   ]
+  },
+  "w-3a85181e8e": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "一起"
+    }
+   ]
+  },
+  "w-a9bd182d2e": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "高兴"
+    }
+   ]
+  },
+  "w-1e358ba2b7": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "听"
+    }
+   ]
+  },
+  "w-0cb0206b42": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "飞机"
+    }
+   ]
+  },
+  "w-43de9ee222": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "是的"
+    }
+   ]
+  },
+  "w-305572c533": {
+   "tipo": "palabra",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "火车站"
+    }
+   ]
+  },
+  "d-747c8a337a": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "十一"
+    }
+   ]
+  },
+  "d-3875fa1497": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "二十八"
+    }
+   ]
+  },
+  "d-a2c6507651": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "三十五"
+    }
+   ]
+  },
+  "d-fcbefc7d46": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "四十七"
+    }
+   ]
+  },
+  "d-1d82a145ae": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "五十"
+    }
+   ]
+  },
+  "d-82d787ffde": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "六十九"
+    }
+   ]
+  },
+  "d-787531716b": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "七十二"
+    }
+   ]
+  },
+  "d-cf5c483d33": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "八十八"
+    }
+   ]
+  },
+  "d-c09c4a539e": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "九十六"
+    }
+   ]
+  },
+  "d-4fb0b387cb": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "十四"
+    }
+   ]
+  },
+  "d-e86bda414f": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "三十三"
+    }
+   ]
+  },
+  "d-2bb3771b8e": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "九十九"
+    }
+   ]
+  },
+  "d-69d60967c7": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "我今年十九岁。"
+    }
+   ]
+  },
+  "d-75374f7ed5": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "我女儿六岁了。"
+    }
+   ]
+  },
+  "d-385e700a26": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "李老师今年四十五岁。"
+    }
+   ]
+  },
+  "d-60d3e15b3f": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "我爸爸七十岁了。"
+    }
+   ]
+  },
+  "d-f4923e132b": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "他儿子今年十二岁。"
+    }
+   ]
+  },
+  "d-9100037810": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "你妈妈多大了？"
+    }
+   ]
+  },
+  "d-dee9c634ca": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "她今年六十三岁了。"
+    }
+   ]
+  },
+  "d-be808c56cd": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "大卫二十二岁，是学生。"
+    }
+   ]
+  },
+  "d-7e360d1004": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "这个杯子九块。"
+    }
+   ]
+  },
+  "d-ab44c1b07e": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "那本书三十五块。"
+    }
+   ]
+  },
+  "d-5e866e5fda": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "苹果多少钱？"
+    }
+   ]
+  },
+  "d-5d37b2140a": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "米饭三块钱。"
+    }
+   ]
+  },
+  "d-cfa770d9bd": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "这个菜四十八块。"
+    }
+   ]
+  },
+  "d-4d5702d94b": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "茶十二块，水三块。"
+    }
+   ]
+  },
+  "d-f81976552e": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "这些衣服九十九块。"
+    }
+   ]
+  },
+  "d-9fb2f8e5ac": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "这个杯子十六块钱。"
+    }
+   ]
+  },
+  "d-b5906f057a": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "今天三月八号。"
+    }
+   ]
+  },
+  "d-0699bd835d": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "明天星期五。"
+    }
+   ]
+  },
+  "d-28b6fa4d81": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "昨天是十二月二十五号。"
+    }
+   ]
+  },
+  "d-968945582d": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "今天是六月一号，星期一。"
+    }
+   ]
+  },
+  "d-da405a761f": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "我星期六去北京。"
+    }
+   ]
+  },
+  "d-5da24f2e39": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "十月一号是星期几？"
+    }
+   ]
+  },
+  "d-207518823d": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "我们星期天去看电影。"
+    }
+   ]
+  },
+  "d-cd752c68c0": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "他七月十四号回来。"
+    }
+   ]
+  },
+  "d-ae8dbc755f": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "今天二月二十八号，星期三。"
+    }
+   ]
+  },
+  "d-b3b3626d0e": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "我是二零零三年四月十一号来中国的。"
+    }
+   ]
+  },
+  "d-fb36885865": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "现在八点。"
+    }
+   ]
+  },
+  "d-8c394ab0b0": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "现在上午九点十五分。"
+    }
+   ]
+  },
+  "d-7569ec64f8": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "中午十二点吃饭。"
+    }
+   ]
+  },
+  "d-886b00dc42": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "下午三点四十分。"
+    }
+   ]
+  },
+  "d-a0c9bd6ea7": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "我七点三十分去学校。"
+    }
+   ]
+  },
+  "d-fa9c7bf3ba": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "我们六点五分去看电影。"
+    }
+   ]
+  },
+  "d-4d89090731": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "爸爸下午五点五十分回家。"
+    }
+   ]
+  },
+  "d-3b1aa12141": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "你几点睡觉？"
+    }
+   ]
+  },
+  "d-551ac61ded": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "我十一点睡觉。"
+    }
+   ]
+  },
+  "d-c7a2359192": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "飞机十点二十分来。"
+    }
+   ]
+  },
+  "d-0e671d5cb4": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "我的电话是六二八五三零幺九。"
+    }
+   ]
+  },
+  "d-0d14f18e79": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "李老师的电话是八九零七四四二六。"
+    }
+   ]
+  },
+  "d-2f1313fd35": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "医院的电话是多少？"
+    }
+   ]
+  },
+  "d-1c824e4bc8": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "五九三幺六八零二。"
+    }
+   ]
+  },
+  "d-2a71456180": {
+   "tipo": "frase",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "请给我打电话：七七三五幺二零八。"
+    }
+   ]
+  },
+  "L01a": {
+   "tipo": "listening",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "你们好！",
+     "sp": "李老师"
+    },
+    {
+     "v": "m1",
+     "zh": "老师好！",
+     "sp": "大卫"
+    },
+    {
+     "v": "f1",
+     "zh": "你好！你叫什么名字？",
+     "sp": "李老师"
+    },
+    {
+     "v": "m1",
+     "zh": "我叫大卫，我是美国人。",
+     "sp": "大卫"
+    },
+    {
+     "v": "f2",
+     "zh": "对不起，老师！",
+     "sp": "李月"
+    },
+    {
+     "v": "f1",
+     "zh": "没关系。你是学生吗？",
+     "sp": "李老师"
+    },
+    {
+     "v": "f2",
+     "zh": "是，我是学生，我叫李月。",
+     "sp": "李月"
+    },
+    {
+     "v": "f1",
+     "zh": "李月，你是中国人吗？",
+     "sp": "李老师"
+    },
+    {
+     "v": "f2",
+     "zh": "是，我是中国人。",
+     "sp": "李月"
+    }
+   ]
+  },
+  "L01b": {
+   "tipo": "listening",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "您好！您是老师吗？",
+     "sp": "大卫"
+    },
+    {
+     "v": "m2",
+     "zh": "你好！我不是老师，我是学生。",
+     "sp": "谢朋"
+    },
+    {
+     "v": "m1",
+     "zh": "对不起！",
+     "sp": "大卫"
+    },
+    {
+     "v": "m2",
+     "zh": "没关系。我叫谢朋，我是中国人。你叫什么名字？",
+     "sp": "谢朋"
+    },
+    {
+     "v": "m1",
+     "zh": "我叫大卫，我是美国人。",
+     "sp": "大卫"
+    },
+    {
+     "v": "f1",
+     "zh": "你们好！我是王老师。",
+     "sp": "王老师"
+    },
+    {
+     "v": "m2",
+     "zh": "王老师，您好！",
+     "sp": "谢朋"
+    },
+    {
+     "v": "m1",
+     "zh": "老师好！",
+     "sp": "大卫"
+    }
+   ]
+  },
+  "L02a": {
+   "tipo": "listening",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "李老师，谢谢您！",
+     "sp": "大卫"
+    },
+    {
+     "v": "f1",
+     "zh": "不客气！再见！",
+     "sp": "李老师"
+    },
+    {
+     "v": "m1",
+     "zh": "老师再见！",
+     "sp": "大卫"
+    },
+    {
+     "v": "f2",
+     "zh": "对不起！",
+     "sp": "王方"
+    },
+    {
+     "v": "m1",
+     "zh": "没关系。你是学生吗？",
+     "sp": "大卫"
+    },
+    {
+     "v": "f2",
+     "zh": "是，我是学生，我叫王方。你是中国人吗？",
+     "sp": "王方"
+    },
+    {
+     "v": "m1",
+     "zh": "不是，我是美国人，我叫大卫。",
+     "sp": "大卫"
+    },
+    {
+     "v": "f2",
+     "zh": "大卫，再见！",
+     "sp": "王方"
+    },
+    {
+     "v": "m1",
+     "zh": "再见！",
+     "sp": "大卫"
+    }
+   ]
+  },
+  "L02b": {
+   "tipo": "listening",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "您好！您是王老师吗？",
+     "sp": "李心"
+    },
+    {
+     "v": "m1",
+     "zh": "不是，我不是老师。",
+     "sp": "张先生"
+    },
+    {
+     "v": "f1",
+     "zh": "对不起！",
+     "sp": "李心"
+    },
+    {
+     "v": "m1",
+     "zh": "没关系。",
+     "sp": "张先生"
+    },
+    {
+     "v": "f2",
+     "zh": "你好！我是王老师。你叫什么名字？",
+     "sp": "王老师"
+    },
+    {
+     "v": "f1",
+     "zh": "王老师好！我叫李心。",
+     "sp": "李心"
+    },
+    {
+     "v": "f2",
+     "zh": "李心，你好！",
+     "sp": "王老师"
+    },
+    {
+     "v": "f1",
+     "zh": "谢谢您！再见！",
+     "sp": "李心"
+    },
+    {
+     "v": "m1",
+     "zh": "不谢！再见！",
+     "sp": "张先生"
+    }
+   ]
+  },
+  "L03a": {
+   "tipo": "listening",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "你好！我叫谢朋。你叫什么名字？",
+     "sp": "谢朋"
+    },
+    {
+     "v": "m2",
+     "zh": "你好，我叫大卫。",
+     "sp": "大卫"
+    },
+    {
+     "v": "m1",
+     "zh": "大卫，你是美国人吗？",
+     "sp": "谢朋"
+    },
+    {
+     "v": "m2",
+     "zh": "是，我是美国人。你是中国人吗？",
+     "sp": "大卫"
+    },
+    {
+     "v": "m1",
+     "zh": "是，我是中国人，我是学生。你是学生吗？",
+     "sp": "谢朋"
+    },
+    {
+     "v": "m2",
+     "zh": "我不是学生，我是老师。",
+     "sp": "大卫"
+    },
+    {
+     "v": "m1",
+     "zh": "您是老师！对不起！",
+     "sp": "谢朋"
+    },
+    {
+     "v": "m2",
+     "zh": "没关系。",
+     "sp": "大卫"
+    },
+    {
+     "v": "f1",
+     "zh": "大卫老师，您好！",
+     "sp": "王方"
+    },
+    {
+     "v": "m2",
+     "zh": "你好，王方！",
+     "sp": "大卫"
+    }
+   ]
+  },
+  "L03b": {
+   "tipo": "listening",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "你们好！我是王老师。你是李月吗？",
+     "sp": "王老师"
+    },
+    {
+     "v": "f2",
+     "zh": "不是，我不是李月，我叫李心。",
+     "sp": "李心"
+    },
+    {
+     "v": "f1",
+     "zh": "对不起，李心！你是中国人吗？",
+     "sp": "王老师"
+    },
+    {
+     "v": "f2",
+     "zh": "是，我是中国人。",
+     "sp": "李心"
+    },
+    {
+     "v": "f1",
+     "zh": "你好！你叫什么名字？",
+     "sp": "王老师"
+    },
+    {
+     "v": "m1",
+     "zh": "老师好！我叫大卫。",
+     "sp": "大卫"
+    },
+    {
+     "v": "f1",
+     "zh": "大卫，你是美国人吗？",
+     "sp": "王老师"
+    },
+    {
+     "v": "m1",
+     "zh": "是，我是美国人。",
+     "sp": "大卫"
+    }
+   ]
+  },
+  "L04a": {
+   "tipo": "listening",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "王方，她是谁？",
+     "sp": "大卫"
+    },
+    {
+     "v": "f1",
+     "zh": "她是我的同学，她叫李月。",
+     "sp": "王方"
+    },
+    {
+     "v": "m1",
+     "zh": "她是哪国人？",
+     "sp": "大卫"
+    },
+    {
+     "v": "f1",
+     "zh": "她是中国人。",
+     "sp": "王方"
+    },
+    {
+     "v": "m1",
+     "zh": "他呢？他是你同学吗？",
+     "sp": "大卫"
+    },
+    {
+     "v": "f1",
+     "zh": "他不是我同学，他是我朋友，他叫谢朋。",
+     "sp": "王方"
+    },
+    {
+     "v": "m1",
+     "zh": "他是学生吗？",
+     "sp": "大卫"
+    },
+    {
+     "v": "f1",
+     "zh": "不是，他是汉语老师。",
+     "sp": "王方"
+    }
+   ]
+  },
+  "L04b": {
+   "tipo": "listening",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "李老师，您好！",
+     "sp": "大卫"
+    },
+    {
+     "v": "f1",
+     "zh": "你好，大卫！她是谁？",
+     "sp": "李老师"
+    },
+    {
+     "v": "m1",
+     "zh": "她是我的朋友，她叫李心。",
+     "sp": "大卫"
+    },
+    {
+     "v": "f1",
+     "zh": "李心，你好！你是大卫的同学吗？",
+     "sp": "李老师"
+    },
+    {
+     "v": "f2",
+     "zh": "不是，我不是学生，我是老师。",
+     "sp": "李心"
+    },
+    {
+     "v": "f1",
+     "zh": "你是哪国人？",
+     "sp": "李老师"
+    },
+    {
+     "v": "f2",
+     "zh": "我是中国人。您呢？",
+     "sp": "李心"
+    },
+    {
+     "v": "f1",
+     "zh": "我是中国人，我是大卫的汉语老师。",
+     "sp": "李老师"
+    }
+   ]
+  },
+  "L05a": {
+   "tipo": "listening",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "李老师，您家有几口人？",
+     "sp": "大卫"
+    },
+    {
+     "v": "f1",
+     "zh": "我家有四口人。",
+     "sp": "李老师"
+    },
+    {
+     "v": "m1",
+     "zh": "她是谁？",
+     "sp": "大卫"
+    },
+    {
+     "v": "f1",
+     "zh": "她是我女儿，她叫李月。",
+     "sp": "李老师"
+    },
+    {
+     "v": "m1",
+     "zh": "李月今年多大了？",
+     "sp": "大卫"
+    },
+    {
+     "v": "f1",
+     "zh": "她今年二十二岁了，她是学生。",
+     "sp": "李老师"
+    },
+    {
+     "v": "m1",
+     "zh": "她呢？",
+     "sp": "大卫"
+    },
+    {
+     "v": "f1",
+     "zh": "她是我女儿李心，她今年九岁了。",
+     "sp": "李老师"
+    },
+    {
+     "v": "m1",
+     "zh": "李老师，您今年多大了？",
+     "sp": "大卫"
+    },
+    {
+     "v": "f1",
+     "zh": "我今年四十八岁了。",
+     "sp": "李老师"
+    }
+   ]
+  },
+  "L05b": {
+   "tipo": "listening",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "谢朋，你家有几口人？",
+     "sp": "王方"
+    },
+    {
+     "v": "m1",
+     "zh": "我家有三口人。你家呢？",
+     "sp": "谢朋"
+    },
+    {
+     "v": "f1",
+     "zh": "我家有六口人。",
+     "sp": "王方"
+    },
+    {
+     "v": "m1",
+     "zh": "六口人！你今年多大了？",
+     "sp": "谢朋"
+    },
+    {
+     "v": "f1",
+     "zh": "我今年十九岁。你呢？",
+     "sp": "王方"
+    },
+    {
+     "v": "m1",
+     "zh": "我今年二十一岁了。",
+     "sp": "谢朋"
+    },
+    {
+     "v": "f1",
+     "zh": "李老师有女儿吗？",
+     "sp": "王方"
+    },
+    {
+     "v": "m1",
+     "zh": "有，她女儿今年三岁了。",
+     "sp": "谢朋"
+    },
+    {
+     "v": "f1",
+     "zh": "李老师今年多大了？",
+     "sp": "王方"
+    },
+    {
+     "v": "m1",
+     "zh": "她今年三十五岁。",
+     "sp": "谢朋"
+    }
+   ]
+  },
+  "L06a": {
+   "tipo": "listening",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "李月，中国菜好吃吗？",
+     "sp": "大卫"
+    },
+    {
+     "v": "f1",
+     "zh": "中国菜很好吃！你会做中国菜吗？",
+     "sp": "李月"
+    },
+    {
+     "v": "m1",
+     "zh": "我不会做。你会做吗？",
+     "sp": "大卫"
+    },
+    {
+     "v": "f1",
+     "zh": "我不会，我妈妈会做。",
+     "sp": "李月"
+    },
+    {
+     "v": "m1",
+     "zh": "李月，这个字怎么读？",
+     "sp": "大卫"
+    },
+    {
+     "v": "f1",
+     "zh": "这个字读“菜”，中国菜的菜。",
+     "sp": "李月"
+    },
+    {
+     "v": "m1",
+     "zh": "你会写这个字吗？",
+     "sp": "大卫"
+    },
+    {
+     "v": "f1",
+     "zh": "会，我会写。你会写汉字吗？",
+     "sp": "李月"
+    },
+    {
+     "v": "m1",
+     "zh": "我会说汉语，不会写汉字。",
+     "sp": "大卫"
+    }
+   ]
+  },
+  "L06b": {
+   "tipo": "listening",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "大卫，你会写汉字吗？",
+     "sp": "王老师"
+    },
+    {
+     "v": "m1",
+     "zh": "会，我会写。",
+     "sp": "大卫"
+    },
+    {
+     "v": "f1",
+     "zh": "你会写“口”吗？",
+     "sp": "王老师"
+    },
+    {
+     "v": "m1",
+     "zh": "会，这个字我会写。",
+     "sp": "大卫"
+    },
+    {
+     "v": "f1",
+     "zh": "你妈妈会说汉语吗？",
+     "sp": "王老师"
+    },
+    {
+     "v": "m1",
+     "zh": "会，我妈妈是汉语老师。",
+     "sp": "大卫"
+    },
+    {
+     "v": "f1",
+     "zh": "她会做中国菜吗？",
+     "sp": "王老师"
+    },
+    {
+     "v": "m1",
+     "zh": "她不会做。",
+     "sp": "大卫"
+    },
+    {
+     "v": "f2",
+     "zh": "大卫，你会做中国菜吗？",
+     "sp": "王方"
+    },
+    {
+     "v": "m1",
+     "zh": "我不会。王方，你会做吗？",
+     "sp": "大卫"
+    },
+    {
+     "v": "f2",
+     "zh": "我会做，我会做很多中国菜！",
+     "sp": "王方"
+    }
+   ]
+  },
+  "L07a": {
+   "tipo": "listening",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "李心，请问，今天几号？",
+     "sp": "谢朋"
+    },
+    {
+     "v": "f1",
+     "zh": "今天十月八号。",
+     "sp": "李心"
+    },
+    {
+     "v": "m1",
+     "zh": "今天星期几？",
+     "sp": "谢朋"
+    },
+    {
+     "v": "f1",
+     "zh": "今天星期五。",
+     "sp": "李心"
+    },
+    {
+     "v": "m1",
+     "zh": "明天星期六，你去学校吗？",
+     "sp": "谢朋"
+    },
+    {
+     "v": "f1",
+     "zh": "我去学校。",
+     "sp": "李心"
+    },
+    {
+     "v": "m1",
+     "zh": "你去学校做什么？",
+     "sp": "谢朋"
+    },
+    {
+     "v": "f1",
+     "zh": "我去学校看书。你呢？",
+     "sp": "李心"
+    },
+    {
+     "v": "m1",
+     "zh": "我不去学校，我去朋友家。",
+     "sp": "谢朋"
+    },
+    {
+     "v": "f1",
+     "zh": "你朋友是谁？",
+     "sp": "李心"
+    },
+    {
+     "v": "m1",
+     "zh": "他叫大卫，他是美国人。",
+     "sp": "谢朋"
+    }
+   ]
+  },
+  "L07b": {
+   "tipo": "listening",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "妈妈，今天几号？",
+     "sp": "女儿"
+    },
+    {
+     "v": "f2",
+     "zh": "今天五月二十号。",
+     "sp": "妈妈"
+    },
+    {
+     "v": "f1",
+     "zh": "今天星期几？",
+     "sp": "女儿"
+    },
+    {
+     "v": "f2",
+     "zh": "今天星期日。",
+     "sp": "妈妈"
+    },
+    {
+     "v": "f1",
+     "zh": "星期日！我去同学家看书。",
+     "sp": "女儿"
+    },
+    {
+     "v": "f2",
+     "zh": "你同学叫什么名字？",
+     "sp": "妈妈"
+    },
+    {
+     "v": "f1",
+     "zh": "她叫王方。",
+     "sp": "女儿"
+    },
+    {
+     "v": "f2",
+     "zh": "明天星期一，你去学校吗？",
+     "sp": "妈妈"
+    },
+    {
+     "v": "f1",
+     "zh": "去，明天我去学校。妈妈再见！",
+     "sp": "女儿"
+    },
+    {
+     "v": "f2",
+     "zh": "再见！",
+     "sp": "妈妈"
+    }
+   ]
+  },
+  "L08a": {
+   "tipo": "listening",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "您好！请问，这个杯子多少钱？",
+     "sp": "王方"
+    },
+    {
+     "v": "m1",
+     "zh": "这个杯子三十五块。",
+     "sp": "张先生"
+    },
+    {
+     "v": "f1",
+     "zh": "那个杯子呢？",
+     "sp": "王方"
+    },
+    {
+     "v": "m1",
+     "zh": "那个杯子十六块钱。",
+     "sp": "张先生"
+    },
+    {
+     "v": "f1",
+     "zh": "我想买那个杯子。",
+     "sp": "王方"
+    },
+    {
+     "v": "m1",
+     "zh": "好。你想买茶吗？",
+     "sp": "张先生"
+    },
+    {
+     "v": "f1",
+     "zh": "这个茶多少钱？",
+     "sp": "王方"
+    },
+    {
+     "v": "m1",
+     "zh": "这个茶很好，五十块。",
+     "sp": "张先生"
+    },
+    {
+     "v": "f1",
+     "zh": "我不买茶，谢谢您。",
+     "sp": "王方"
+    },
+    {
+     "v": "m1",
+     "zh": "不客气，再见！",
+     "sp": "张先生"
+    }
+   ]
+  },
+  "L08b": {
+   "tipo": "listening",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "大卫，你想吃什么？",
+     "sp": "李月"
+    },
+    {
+     "v": "m1",
+     "zh": "我想吃米饭。你呢？",
+     "sp": "大卫"
+    },
+    {
+     "v": "f1",
+     "zh": "我想吃这个菜。",
+     "sp": "李月"
+    },
+    {
+     "v": "m1",
+     "zh": "这个菜多少钱？",
+     "sp": "大卫"
+    },
+    {
+     "v": "f1",
+     "zh": "这个菜二十二块。你想喝什么？",
+     "sp": "李月"
+    },
+    {
+     "v": "m1",
+     "zh": "我想喝茶。",
+     "sp": "大卫"
+    },
+    {
+     "v": "f1",
+     "zh": "下午你想去哪儿？",
+     "sp": "李月"
+    },
+    {
+     "v": "m1",
+     "zh": "我想去商店买书。",
+     "sp": "大卫"
+    },
+    {
+     "v": "f1",
+     "zh": "你想买什么书？",
+     "sp": "李月"
+    },
+    {
+     "v": "m1",
+     "zh": "我想买汉语书。你下午去哪儿？",
+     "sp": "大卫"
+    },
+    {
+     "v": "f1",
+     "zh": "我去朋友家。",
+     "sp": "李月"
+    }
+   ]
+  },
+  "L09a": {
+   "tipo": "listening",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "你儿子今年多大了？",
+     "sp": "李月"
+    },
+    {
+     "v": "f2",
+     "zh": "他今年二十八岁了。",
+     "sp": "王方"
+    },
+    {
+     "v": "f1",
+     "zh": "他是学生吗？",
+     "sp": "李月"
+    },
+    {
+     "v": "f2",
+     "zh": "不是，他是医生。",
+     "sp": "王方"
+    },
+    {
+     "v": "f1",
+     "zh": "他在哪儿工作？",
+     "sp": "李月"
+    },
+    {
+     "v": "f2",
+     "zh": "他在医院工作。",
+     "sp": "王方"
+    },
+    {
+     "v": "f1",
+     "zh": "你女儿呢？她在哪儿工作？",
+     "sp": "李月"
+    },
+    {
+     "v": "f2",
+     "zh": "我女儿是老师，她在学校工作。",
+     "sp": "王方"
+    },
+    {
+     "v": "f1",
+     "zh": "你呢？你在哪儿工作？",
+     "sp": "李月"
+    },
+    {
+     "v": "f2",
+     "zh": "我在一个商店工作。你呢？",
+     "sp": "王方"
+    },
+    {
+     "v": "f1",
+     "zh": "我是学生，我不工作。",
+     "sp": "李月"
+    }
+   ]
+  },
+  "L09b": {
+   "tipo": "listening",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "请问，李老师在吗？",
+     "sp": "大卫"
+    },
+    {
+     "v": "f1",
+     "zh": "不在，她今天不在学校。",
+     "sp": "李月"
+    },
+    {
+     "v": "m1",
+     "zh": "她在哪儿？",
+     "sp": "大卫"
+    },
+    {
+     "v": "f1",
+     "zh": "她在医院。",
+     "sp": "李月"
+    },
+    {
+     "v": "m1",
+     "zh": "她怎么了？",
+     "sp": "大卫"
+    },
+    {
+     "v": "f1",
+     "zh": "她妈妈在医院，她去医院看妈妈。",
+     "sp": "李月"
+    },
+    {
+     "v": "m1",
+     "zh": "明天李老师在学校吗？",
+     "sp": "大卫"
+    },
+    {
+     "v": "f1",
+     "zh": "在，明天下午她在这儿。",
+     "sp": "李月"
+    },
+    {
+     "v": "m1",
+     "zh": "好，谢谢你。你是李老师的学生吗？",
+     "sp": "大卫"
+    },
+    {
+     "v": "f1",
+     "zh": "是，我叫李月。你呢？",
+     "sp": "李月"
+    },
+    {
+     "v": "m1",
+     "zh": "我叫大卫，是美国人，我是李老师的朋友。",
+     "sp": "大卫"
+    }
+   ]
+  },
+  "L10a": {
+   "tipo": "listening",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "你好，这儿有人吗？",
+     "sp": "谢朋"
+    },
+    {
+     "v": "f1",
+     "zh": "没有，请坐。",
+     "sp": "王方"
+    },
+    {
+     "v": "m1",
+     "zh": "谢谢。前面那个人是谁？",
+     "sp": "谢朋"
+    },
+    {
+     "v": "f1",
+     "zh": "她叫李心，是我的同学。",
+     "sp": "王方"
+    },
+    {
+     "v": "m1",
+     "zh": "后面那个人呢？他是你们的老师吗？",
+     "sp": "谢朋"
+    },
+    {
+     "v": "f1",
+     "zh": "不是，他是李心的爸爸，是医生。",
+     "sp": "王方"
+    },
+    {
+     "v": "m1",
+     "zh": "桌子上面有一本书，是你的吗？",
+     "sp": "谢朋"
+    },
+    {
+     "v": "f1",
+     "zh": "不是我的，是我同学李月的。",
+     "sp": "王方"
+    },
+    {
+     "v": "m1",
+     "zh": "你的书呢？",
+     "sp": "谢朋"
+    },
+    {
+     "v": "f1",
+     "zh": "我的书和电脑在桌子里面。",
+     "sp": "王方"
+    },
+    {
+     "v": "m1",
+     "zh": "我能看你的书吗？",
+     "sp": "谢朋"
+    },
+    {
+     "v": "f1",
+     "zh": "能，请看。",
+     "sp": "王方"
+    }
+   ]
+  },
+  "L10b": {
+   "tipo": "listening",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "爸爸，我的电脑在哪儿？",
+     "sp": "女儿"
+    },
+    {
+     "v": "m1",
+     "zh": "在你的桌子上面。",
+     "sp": "爸爸"
+    },
+    {
+     "v": "f1",
+     "zh": "桌子上面没有电脑，有三本书和一个杯子。",
+     "sp": "女儿"
+    },
+    {
+     "v": "m1",
+     "zh": "椅子下面呢？",
+     "sp": "爸爸"
+    },
+    {
+     "v": "f1",
+     "zh": "椅子下面有小猫，没有电脑。",
+     "sp": "女儿"
+    },
+    {
+     "v": "m1",
+     "zh": "电脑在你妈妈的桌子上面。",
+     "sp": "爸爸"
+    },
+    {
+     "v": "f1",
+     "zh": "妈妈在家吗？",
+     "sp": "女儿"
+    },
+    {
+     "v": "m1",
+     "zh": "不在，她在前面的商店买茶。",
+     "sp": "爸爸"
+    },
+    {
+     "v": "f1",
+     "zh": "我能坐妈妈的椅子吗？",
+     "sp": "女儿"
+    },
+    {
+     "v": "m1",
+     "zh": "能。",
+     "sp": "爸爸"
+    }
+   ]
+  },
+  "L11a": {
+   "tipo": "listening",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "王方，现在几点？",
+     "sp": "大卫"
+    },
+    {
+     "v": "f1",
+     "zh": "现在下午三点四十分。",
+     "sp": "王方"
+    },
+    {
+     "v": "m1",
+     "zh": "我们什么时候去看电影？",
+     "sp": "大卫"
+    },
+    {
+     "v": "f1",
+     "zh": "六点十分。",
+     "sp": "王方"
+    },
+    {
+     "v": "m1",
+     "zh": "看电影前，我们去吃饭吗？",
+     "sp": "大卫"
+    },
+    {
+     "v": "f1",
+     "zh": "好，五点我们去学校前面吃饭。",
+     "sp": "王方"
+    },
+    {
+     "v": "m1",
+     "zh": "你什么时候回家？",
+     "sp": "大卫"
+    },
+    {
+     "v": "f1",
+     "zh": "九点前回家。明天我去北京。",
+     "sp": "王方"
+    },
+    {
+     "v": "m1",
+     "zh": "你想在北京住几天？",
+     "sp": "大卫"
+    },
+    {
+     "v": "f1",
+     "zh": "住四天，星期天回家。",
+     "sp": "王方"
+    },
+    {
+     "v": "m1",
+     "zh": "你爸爸妈妈在北京吗？",
+     "sp": "大卫"
+    },
+    {
+     "v": "f1",
+     "zh": "在，我爸爸妈妈在北京工作。",
+     "sp": "王方"
+    }
+   ]
+  },
+  "L11b": {
+   "tipo": "listening",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "爸爸，现在几点？",
+     "sp": "李心"
+    },
+    {
+     "v": "m1",
+     "zh": "七点五十分。我八点去医院。",
+     "sp": "爸爸"
+    },
+    {
+     "v": "f1",
+     "zh": "中午你回家吃饭吗？",
+     "sp": "李心"
+    },
+    {
+     "v": "m1",
+     "zh": "不回家，我没有时间，在医院吃饭。",
+     "sp": "爸爸"
+    },
+    {
+     "v": "f1",
+     "zh": "你什么时候回家？",
+     "sp": "李心"
+    },
+    {
+     "v": "m1",
+     "zh": "下午六点十分。",
+     "sp": "爸爸"
+    },
+    {
+     "v": "f1",
+     "zh": "妈妈在北京住几天？",
+     "sp": "李心"
+    },
+    {
+     "v": "m1",
+     "zh": "住五天，星期六回家。",
+     "sp": "爸爸"
+    },
+    {
+     "v": "f1",
+     "zh": "星期六我们去看电影，好吗？",
+     "sp": "李心"
+    },
+    {
+     "v": "m1",
+     "zh": "好，星期六下午我们和妈妈去看电影。",
+     "sp": "爸爸"
+    }
+   ]
+  },
+  "L12a": {
+   "tipo": "listening",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "王小姐，你身体怎么样？",
+     "sp": "医生"
+    },
+    {
+     "v": "f1",
+     "zh": "不太好。天气太热了，我不想吃饭。",
+     "sp": "王小姐"
+    },
+    {
+     "v": "m1",
+     "zh": "你爱喝水吗？",
+     "sp": "医生"
+    },
+    {
+     "v": "f1",
+     "zh": "不爱喝水，我爱喝茶。",
+     "sp": "王小姐"
+    },
+    {
+     "v": "m1",
+     "zh": "你多喝水，多吃些水果。",
+     "sp": "医生"
+    },
+    {
+     "v": "f1",
+     "zh": "医生，我明天能去工作吗？",
+     "sp": "王小姐"
+    },
+    {
+     "v": "m1",
+     "zh": "明天不能。今天星期三，你星期五能去工作。",
+     "sp": "医生"
+    },
+    {
+     "v": "f1",
+     "zh": "好。明天会下雨吗？",
+     "sp": "王小姐"
+    },
+    {
+     "v": "m1",
+     "zh": "不会下雨，明天会很热。",
+     "sp": "医生"
+    },
+    {
+     "v": "f1",
+     "zh": "谢谢你，医生。",
+     "sp": "王小姐"
+    }
+   ]
+  },
+  "L12b": {
+   "tipo": "listening",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "李月，昨天北京的天气怎么样？",
+     "sp": "大卫"
+    },
+    {
+     "v": "f1",
+     "zh": "太冷了！今天不冷不热。",
+     "sp": "李月"
+    },
+    {
+     "v": "m1",
+     "zh": "明天会下雨吗？",
+     "sp": "大卫"
+    },
+    {
+     "v": "f1",
+     "zh": "会，明天下午会下雨。",
+     "sp": "李月"
+    },
+    {
+     "v": "m1",
+     "zh": "明天我想去商店买些水果，你去吗？",
+     "sp": "大卫"
+    },
+    {
+     "v": "f1",
+     "zh": "明天下雨，我不想去。今天去，好吗？",
+     "sp": "李月"
+    },
+    {
+     "v": "m1",
+     "zh": "好。现在几点？",
+     "sp": "大卫"
+    },
+    {
+     "v": "f1",
+     "zh": "十一点。我一会儿去学校看书。",
+     "sp": "李月"
+    },
+    {
+     "v": "m1",
+     "zh": "那我们什么时候去商店？",
+     "sp": "大卫"
+    },
+    {
+     "v": "f1",
+     "zh": "下午三点，你来我家，好吗？",
+     "sp": "李月"
+    },
+    {
+     "v": "m1",
+     "zh": "好，三点我去你家。",
+     "sp": "大卫"
+    }
+   ]
+  },
+  "L13a": {
+   "tipo": "listening",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "喂，你好！",
+     "sp": "妈妈"
+    },
+    {
+     "v": "m1",
+     "zh": "您好，我是谢朋的同学大卫。谢朋在家吗？",
+     "sp": "大卫"
+    },
+    {
+     "v": "f1",
+     "zh": "在，他在睡觉呢。",
+     "sp": "妈妈"
+    },
+    {
+     "v": "m1",
+     "zh": "下午我想和他去学校学习汉语。",
+     "sp": "大卫"
+    },
+    {
+     "v": "f1",
+     "zh": "下午他不在家，他和爸爸去看电影。",
+     "sp": "妈妈"
+    },
+    {
+     "v": "m1",
+     "zh": "明天上午呢？",
+     "sp": "大卫"
+    },
+    {
+     "v": "f1",
+     "zh": "明天上午他在家。你明天上午给他打电话吧。",
+     "sp": "妈妈"
+    },
+    {
+     "v": "m1",
+     "zh": "好。他的电话是多少？",
+     "sp": "大卫"
+    },
+    {
+     "v": "f1",
+     "zh": "八二三零五一六九。",
+     "sp": "妈妈"
+    },
+    {
+     "v": "m1",
+     "zh": "八二三零五一六九。谢谢您！",
+     "sp": "大卫"
+    },
+    {
+     "v": "f1",
+     "zh": "不客气，再见！",
+     "sp": "妈妈"
+    }
+   ]
+  },
+  "L13b": {
+   "tipo": "listening",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "李朋，昨天上午十点我给你打电话，你在做什么呢？",
+     "sp": "王方"
+    },
+    {
+     "v": "m1",
+     "zh": "我在学校学习汉语呢。",
+     "sp": "李朋"
+    },
+    {
+     "v": "f1",
+     "zh": "下午呢？下午你在家吗？",
+     "sp": "王方"
+    },
+    {
+     "v": "m1",
+     "zh": "在家，我和妈妈在做中国菜呢。你喜欢吃中国菜吗？",
+     "sp": "李朋"
+    },
+    {
+     "v": "f1",
+     "zh": "很喜欢。我也在学做中国菜。",
+     "sp": "王方"
+    },
+    {
+     "v": "m1",
+     "zh": "你昨天下午在做什么呢？",
+     "sp": "李朋"
+    },
+    {
+     "v": "f1",
+     "zh": "我在家看电视呢。我爱看电视。",
+     "sp": "王方"
+    },
+    {
+     "v": "m1",
+     "zh": "我不喜欢看电视，我喜欢看书。",
+     "sp": "李朋"
+    },
+    {
+     "v": "f1",
+     "zh": "今天下午我们去商店买书吧。",
+     "sp": "王方"
+    },
+    {
+     "v": "m1",
+     "zh": "好，下午四点我给你打电话。",
+     "sp": "李朋"
+    }
+   ]
+  },
+  "L14a": {
+   "tipo": "listening",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "王方，昨天下午你去哪儿了？",
+     "sp": "小王"
+    },
+    {
+     "v": "f1",
+     "zh": "我和李月去商店了。",
+     "sp": "王方"
+    },
+    {
+     "v": "m1",
+     "zh": "你们买什么了？",
+     "sp": "小王"
+    },
+    {
+     "v": "f1",
+     "zh": "李月买了不少衣服，我买了一个杯子。",
+     "sp": "王方"
+    },
+    {
+     "v": "m1",
+     "zh": "你没买衣服吗？",
+     "sp": "小王"
+    },
+    {
+     "v": "f1",
+     "zh": "没买，那个商店的衣服不漂亮。",
+     "sp": "王方"
+    },
+    {
+     "v": "m1",
+     "zh": "杯子多少钱？",
+     "sp": "小王"
+    },
+    {
+     "v": "f1",
+     "zh": "二十八块。",
+     "sp": "王方"
+    },
+    {
+     "v": "m1",
+     "zh": "你们在商店看见谢朋了吗？",
+     "sp": "小王"
+    },
+    {
+     "v": "f1",
+     "zh": "看见了，他买了一点儿苹果，开车回家了。",
+     "sp": "王方"
+    },
+    {
+     "v": "m1",
+     "zh": "这些东西是李月的吗？",
+     "sp": "小王"
+    },
+    {
+     "v": "f1",
+     "zh": "是，这些都是她的衣服，她一会儿回来。",
+     "sp": "王方"
+    }
+   ]
+  },
+  "L14b": {
+   "tipo": "listening",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "你回来了！上午你去学校了吗？",
+     "sp": "妈妈"
+    },
+    {
+     "v": "m1",
+     "zh": "没去，今天是星期六。我去商店了。",
+     "sp": "儿子"
+    },
+    {
+     "v": "f1",
+     "zh": "你买什么了？",
+     "sp": "妈妈"
+    },
+    {
+     "v": "m1",
+     "zh": "我买了一本汉语书和一点儿水果。",
+     "sp": "儿子"
+    },
+    {
+     "v": "f1",
+     "zh": "你买苹果了吗？",
+     "sp": "妈妈"
+    },
+    {
+     "v": "m1",
+     "zh": "没买，那儿的苹果不太好。",
+     "sp": "儿子"
+    },
+    {
+     "v": "f1",
+     "zh": "你看见你爸爸了吗？他也去商店了。",
+     "sp": "妈妈"
+    },
+    {
+     "v": "m1",
+     "zh": "没看见。爸爸开车去了吗？",
+     "sp": "儿子"
+    },
+    {
+     "v": "f1",
+     "zh": "是，他开车去买东西了。他二十分钟后回来。",
+     "sp": "妈妈"
+    },
+    {
+     "v": "m1",
+     "zh": "现在几点了？",
+     "sp": "儿子"
+    },
+    {
+     "v": "f1",
+     "zh": "十二点了。爸爸回来后，我们吃饭。",
+     "sp": "妈妈"
+    }
+   ]
+  },
+  "L15a": {
+   "tipo": "listening",
+   "lineas": [
+    {
+     "v": "m1",
+     "zh": "李小姐，这是我的朋友王方。",
+     "sp": "张先生"
+    },
+    {
+     "v": "f1",
+     "zh": "你好，很高兴认识你！",
+     "sp": "李小姐"
+    },
+    {
+     "v": "f2",
+     "zh": "认识你我也很高兴！",
+     "sp": "王方"
+    },
+    {
+     "v": "f1",
+     "zh": "你们是什么时候认识的？",
+     "sp": "李小姐"
+    },
+    {
+     "v": "m1",
+     "zh": "我们是二零一二年认识的。",
+     "sp": "张先生"
+    },
+    {
+     "v": "f1",
+     "zh": "你们是在哪儿认识的？",
+     "sp": "李小姐"
+    },
+    {
+     "v": "f2",
+     "zh": "是在北京认识的，我们是大学同学。",
+     "sp": "王方"
+    },
+    {
+     "v": "f1",
+     "zh": "王方，你是怎么来饭店的？",
+     "sp": "李小姐"
+    },
+    {
+     "v": "f2",
+     "zh": "我是坐出租车来的。你呢？",
+     "sp": "王方"
+    },
+    {
+     "v": "f1",
+     "zh": "我是和张先生一起开车来的。",
+     "sp": "李小姐"
+    },
+    {
+     "v": "f2",
+     "zh": "听张先生说，你是坐飞机来北京的？",
+     "sp": "王方"
+    },
+    {
+     "v": "f1",
+     "zh": "是的，我是昨天坐飞机来的。",
+     "sp": "李小姐"
+    }
+   ]
+  },
+  "L15b": {
+   "tipo": "listening",
+   "lineas": [
+    {
+     "v": "f1",
+     "zh": "大卫，你是什么时候来北京的？",
+     "sp": "李月"
+    },
+    {
+     "v": "m1",
+     "zh": "我是九月三号来的。",
+     "sp": "大卫"
+    },
+    {
+     "v": "f1",
+     "zh": "你是坐飞机来的吗？",
+     "sp": "李月"
+    },
+    {
+     "v": "m1",
+     "zh": "是的，我是和妈妈一起坐飞机来的。",
+     "sp": "大卫"
+    },
+    {
+     "v": "f1",
+     "zh": "你妈妈现在在哪儿？",
+     "sp": "李月"
+    },
+    {
+     "v": "m1",
+     "zh": "她住在饭店，明天坐飞机回美国。",
+     "sp": "大卫"
+    },
+    {
+     "v": "f1",
+     "zh": "你是怎么认识李老师的？",
+     "sp": "李月"
+    },
+    {
+     "v": "m1",
+     "zh": "我是在大学认识她的，她是我的汉语老师。",
+     "sp": "大卫"
+    },
+    {
+     "v": "f1",
+     "zh": "今天你是怎么来学校的？",
+     "sp": "李月"
+    },
+    {
+     "v": "m1",
+     "zh": "我是坐出租车来的。你呢？",
+     "sp": "大卫"
+    },
+    {
+     "v": "f1",
+     "zh": "我是开车来的。下午我们一起开车去饭店看你妈妈，好吗？",
+     "sp": "李月"
+    },
+    {
+     "v": "m1",
+     "zh": "太好了！谢谢你。",
+     "sp": "大卫"
+    }
+   ]
+  },
+  "R1-01": {
+   "tipo": "lectura",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "李老师是中国人，大卫是美国人，他是学生。李老师说：你们好！学生说：老师好！大卫说：对不起，老师！李老师说：没关系。"
+    }
+   ]
+  },
+  "R1-02": {
+   "tipo": "lectura",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "大卫是学生，李月是他的汉语老师。大卫说：谢谢您，李老师！李老师说：不客气。大卫说：老师，再见！李老师说：再见！"
+    }
+   ]
+  },
+  "R1-03": {
+   "tipo": "lectura",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "你好！我叫王方，我是中国人。我不是老师，我是学生。"
+    },
+    {
+     "v": "f2",
+     "zh": "你好！我叫大卫。我不是中国人，我是美国人。我是学生。"
+    }
+   ]
+  },
+  "R1-04": {
+   "tipo": "lectura",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "我叫李心，我是学生。她是我的汉语老师，她叫李月。他是谁？他是我同学，他叫大卫，是美国人。王方不是我同学，她是我的朋友。"
+    }
+   ]
+  },
+  "R1-05": {
+   "tipo": "lectura",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "我叫王方，是中国人。我家有四口人：爸爸、妈妈、我和我女儿。我今年三十一岁，我女儿今年六岁了。我妈妈今年五十八岁。"
+    }
+   ]
+  },
+  "R1-06": {
+   "tipo": "lectura",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "我叫李心。我的同学大卫是美国人，他会说汉语，会写汉字，不会做中国菜。我妈妈会做中国菜。大卫说：中国菜很好吃！"
+    }
+   ]
+  },
+  "R1-07": {
+   "tipo": "lectura",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "今天是十月八号，星期五。明天是星期六，我不去学校，我去同学家看书。星期日我去朋友家做中国菜。"
+    }
+   ]
+  },
+  "R1-08": {
+   "tipo": "lectura",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "今天下午我去商店。我想喝茶，想买一个杯子。这个杯子三十五块钱，那个杯子十八块钱。我买那个杯子。"
+    }
+   ]
+  },
+  "R1-09": {
+   "tipo": "lectura",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "我爸爸是医生，他在医院工作。我妈妈是老师，在学校工作。我是学生，我不工作。我的小狗在哪儿？小狗在椅子下面。"
+    }
+   ]
+  },
+  "R1-10": {
+   "tipo": "lectura",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "王方，你好！我不在家。桌子上有一个电脑和一本书，电脑后面有一个杯子。小猫在椅子下面。你能坐这儿看书。"
+    },
+    {
+     "v": "m2",
+     "zh": "李朋"
+    }
+   ]
+  },
+  "R1-11": {
+   "tipo": "lectura",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "我叫李心，我住在北京。今天中午十二点我在学校吃饭，下午五点回家。我妈妈什么时候回家？她下午六点十分回家。我们七点去看电影。"
+    }
+   ]
+  },
+  "R1-12": {
+   "tipo": "lectura",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "王小姐，你好！北京今天太冷了，明天会下雨。你身体怎么样？我很好。我妈妈身体不太好，她在医院。请你多喝水，多吃水果。"
+    },
+    {
+     "v": "m2",
+     "zh": "李月"
+    }
+   ]
+  },
+  "R1-13": {
+   "tipo": "lectura",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "现在是下午三点。我在家学做中国菜呢。我爸爸在看电视呢，我妈妈在睡觉呢。我的朋友大卫给我打电话，他说：我喜欢中国菜！他想来我家吃饭。"
+    }
+   ]
+  },
+  "R1-14": {
+   "tipo": "lectura",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "昨天上午我和王方去商店了。王方买了不少衣服，都很漂亮。我没买衣服，我买了一点儿水果。我们在商店看见了张先生。"
+    }
+   ]
+  },
+  "R1-15": {
+   "tipo": "lectura",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "我叫大卫，是美国人。我是二零一九年来北京的，是坐飞机来的。我在大学学习汉语。我和李月是在大学认识的。明天我们一起坐出租车去火车站。"
+    }
+   ]
+  },
+  "R2-01": {
+   "tipo": "lectura",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "大卫：对不起！"
+    },
+    {
+     "v": "f2",
+     "zh": "李月：没关系。"
+    },
+    {
+     "v": "f2",
+     "zh": "大卫：你好！"
+    },
+    {
+     "v": "f2",
+     "zh": "李月：你好！"
+    },
+    {
+     "v": "f2",
+     "zh": "李老师：你们好！"
+    },
+    {
+     "v": "f2",
+     "zh": "大卫、李月：李老师，您好！"
+    },
+    {
+     "v": "f2",
+     "zh": "李心：对不起！"
+    },
+    {
+     "v": "f2",
+     "zh": "李老师：没关系。李心，你好！"
+    }
+   ]
+  },
+  "R2-02": {
+   "tipo": "lectura",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "大卫：李老师，您好！"
+    },
+    {
+     "v": "m2",
+     "zh": "李老师：大卫，你好！"
+    },
+    {
+     "v": "m2",
+     "zh": "大卫：对不起！"
+    },
+    {
+     "v": "m2",
+     "zh": "李老师：没关系。"
+    },
+    {
+     "v": "m2",
+     "zh": "李心：谢谢你，大卫！"
+    },
+    {
+     "v": "m2",
+     "zh": "大卫：不客气！"
+    },
+    {
+     "v": "m2",
+     "zh": "李月：谢谢！"
+    },
+    {
+     "v": "m2",
+     "zh": "大卫：不谢。"
+    },
+    {
+     "v": "m2",
+     "zh": "李老师：再见！"
+    },
+    {
+     "v": "m2",
+     "zh": "大卫、李心、李月：李老师，再见！"
+    }
+   ]
+  },
+  "R2-03": {
+   "tipo": "lectura",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "我叫大卫，我是美国人，我是学生。"
+    },
+    {
+     "v": "f2",
+     "zh": "李月：你好！你叫什么名字？"
+    },
+    {
+     "v": "f2",
+     "zh": "大卫：我叫大卫。你是老师吗？"
+    },
+    {
+     "v": "f2",
+     "zh": "李月：是，我是老师，我是中国人。"
+    },
+    {
+     "v": "f2",
+     "zh": "李心：老师，您好！我叫李心，我是学生。"
+    },
+    {
+     "v": "f2",
+     "zh": "李月：李心，你是美国人吗？"
+    },
+    {
+     "v": "f2",
+     "zh": "李心：我不是美国人，我是中国人。"
+    }
+   ]
+  },
+  "R2-04": {
+   "tipo": "lectura",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "我叫大卫，我是美国人，我是学生。李月是我的汉语老师，她是中国人。"
+    },
+    {
+     "v": "m2",
+     "zh": "他是谁？他是我同学，他叫李朋。他是哪国人？他不是中国人，他是美国人。"
+    },
+    {
+     "v": "m2",
+     "zh": "她呢？她是你同学吗？不是，她是我的中国朋友，她叫李心。李心不是学生，她是老师，她是李月的朋友。"
+    }
+   ]
+  },
+  "R2-05": {
+   "tipo": "lectura",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "我叫大卫，我是美国人，今年十九岁。我家有五口人。我妈妈今年五十一岁了。"
+    },
+    {
+     "v": "f2",
+     "zh": "李老师是我的汉语老师，她是中国人。李老师家有三口人。她今年四十八岁了。"
+    },
+    {
+     "v": "f2",
+     "zh": "她女儿叫李心，今年二十岁了。李心是学生，是我的同学。她不是美国人，她是中国人。她是我的好朋友。"
+    }
+   ]
+  },
+  "R2-06": {
+   "tipo": "lectura",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "我叫大卫，我是美国人。我会说汉语，李月是我的汉语老师，她是中国人。汉字，我会读，不会写。"
+    },
+    {
+     "v": "m2",
+     "zh": "我妈妈不会说汉语，她会做中国菜。妈妈做的中国菜很好吃！"
+    },
+    {
+     "v": "m2",
+     "zh": "李心是我的中国朋友。她会说汉语，会写汉字，不会做中国菜。李心说：你妈妈的中国菜很好吃！"
+    }
+   ]
+  },
+  "R2-07": {
+   "tipo": "lectura",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "今天九月一号，星期三。昨天是八月三十一号，星期二。"
+    },
+    {
+     "v": "f2",
+     "zh": "今天我去学校。我的汉语老师是李老师，她是中国人。我的同学大卫是美国人，他会说汉语，不会写汉字。"
+    },
+    {
+     "v": "f2",
+     "zh": "明天星期四，我不去学校，我去大卫家看书。星期六我去朋友李心家，她妈妈会做中国菜。"
+    }
+   ]
+  },
+  "R2-08": {
+   "tipo": "lectura",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "今天星期六，我不去学校。下午我想去商店买一个杯子。"
+    },
+    {
+     "v": "m2",
+     "zh": "我说：你好！请问，这个杯子多少钱？她说：这个二十八块，那个十八块。我想买那个杯子。"
+    },
+    {
+     "v": "m2",
+     "zh": "我去朋友李心家。李心说：你想喝什么？我说：我想喝茶。李心妈妈会做中国菜，她的菜很好吃。我想吃米饭。"
+    }
+   ]
+  },
+  "R2-09": {
+   "tipo": "lectura",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "我家有三口人。我是医生，在医院工作。我女儿今年二十四岁，她是汉语老师，在学校工作。我儿子今年十七岁，他是学生。"
+    },
+    {
+     "v": "f2",
+     "zh": "今天星期六，我不去医院。我女儿呢？她不在家，她在朋友家。"
+    },
+    {
+     "v": "f2",
+     "zh": "我儿子在家。他说：妈妈，我的小狗在哪儿？我说：在那儿，椅子下面。"
+    }
+   ]
+  },
+  "R2-10": {
+   "tipo": "lectura",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "这儿是我的学校。我前面那个人叫王方，她是我的同学。我后面那个人叫谢朋，他是我的中国朋友。"
+    },
+    {
+     "v": "m2",
+     "zh": "我的桌子上面有一个电脑和一本汉语书。我的杯子在桌子里面。"
+    },
+    {
+     "v": "m2",
+     "zh": "李朋说：你好，我能坐这儿吗？我说：对不起，这儿有人。谢朋后面没有人，你能坐那儿。"
+    }
+   ]
+  },
+  "R2-11": {
+   "tipo": "lectura",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "我叫大卫。星期一我去北京，想在北京住四天，住在朋友李朋家。"
+    },
+    {
+     "v": "f2",
+     "zh": "李朋是医生，在医院工作。他八点去医院，中午十二点吃饭，下午五点回家。"
+    },
+    {
+     "v": "f2",
+     "zh": "现在是星期二下午三点，李朋没有时间，他在医院工作。我们什么时候去看电影？星期三下午六点三十分。星期五前我回美国。"
+    }
+   ]
+  },
+  "R2-12": {
+   "tipo": "lectura",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "李月：你好！你身体怎么样？我现在在北京，我想在北京住五天。"
+    },
+    {
+     "v": "m2",
+     "zh": "北京的天气太热了！昨天我不爱吃饭，身体不太好。医生说：多吃些水果，多喝水。我现在很爱吃水果！"
+    },
+    {
+     "v": "m2",
+     "zh": "今天下雨了，天气不冷不热。明天会下雨吗？明天不会下雨。明天我想去看电影。星期五我回家。"
+    },
+    {
+     "v": "m2",
+     "zh": "王方"
+    }
+   ]
+  },
+  "R2-13": {
+   "tipo": "lectura",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "大卫：喂，李心，你在做什么呢？"
+    },
+    {
+     "v": "f2",
+     "zh": "李心：我在看电视呢。你呢？"
+    },
+    {
+     "v": "f2",
+     "zh": "大卫：我在学做中国菜呢，我妈妈也在学。你喜欢吃中国菜吗？"
+    },
+    {
+     "v": "f2",
+     "zh": "李心：很喜欢！"
+    },
+    {
+     "v": "f2",
+     "zh": "大卫：明天中午你来我家吃饭吧！"
+    },
+    {
+     "v": "f2",
+     "zh": "李心：好，谢谢你！李月也能来吗？"
+    },
+    {
+     "v": "f2",
+     "zh": "大卫：能。她的电话是多少？"
+    },
+    {
+     "v": "f2",
+     "zh": "李心：八二三零四一五六。她上午在学习呢，你下午给她打电话吧。"
+    }
+   ]
+  },
+  "R2-14": {
+   "tipo": "lectura",
+   "lineas": [
+    {
+     "v": "m2",
+     "zh": "昨天是星期六。上午我和王方去商店买东西了。王方买了不少衣服，这些衣服都很漂亮！我没买衣服，我买了一点儿苹果和一个杯子，杯子二十五块。"
+    },
+    {
+     "v": "m2",
+     "zh": "中午我们在王方家吃饭。她妈妈做了中国菜，太好吃了！"
+    },
+    {
+     "v": "m2",
+     "zh": "下午我去学校看书。我看见张先生了，他去学开车了，四十分钟后回来。"
+    }
+   ]
+  },
+  "R2-15": {
+   "tipo": "lectura",
+   "lineas": [
+    {
+     "v": "f2",
+     "zh": "小王，你好！我是昨天下午坐飞机来北京的。我是坐出租车去饭店的，饭店在大学前面。"
+    },
+    {
+     "v": "f2",
+     "zh": "我和王小姐是今天中午在饭店认识的。她是大学的汉语老师。我们一起吃了中国菜。认识她，我很高兴！"
+    },
+    {
+     "v": "f2",
+     "zh": "星期五我去火车站，王小姐开车和我一起去。你什么时候来北京？"
+    },
+    {
+     "v": "f2",
+     "zh": "大卫"
+    }
+   ]
+  }
+ }
+}

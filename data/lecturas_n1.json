@@ -1,0 +1,789 @@
+[
+  {
+    "id": "R1-01",
+    "nivel": 1,
+    "tema": 1,
+    "titulo": "Buenos días, clase",
+    "titulo_zh": "你们好",
+    "texto": "李老师 是 中国人 ， 大卫 是 美国人 ， 他 是 学生 。 李老师 说 ： 你们好 ！ 学生 说 ： 老师 好 ！ 大卫 说 ： 对不起 ， 老师 ！ 李老师 说 ： 没关系 。",
+    "es": "La profesora Li es china; David es estadounidense y es estudiante. La profesora Li dice: «¡Hola a todos!». Los estudiantes dicen: «¡Hola, profesora!». David dice: «¡Perdón, profesora!». La profesora Li dice: «No pasa nada».",
+    "preguntas": [
+      {
+        "q": "¿De qué país es la profesora Li?",
+        "lang": "es",
+        "a": [
+          "china",
+          "chino"
+        ],
+        "r": "Es china (李老师是中国人)."
+      },
+      {
+        "q": "¿Qué dice la profesora Li a toda la clase?",
+        "lang": "py",
+        "a": [
+          "nǐmen hǎo"
+        ],
+        "r": "Nǐmen hǎo! · 你们好！(¡Hola a todos!)"
+      },
+      {
+        "q": "¿Qué contestan los estudiantes?",
+        "lang": "py",
+        "a": [
+          "lǎoshī hǎo"
+        ],
+        "r": "Lǎoshī hǎo! · 老师好！(¡Hola, profesora!)"
+      },
+      {
+        "q": "¿Quién pide perdón?",
+        "lang": "es",
+        "a": [
+          "David"
+        ],
+        "r": "David (大卫说：对不起，老师！)."
+      },
+      {
+        "q": "¿Qué responde la profesora Li cuando David pide perdón?",
+        "lang": "py",
+        "a": [
+          "méi guānxi"
+        ],
+        "r": "Méi guānxi. · 没关系。(No pasa nada.)"
+      }
+    ]
+  },
+  {
+    "id": "R1-02",
+    "nivel": 1,
+    "tema": 2,
+    "titulo": "Gracias, profesora",
+    "titulo_zh": "谢谢 您",
+    "texto": "大卫 是 学生 ， 李月 是 他 的 汉语 老师 。 大卫 说 ： 谢谢 您 ， 李老师 ！ 李老师 说 ： 不客气 。 大卫 说 ： 老师 ， 再见 ！ 李老师 说 ： 再见 ！",
+    "es": "David es estudiante y Li Yue es su profesora de chino. David dice: «¡Gracias, profesora Li!». La profesora Li dice: «De nada». David dice: «¡Adiós, profesora!». La profesora Li dice: «¡Adiós!».",
+    "preguntas": [
+      {
+        "q": "¿Cómo se llama la profesora de David?",
+        "lang": "es",
+        "a": [
+          "Li Yue"
+        ],
+        "r": "Se llama Li Yue (李月)."
+      },
+      {
+        "q": "¿Qué enseña Li Yue?",
+        "lang": "es",
+        "a": [
+          "chino"
+        ],
+        "r": "Chino: es su profesora de chino (汉语老师)."
+      },
+      {
+        "q": "¿Qué le dice David a la profesora?",
+        "lang": "py",
+        "a": [
+          "xièxie nín"
+        ],
+        "r": "Xièxie nín, Lǐ lǎoshī! · 谢谢您，李老师！(¡Gracias, profesora Li!)"
+      },
+      {
+        "q": "¿Qué contesta la profesora?",
+        "lang": "py",
+        "a": [
+          "bú kèqi"
+        ],
+        "r": "Bú kèqi. · 不客气。(De nada.)"
+      },
+      {
+        "q": "¿Qué palabra usan los dos para despedirse?",
+        "lang": "py",
+        "a": [
+          "zàijiàn"
+        ],
+        "r": "Zàijiàn! · 再见！(¡Adiós!)"
+      }
+    ]
+  },
+  {
+    "id": "R1-03",
+    "nivel": 1,
+    "tema": 3,
+    "titulo": "Nos presentamos",
+    "titulo_zh": "你 叫 什么 名字",
+    "texto": "你好 ！ 我 叫 王方 ， 我 是 中国人 。 我 不 是 老师 ， 我 是 学生 。 ¶ 你好 ！ 我 叫 大卫 。 我 不 是 中国人 ， 我 是 美国人 。 我 是 学生 。",
+    "es": "¡Hola! Me llamo Wang Fang y soy china. No soy profesora, soy estudiante.\n¡Hola! Me llamo David. No soy chino, soy estadounidense. Soy estudiante.",
+    "preguntas": [
+      {
+        "q": "¿Cómo se llama la chica que se presenta primero?",
+        "lang": "py",
+        "a": [
+          "Wáng Fāng"
+        ],
+        "r": "Wáng Fāng · 王方."
+      },
+      {
+        "q": "¿De qué país es Wang Fang?",
+        "lang": "es",
+        "a": [
+          "China",
+          "china",
+          "chino"
+        ],
+        "r": "Es china (我是中国人)."
+      },
+      {
+        "q": "¿Wang Fang es profesora o estudiante?",
+        "lang": "es",
+        "a": [
+          "estudiante"
+        ],
+        "r": "Es estudiante (我不是老师，我是学生)."
+      },
+      {
+        "q": "¿De qué país es David?",
+        "lang": "py",
+        "a": [
+          "Měiguó"
+        ],
+        "r": "Wǒ shì Měiguó rén · 我是美国人 (es estadounidense)."
+      },
+      {
+        "q": "¿David es profesor o estudiante?",
+        "lang": "py",
+        "a": [
+          "xuésheng"
+        ],
+        "r": "Wǒ shì xuésheng · 我是学生 (es estudiante)."
+      }
+    ]
+  },
+  {
+    "id": "R1-04",
+    "nivel": 1,
+    "tema": 4,
+    "titulo": "Mi profesora y mis amigos",
+    "titulo_zh": "她 是 我 的 汉语 老师",
+    "texto": "我 叫 李心 ， 我 是 学生 。 她 是 我 的 汉语 老师 ， 她 叫 李月 。 他 是 谁 ？ 他 是 我 同学 ， 他 叫 大卫 ， 是 美国人 。 王方 不 是 我 同学 ， 她 是 我 的 朋友 。",
+    "es": "Me llamo Li Xin y soy estudiante. Ella es mi profesora de chino, se llama Li Yue. ¿Quién es él? Es mi compañero de clase, se llama David y es estadounidense. Wang Fang no es compañera de clase mía, es mi amiga.",
+    "preguntas": [
+      {
+        "q": "¿Cómo se llama la profesora de chino de Li Xin?",
+        "lang": "py",
+        "a": [
+          "Lǐ Yuè"
+        ],
+        "r": "Lǐ Yuè · 李月."
+      },
+      {
+        "q": "¿Qué es David para Li Xin?",
+        "lang": "es",
+        "a": [
+          "compañero"
+        ],
+        "r": "Es su compañero de clase (他是我同学)."
+      },
+      {
+        "q": "¿De qué país es David?",
+        "lang": "es",
+        "a": [
+          "Estados Unidos",
+          "estadounidense",
+          "norteamericano",
+          "americano"
+        ],
+        "r": "Es estadounidense (是美国人)."
+      },
+      {
+        "q": "¿Wang Fang es compañera de clase de Li Xin?",
+        "lang": "es",
+        "a": [
+          "no"
+        ],
+        "r": "No, no es su compañera de clase (王方不是我同学)."
+      },
+      {
+        "q": "¿Qué es Wang Fang para Li Xin?",
+        "lang": "py",
+        "a": [
+          "péngyou"
+        ],
+        "r": "Tā shì wǒ de péngyou · 她是我的朋友 (es su amiga)."
+      }
+    ]
+  },
+  {
+    "id": "R1-05",
+    "nivel": 1,
+    "tema": 5,
+    "titulo": "La familia de Wang Fang",
+    "titulo_zh": "王方 的 家",
+    "texto": "我 叫 王方 ， 是 中国人 。 我 家 有 四 口 人 ： 爸爸 、 妈妈 、 我 和 我 女儿 。 我 今年 三十一 岁 ， 我 女儿 今年 六 岁 了 。 我 妈妈 今年 五十八 岁 。",
+    "es": "Me llamo Wang Fang y soy china. En mi familia somos cuatro: mi padre, mi madre, mi hija y yo. Este año tengo treinta y un años y mi hija ya tiene seis. Mi madre tiene cincuenta y ocho años.",
+    "preguntas": [
+      {
+        "q": "¿Cuántas personas hay en la familia de Wang Fang?",
+        "lang": "py",
+        "a": [
+          "sì kǒu"
+        ],
+        "r": "Sì kǒu rén · 四口人 (cuatro personas)."
+      },
+      {
+        "q": "¿Wang Fang tiene un hijo o una hija?",
+        "lang": "es",
+        "a": [
+          "hija"
+        ],
+        "r": "Una hija (我女儿)."
+      },
+      {
+        "q": "¿Cuántos años tiene Wang Fang?",
+        "lang": "es",
+        "a": [
+          "31",
+          "treinta y uno",
+          "treinta y un"
+        ],
+        "r": "Treinta y un años (我今年三十一岁)."
+      },
+      {
+        "q": "¿Cuántos años tiene su hija?",
+        "lang": "py",
+        "a": [
+          "liù suì"
+        ],
+        "r": "Liù suì · 六岁 (seis años)."
+      },
+      {
+        "q": "¿Cuántos años tiene la madre de Wang Fang?",
+        "lang": "es",
+        "a": [
+          "58",
+          "cincuenta y ocho"
+        ],
+        "r": "Cincuenta y ocho años (我妈妈今年五十八岁)."
+      }
+    ]
+  },
+  {
+    "id": "R1-06",
+    "nivel": 1,
+    "tema": 6,
+    "titulo": "David sabe chino",
+    "titulo_zh": "大卫 会 说 汉语",
+    "texto": "我 叫 李心 。 我 的 同学 大卫 是 美国人 ， 他 会 说 汉语 ， 会 写 汉字 ， 不 会 做 中国菜 。 我 妈妈 会 做 中国菜 。 大卫 说 ： 中国菜 很 好吃 ！",
+    "es": "Me llamo Li Xin. Mi compañero de clase David es estadounidense; sabe hablar chino y sabe escribir caracteres chinos, pero no sabe cocinar comida china. Mi madre sí sabe cocinar comida china. David dice: «¡La comida china está muy rica!».",
+    "preguntas": [
+      {
+        "q": "¿Qué relación tiene David con Li Xin?",
+        "lang": "es",
+        "a": [
+          "compañero",
+          "compañeros"
+        ],
+        "r": "Es su compañero de clase (我的同学大卫)."
+      },
+      {
+        "q": "¿Qué idioma sabe hablar David?",
+        "lang": "py",
+        "a": [
+          "Hànyǔ"
+        ],
+        "r": "Tā huì shuō Hànyǔ · 他会说汉语 (sabe hablar chino)."
+      },
+      {
+        "q": "¿Sabe David cocinar comida china?",
+        "lang": "es",
+        "a": [
+          "no"
+        ],
+        "r": "No, no sabe (不会做中国菜)."
+      },
+      {
+        "q": "¿Quién sabe cocinar comida china?",
+        "lang": "es",
+        "a": [
+          "madre",
+          "mamá"
+        ],
+        "r": "La madre de Li Xin (我妈妈会做中国菜)."
+      },
+      {
+        "q": "¿Qué dice David de la comida china?",
+        "lang": "py",
+        "a": [
+          "hǎochī"
+        ],
+        "r": "Zhōngguó cài hěn hǎochī! · 中国菜很好吃！(¡Está muy rica!)"
+      }
+    ]
+  },
+  {
+    "id": "R1-07",
+    "nivel": 1,
+    "tema": 7,
+    "titulo": "Mi fin de semana",
+    "titulo_zh": "我 的 星期六",
+    "texto": "今天 是 十 月 八 号 ， 星期五 。 明天 是 星期六 ， 我 不 去 学校 ， 我 去 同学 家 看书 。 星期日 我 去 朋友 家 做 中国菜 。",
+    "es": "Hoy es 8 de octubre, viernes. Mañana es sábado: no voy a la escuela, voy a casa de un compañero de clase a leer. El domingo voy a casa de un amigo a cocinar comida china.",
+    "preguntas": [
+      {
+        "q": "¿Qué fecha es hoy?",
+        "lang": "py",
+        "a": [
+          "shí yuè bā hào"
+        ],
+        "r": "Shí yuè bā hào · 十月八号 (8 de octubre)."
+      },
+      {
+        "q": "¿Qué día de la semana es hoy?",
+        "lang": "es",
+        "a": [
+          "viernes"
+        ],
+        "r": "Viernes (星期五)."
+      },
+      {
+        "q": "¿Va a ir a la escuela mañana?",
+        "lang": "es",
+        "a": [
+          "no"
+        ],
+        "r": "No, mañana es sábado y no va a la escuela (我不去学校)."
+      },
+      {
+        "q": "¿Qué va a hacer mañana en casa de su compañero?",
+        "lang": "py",
+        "a": [
+          "kàn shū"
+        ],
+        "r": "Kàn shū · 看书 (leer)."
+      },
+      {
+        "q": "¿Qué va a hacer el domingo en casa de un amigo?",
+        "lang": "es",
+        "a": [
+          "comida china",
+          "cocinar"
+        ],
+        "r": "Cocinar comida china (做中国菜)."
+      }
+    ]
+  },
+  {
+    "id": "R1-08",
+    "nivel": 1,
+    "tema": 8,
+    "titulo": "Una taza para el té",
+    "titulo_zh": "我 想 买 一个 杯子",
+    "texto": "今天 下午 我 去 商店 。 我 想 喝 茶 ， 想 买 一个 杯子 。 这个 杯子 三十五 块 钱 ， 那个 杯子 十八 块 钱 。 我 买 那个 杯子 。",
+    "es": "Esta tarde voy a la tienda. Quiero tomar té y quiero comprar una taza. Esta taza cuesta treinta y cinco yuanes y esa cuesta dieciocho. Compro esa.",
+    "preguntas": [
+      {
+        "q": "¿Cuándo va a la tienda?",
+        "lang": "es",
+        "a": [
+          "tarde"
+        ],
+        "r": "Hoy por la tarde (今天下午)."
+      },
+      {
+        "q": "¿Qué quiere beber?",
+        "lang": "es",
+        "a": [
+          "té"
+        ],
+        "r": "Té (我想喝茶)."
+      },
+      {
+        "q": "¿Qué quiere comprar?",
+        "lang": "py",
+        "a": [
+          "bēizi"
+        ],
+        "r": "Yí ge bēizi · 一个杯子 (una taza)."
+      },
+      {
+        "q": "¿Cuánto cuesta la primera taza (这个杯子)?",
+        "lang": "py",
+        "a": [
+          "sānshíwǔ kuài"
+        ],
+        "r": "Sānshíwǔ kuài qián · 三十五块钱 (35 yuanes)."
+      },
+      {
+        "q": "¿Cuánto cuesta la taza que compra?",
+        "lang": "es",
+        "a": [
+          "18",
+          "dieciocho"
+        ],
+        "r": "Dieciocho yuanes: compra esa (那个杯子十八块钱)."
+      }
+    ]
+  },
+  {
+    "id": "R1-09",
+    "nivel": 1,
+    "tema": 9,
+    "titulo": "¿Dónde trabajan?",
+    "titulo_zh": "我 爸爸 在 医院 工作",
+    "texto": "我 爸爸 是 医生 ， 他 在 医院 工作 。 我 妈妈 是 老师 ， 在 学校 工作 。 我 是 学生 ， 我 不 工作 。 我 的 小狗 在 哪儿 ？ 小狗 在 椅子 下面 。",
+    "es": "Mi padre es médico y trabaja en el hospital. Mi madre es profesora y trabaja en la escuela. Yo soy estudiante y no trabajo. ¿Dónde está mi perrito? El perrito está debajo de la silla.",
+    "preguntas": [
+      {
+        "q": "¿A qué se dedica el padre?",
+        "lang": "es",
+        "a": [
+          "médico",
+          "doctor"
+        ],
+        "r": "Es médico (我爸爸是医生)."
+      },
+      {
+        "q": "¿Dónde trabaja el padre?",
+        "lang": "py",
+        "a": [
+          "yīyuàn"
+        ],
+        "r": "Zài yīyuàn gōngzuò · 在医院工作 (en el hospital)."
+      },
+      {
+        "q": "¿Dónde trabaja la madre?",
+        "lang": "py",
+        "a": [
+          "xuéxiào"
+        ],
+        "r": "Zài xuéxiào gōngzuò · 在学校工作 (en la escuela)."
+      },
+      {
+        "q": "¿Trabaja el narrador?",
+        "lang": "es",
+        "a": [
+          "no"
+        ],
+        "r": "No, es estudiante y no trabaja (我不工作)."
+      },
+      {
+        "q": "¿Dónde está el perrito?",
+        "lang": "es",
+        "a": [
+          "debajo silla",
+          "bajo silla"
+        ],
+        "r": "Debajo de la silla (在椅子下面)."
+      }
+    ]
+  },
+  {
+    "id": "R1-10",
+    "nivel": 1,
+    "tema": 10,
+    "titulo": "Una nota para Wang Fang",
+    "titulo_zh": "你 能 坐 这儿",
+    "texto": "王方 ， 你好 ！ 我 不 在 家 。 桌子 上|shang 有 一个 电脑 和 一本 书 ， 电脑 后面 有 一个 杯子 。 小猫 在 椅子 下面 。 你 能 坐 这儿 看书 。 ¶ 李朋",
+    "es": "¡Hola, Wang Fang! No estoy en casa. Sobre la mesa hay un ordenador y un libro, y detrás del ordenador hay una taza. El gatito está debajo de la silla. Puedes sentarte aquí a leer.\nLi Peng",
+    "preguntas": [
+      {
+        "q": "¿Está en casa la persona que escribe la nota?",
+        "lang": "es",
+        "a": [
+          "no"
+        ],
+        "r": "No (我不在家)."
+      },
+      {
+        "q": "Además del libro, ¿qué hay sobre la mesa?",
+        "lang": "py",
+        "a": [
+          "diànnǎo"
+        ],
+        "r": "Yí ge diànnǎo · 一个电脑 (un ordenador)."
+      },
+      {
+        "q": "¿Dónde está la taza?",
+        "lang": "es",
+        "a": [
+          "detrás ordenador",
+          "detrás computadora"
+        ],
+        "r": "Detrás del ordenador (电脑后面有一个杯子)."
+      },
+      {
+        "q": "¿Dónde está el gatito?",
+        "lang": "py",
+        "a": [
+          "yǐzi xiàmiàn"
+        ],
+        "r": "Zài yǐzi xiàmiàn · 在椅子下面 (debajo de la silla)."
+      },
+      {
+        "q": "¿Quién escribe la nota?",
+        "lang": "es",
+        "a": [
+          "Li Peng"
+        ],
+        "r": "Li Peng (李朋)."
+      }
+    ]
+  },
+  {
+    "id": "R1-11",
+    "nivel": 1,
+    "tema": 11,
+    "titulo": "Un día de Li Xin",
+    "titulo_zh": "我 什么时候 回家",
+    "texto": "我 叫 李心 ， 我 住 在 北京 。 今天 中午 十二 点 我 在 学校 吃饭 ， 下午 五 点 回家 。 我 妈妈 什么时候 回家 ？ 她 下午 六 点 十 分 回家 。 我们 七 点 去 看 电影 。",
+    "es": "Me llamo Li Xin y vivo en Pekín. Hoy a las doce del mediodía como en la escuela y a las cinco de la tarde vuelvo a casa. ¿Cuándo vuelve mi madre a casa? Vuelve a las seis y diez de la tarde. A las siete vamos a ver una película.",
+    "preguntas": [
+      {
+        "q": "¿En qué ciudad vive Li Xin?",
+        "lang": "py",
+        "a": [
+          "Běijīng"
+        ],
+        "r": "Zhù zài Běijīng · 住在北京 (en Pekín)."
+      },
+      {
+        "q": "¿A qué hora come Li Xin?",
+        "lang": "es",
+        "a": [
+          "12",
+          "doce"
+        ],
+        "r": "A las doce del mediodía (中午十二点)."
+      },
+      {
+        "q": "¿A qué hora vuelve Li Xin a casa?",
+        "lang": "es",
+        "a": [
+          "5",
+          "cinco"
+        ],
+        "r": "A las cinco de la tarde (下午五点回家)."
+      },
+      {
+        "q": "¿A qué hora vuelve la madre a casa?",
+        "lang": "py",
+        "a": [
+          "liù diǎn shí fēn"
+        ],
+        "r": "Xiàwǔ liù diǎn shí fēn · 下午六点十分 (a las seis y diez de la tarde)."
+      },
+      {
+        "q": "¿Qué van a hacer a las siete?",
+        "lang": "es",
+        "a": [
+          "película",
+          "cine"
+        ],
+        "r": "Van a ver una película (去看电影)."
+      }
+    ]
+  },
+  {
+    "id": "R1-12",
+    "nivel": 1,
+    "tema": 12,
+    "titulo": "Un mensaje de Li Yue",
+    "titulo_zh": "今天 天气 太 冷 了",
+    "texto": "王小姐 ， 你好 ！ 北京 今天 太 冷 了 ， 明天 会 下雨 。 你 身体 怎么样 ？ 我 很 好 。 我 妈妈 身体 不 太 好 ， 她 在 医院 。 请 你 多 喝 水 ， 多 吃 水果 。 ¶ 李月",
+    "es": "¡Hola, señorita Wang! Hoy en Pekín hace demasiado frío y mañana va a llover. ¿Qué tal estás de salud? Yo estoy bien. Mi madre no está muy bien de salud; está en el hospital. Bebe mucha agua y come mucha fruta.\nLi Yue",
+    "preguntas": [
+      {
+        "q": "¿Qué tiempo hace hoy en Pekín?",
+        "lang": "es",
+        "a": [
+          "frío"
+        ],
+        "r": "Hace demasiado frío (太冷了)."
+      },
+      {
+        "q": "¿Qué tiempo hará mañana?",
+        "lang": "py",
+        "a": [
+          "xià yǔ"
+        ],
+        "r": "Míngtiān huì xià yǔ · 明天会下雨 (va a llover)."
+      },
+      {
+        "q": "¿Cómo está Li Yue?",
+        "lang": "es",
+        "a": [
+          "bien"
+        ],
+        "r": "Está bien (我很好)."
+      },
+      {
+        "q": "¿Dónde está la madre de Li Yue?",
+        "lang": "es",
+        "a": [
+          "hospital"
+        ],
+        "r": "En el hospital (她在医院)."
+      },
+      {
+        "q": "¿Qué le pide Li Yue que beba?",
+        "lang": "py",
+        "a": [
+          "shuǐ"
+        ],
+        "r": "Duō hē shuǐ · 多喝水 (mucha agua)."
+      }
+    ]
+  },
+  {
+    "id": "R1-13",
+    "nivel": 1,
+    "tema": 13,
+    "titulo": "Una tarde en casa",
+    "titulo_zh": "我 在 学 做 中国菜 呢",
+    "texto": "现在 是 下午 三 点 。 我 在 家 学 做 中国菜 呢 。 我 爸爸 在 看 电视 呢 ， 我 妈妈 在 睡觉 呢 。 我 的 朋友 大卫 给 我 打电话 ， 他 说 ： 我 喜欢 中国菜 ！ 他 想 来 我 家 吃饭 。",
+    "es": "Son las tres de la tarde. Estoy en casa aprendiendo a cocinar comida china. Mi padre está viendo la televisión y mi madre está durmiendo. Mi amigo David me llama por teléfono y dice: «¡Me gusta la comida china!». Quiere venir a mi casa a comer.",
+    "preguntas": [
+      {
+        "q": "¿Qué hora es?",
+        "lang": "es",
+        "a": [
+          "3",
+          "tres"
+        ],
+        "r": "Son las tres de la tarde (下午三点)."
+      },
+      {
+        "q": "¿Qué está aprendiendo a hacer el narrador?",
+        "lang": "py",
+        "a": [
+          "zuò Zhōngguó cài"
+        ],
+        "r": "Xué zuò Zhōngguó cài · 学做中国菜 (a cocinar comida china)."
+      },
+      {
+        "q": "¿Qué está haciendo el padre?",
+        "lang": "es",
+        "a": [
+          "televisión",
+          "tele"
+        ],
+        "r": "Está viendo la televisión (在看电视呢)."
+      },
+      {
+        "q": "¿Qué está haciendo la madre?",
+        "lang": "py",
+        "a": [
+          "shuì jiào"
+        ],
+        "r": "Zài shuì jiào ne · 在睡觉呢 (está durmiendo)."
+      },
+      {
+        "q": "¿Quién llama por teléfono?",
+        "lang": "es",
+        "a": [
+          "David"
+        ],
+        "r": "David, su amigo (我的朋友大卫给我打电话)."
+      }
+    ]
+  },
+  {
+    "id": "R1-14",
+    "nivel": 1,
+    "tema": 14,
+    "titulo": "De compras con Wang Fang",
+    "titulo_zh": "王方 买 了 不少 衣服",
+    "texto": "昨天 上午 我 和 王方 去 商店 了 。 王方 买 了 不少 衣服 ， 都 很 漂亮 。 我 没 买 衣服 ， 我 买 了 一点儿 水果 。 我们 在 商店 看见 了 张先生 。",
+    "es": "Ayer por la mañana fui a la tienda con Wang Fang. Wang Fang compró bastante ropa, y toda es muy bonita. Yo no compré ropa; compré un poco de fruta. En la tienda vimos al señor Zhang.",
+    "preguntas": [
+      {
+        "q": "¿Cuándo fueron a la tienda?",
+        "lang": "es",
+        "a": [
+          "ayer"
+        ],
+        "r": "Ayer por la mañana (昨天上午)."
+      },
+      {
+        "q": "¿Qué compró Wang Fang?",
+        "lang": "py",
+        "a": [
+          "yīfu"
+        ],
+        "r": "Bùshǎo yīfu · 不少衣服 (bastante ropa)."
+      },
+      {
+        "q": "¿Compró ropa el narrador?",
+        "lang": "es",
+        "a": [
+          "no"
+        ],
+        "r": "No (我没买衣服)."
+      },
+      {
+        "q": "¿Qué compró el narrador?",
+        "lang": "es",
+        "a": [
+          "fruta"
+        ],
+        "r": "Un poco de fruta (一点儿水果)."
+      },
+      {
+        "q": "¿A quién vieron en la tienda?",
+        "lang": "py",
+        "a": [
+          "Zhāng xiānsheng"
+        ],
+        "r": "Zhāng xiānsheng · 张先生 (al señor Zhang)."
+      }
+    ]
+  },
+  {
+    "id": "R1-15",
+    "nivel": 1,
+    "tema": 15,
+    "titulo": "David en Pekín",
+    "titulo_zh": "我 是 坐 飞机 来 的",
+    "texto": "我 叫 大卫 ， 是 美国人 。 我 是 二零一九 年 来 北京 的 ， 是 坐 飞机 来 的 。 我 在 大学 学习 汉语 。 我 和 李月 是 在 大学 认识 的 。 明天 我们 一起 坐 出租车 去 火车站 。",
+    "es": "Me llamo David y soy estadounidense. Vine a Pekín en 2019, en avión. Estudio chino en la universidad. A Li Yue la conocí en la universidad. Mañana vamos juntos en taxi a la estación de tren.",
+    "preguntas": [
+      {
+        "q": "¿En qué año llegó David a Pekín?",
+        "lang": "es",
+        "a": [
+          "2019",
+          "dos mil diecinueve"
+        ],
+        "r": "En 2019 (二零一九年)."
+      },
+      {
+        "q": "¿En qué medio de transporte vino a Pekín?",
+        "lang": "py",
+        "a": [
+          "fēijī"
+        ],
+        "r": "Zuò fēijī lái de · 坐飞机来的 (en avión)."
+      },
+      {
+        "q": "¿Qué estudia David en la universidad?",
+        "lang": "py",
+        "a": [
+          "Hànyǔ"
+        ],
+        "r": "Xuéxí Hànyǔ · 学习汉语 (chino)."
+      },
+      {
+        "q": "¿Dónde conoció David a Li Yue?",
+        "lang": "es",
+        "a": [
+          "universidad"
+        ],
+        "r": "En la universidad (是在大学认识的)."
+      },
+      {
+        "q": "¿Cómo van a ir mañana a la estación de tren?",
+        "lang": "es",
+        "a": [
+          "taxi"
+        ],
+        "r": "En taxi (坐出租车去火车站)."
+      }
+    ]
+  }
+]

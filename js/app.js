@@ -1,0 +1,1200 @@
+/* ==========================================================================
+   app.js · HSK1 Repaso
+   Dictado · Listening · Lectura · Traducción · Vocabulario
+   Todo corre en el navegador; el progreso se guarda en este dispositivo.
+   ========================================================================== */
+(function () {
+  "use strict";
+
+  var D = window.HSK;
+  var C = window.Corrector;
+  var APP = document.getElementById("app");
+
+  // ======================================================================
+  // utilidades
+  // ======================================================================
+  function h(tag, props) {
+    var e = document.createElement(tag);
+    if (props) {
+      Object.keys(props).forEach(function (k) {
+        var v = props[k];
+        if (v === null || v === undefined || v === false) return;
+        if (k === "class") e.className = v;
+        else if (k === "html") e.innerHTML = v;
+        else if (k === "text") e.textContent = v;
+        else if (k.slice(0, 2) === "on") e.addEventListener(k.slice(2), v);
+        else if (k === "style") e.style.cssText = v;
+        else e.setAttribute(k, v === true ? "" : v);
+      });
+    }
+    for (var i = 2; i < arguments.length; i++) add(e, arguments[i]);
+    return e;
+  }
+  function add(e, c) {
+    if (c === null || c === undefined || c === false) return;
+    if (Array.isArray(c)) { c.forEach(function (x) { add(e, x); }); return; }
+    e.appendChild(c.nodeType ? c : document.createTextNode(String(c)));
+  }
+  function icon(name, size) {
+    var s = size || 20;
+    var P = {
+      play: '<path d="M8 5.5v13l11-6.5z" fill="currentColor"/>',
+      pause: '<rect x="6.5" y="5" width="4" height="14" rx="1.2" fill="currentColor"/><rect x="13.5" y="5" width="4" height="14" rx="1.2" fill="currentColor"/>',
+      replay: '<path d="M4 12a8 8 0 1 0 2.4-5.7M4 4v4.5h4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>',
+      speaker: '<path d="M4 9.5h3.5L12 5v14l-4.5-4.5H4z" fill="currentColor"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>',
+      back: '<path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>',
+      menu: '<path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>',
+      close: '<path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>',
+      ear: '<path d="M7 10a5 5 0 0 1 10 0c0 3-3 3.5-3 6.5a2.5 2.5 0 0 1-5 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M10 10a2 2 0 0 1 4 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>',
+      pen: '<path d="M4 20l4-1 11-11-3-3L5 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M14 7l3 3" stroke="currentColor" stroke-width="2"/>',
+      book: '<path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M4 20.5A2.5 2.5 0 0 1 6.5 18H20v3H6.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>',
+      swap: '<path d="M4 8h13l-3-3M20 16H7l3 3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>',
+      list: '<path d="M8 6h12M8 12h12M8 18h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="4" cy="6" r="1.4" fill="currentColor"/><circle cx="4" cy="12" r="1.4" fill="currentColor"/><circle cx="4" cy="18" r="1.4" fill="currentColor"/>',
+      gear: '<circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 2.5v3M12 18.5v3M4.2 6.2l2.1 2.1M17.7 15.7l2.1 2.1M2.5 12h3M18.5 12h3M4.2 17.8l2.1-2.1M17.7 8.3l2.1-2.1" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>',
+      bulb: '<path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>',
+      keyboard: '<rect x="2.5" y="6" width="19" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M6 10h.01M10 10h.01M14 10h.01M18 10h.01M7 14h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>'
+    };
+    return h("span", { "aria-hidden": "true", style: "display:inline-flex", html: '<svg width="' + s + '" height="' + s + '" viewBox="0 0 24 24">' + (P[name] || "") + "</svg>" });
+  }
+  function shuffle(a) {
+    a = a.slice();
+    for (var i = a.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; }
+    return a;
+  }
+  var CN_NUM = ["零", "一", "二", "三", "四", "五", "六", "七", "八", "九", "十", "十一", "十二", "十三", "十四", "十五"];
+  function pct(x) { return Math.round(x * 100); }
+  function scoreClass(p) { return p === undefined ? "" : p >= 80 ? "good" : p >= 50 ? "mid" : "low"; }
+  function levelOf(score) { return score >= 1 ? "ok" : score > 0 ? "mid" : "ko"; }
+
+  // ======================================================================
+  // almacenamiento (solo en este navegador)
+  // ======================================================================
+  var KEY = "hsk1-repaso-v1";
+  var S = { settings: { tones: "cuentan", speed: "lento", autoTone: true, theme: "auto", voice: "" }, progress: {} };
+  try {
+    var saved = JSON.parse(localStorage.getItem(KEY) || "null");
+    if (saved) { S.settings = Object.assign(S.settings, saved.settings || {}); S.progress = saved.progress || {}; }
+  } catch (e) { /* sin almacenamiento: se trabaja en memoria */ }
+  function persist() { try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) { /* nada */ } }
+  function saveResult(key, value) {
+    var p = S.progress[key] || { best: 0, n: 0 };
+    p.last = value; p.best = Math.max(p.best || 0, value); p.n = (p.n || 0) + 1; p.date = Date.now();
+    S.progress[key] = p; persist();
+  }
+  function best(key) { return S.progress[key] ? S.progress[key].best : undefined; }
+  function ignoreTones() { return S.settings.tones === "ignorar"; }
+  function applyTheme() {
+    var t = S.settings.theme;
+    if (t === "auto") document.documentElement.removeAttribute("data-theme");
+    else document.documentElement.setAttribute("data-theme", t);
+  }
+  applyTheme();
+
+  // ======================================================================
+  // índices de datos
+  // ======================================================================
+  var FRASE = {}, TEMA = {};
+  D.temas.forEach(function (t) { TEMA[t.n] = t; t.frases.forEach(function (f) { f.tema = t.n; FRASE[f.id] = f; }); });
+  function item(id) { return FRASE[id] || D.vocab[id] || D.extra[id]; }
+  var LIST = {}; D.listenings.forEach(function (l) { LIST[l.id] = l; });
+  var READ = {}; D.lecturas.forEach(function (r) { READ[r.id] = r; });
+  var DICT = {}; D.dictados.forEach(function (d) { DICT[d.id] = d; });
+
+  // ======================================================================
+  // pinyin a partir del hanzi (lecturas y textos clicables)
+  // ======================================================================
+  var PUNCT = "，。？！、；：“”‘’（）《》…—·,.?!;:\"'()";
+  var PUNCT_PY = { "，": ",", "。": ".", "？": "?", "！": "!", "、": ",", "；": ";", "：": ":", "“": "“", "”": "”", "（": "(", "）": ")", "…": "…" };
+  var NUM_PY = { "零": "líng", "一": "yī", "二": "èr", "三": "sān", "四": "sì", "五": "wǔ", "六": "liù", "七": "qī", "八": "bā", "九": "jiǔ", "十": "shí" };
+  function isPunct(w) { return w.split("").every(function (c) { return PUNCT.indexOf(c) >= 0; }); }
+  function isNumZh(w) { return /^[零一二三四五六七八九十]+$/.test(w); }
+  function numPinyin(w) {
+    var out = "";
+    w.split("").forEach(function (c, i) {
+      var p = NUM_PY[c];
+      if (i && /^[aeo]/.test(C.stripMarks(p))) out += "'";
+      out += p;
+    });
+    return out;
+  }
+  function firstTone(py) { var s = C.parse(py); return s.length ? s[0].t : 0; }
+
+  /** Información de una palabra: {w, py, es, t} */
+  function wordInfo(w, override) {
+    if (/^\d+$/.test(w)) return { w: w, py: w, es: w, num: true };
+    var d = D.dic[w];
+    if (d) return { w: w, py: override || d[0], es: d[1], t: d[2] };
+    if (isNumZh(w)) return { w: w, py: override || numPinyin(w), es: C.hanziKey(w), num: true };
+    return { w: w, py: override || "", es: "" };
+  }
+
+  /** "我 叫 大卫 。 ¶ …" → [[{w,py,es}|{p:"。"}, …], …] (párrafos) */
+  function tokensFromText(text) {
+    var paras = [[]];
+    text.split(/\s+/).filter(Boolean).forEach(function (tok) {
+      if (tok === "¶") { paras.push([]); return; }
+      var parts = tok.split("|");
+      if (isPunct(parts[0])) paras[paras.length - 1].push({ p: parts[0] });
+      else paras[paras.length - 1].push(wordInfo(parts[0], parts[1]));
+    });
+    paras = paras.filter(function (p) { return p.length; });
+    fixSandhi(paras);
+    return paras;
+  }
+
+  /** Troceado por máxima coincidencia con el diccionario (textos de hanzi seguidos). */
+  function segment(text) {
+    var out = [], i = 0, n = text.length;
+    while (i < n) {
+      var c = text[i];
+      if (/\s/.test(c)) { i++; continue; }
+      if (PUNCT.indexOf(c) >= 0) { out.push({ p: c }); i++; continue; }
+      if (/\d/.test(c)) { var j = i; while (j < n && /\d/.test(text[j])) j++; out.push(wordInfo(text.slice(i, j))); i = j; continue; }
+      var found = null;
+      for (var L = Math.min(6, n - i); L >= 2; L--) { if (D.dic[text.substr(i, L)]) { found = text.substr(i, L); break; } }
+      if (!found && isNumZh(c)) { var k = i; while (k < n && isNumZh(text[k])) k++; found = text.slice(i, k); }
+      if (!found) found = c;
+      out.push(wordInfo(found));
+      i += found.length;
+    }
+    fixSandhi([out]);
+    return out;
+  }
+
+  /** 不 → bú delante de 4.º tono. */
+  function fixSandhi(paras) {
+    paras.forEach(function (p) {
+      for (var i = 0; i < p.length; i++) {
+        var t = p[i];
+        if (t.w === "不" && t.py === "bù") {
+          var nx = p[i + 1];
+          if (nx && nx.py && firstTone(nx.py) === 4) t.py = "bú";
+        }
+      }
+    });
+  }
+
+  function capFirst(s) { return s ? s.charAt(0).toUpperCase() + s.slice(1) : s; }
+
+  // ======================================================================
+  // voz: audio grabado o voz del navegador
+  // ======================================================================
+  var SPEEDS = [
+    { k: "muylento", zh: "很慢", es: "Muy lento", file: "lento", rate: 0.8, tts: 0.45 },
+    { k: "lento", zh: "慢", es: "Lento", file: "lento", rate: 1, tts: 0.6 },
+    { k: "medio", zh: "中", es: "Medio", file: "medio", rate: 1, tts: 0.8 },
+    { k: "normal", zh: "正常", es: "Normal", file: "normal", rate: 1, tts: 1 }
+  ];
+  function speedObj(k) { return SPEEDS.filter(function (s) { return s.k === k; })[0] || SPEEDS[1]; }
+  function manifest() { return window.HSK_AUDIO && window.HSK_AUDIO.files ? window.HSK_AUDIO.files : null; }
+  function recorded(id) { var m = manifest(); return !!(m && id && m[id] && m[id].normal); }
+
+  var TTS = {
+    voices: [],
+    load: function () {
+      if (!("speechSynthesis" in window)) return;
+      var all = speechSynthesis.getVoices();
+      var zh = all.filter(function (v) { return /^zh/i.test(v.lang) && !/HK|yue|Cantonese/i.test(v.lang + v.name); });
+      zh.sort(function (a, b) { return score(b) - score(a); });
+      function score(v) {
+        var s = 0;
+        if (/zh[-_]CN/i.test(v.lang)) s += 10;
+        if (/Natural|Neural|Online|Premium|Enhanced|Xiaoxiao|Yunxi|Google/i.test(v.name)) s += 5;
+        if (/Tingting|Ting-Ting|Lili|Meijia/i.test(v.name)) s += 2;
+        return s;
+      }
+      TTS.voices = zh;
+    },
+    pick: function (g) {
+      if (!TTS.voices.length) TTS.load();
+      if (S.settings.voice) {
+        var chosen = TTS.voices.filter(function (v) { return v.name === S.settings.voice; })[0];
+        if (chosen) return chosen;
+      }
+      var male = /Yunxi|Yunjian|Yunyang|Kangkang|Male|男|Li-mu|Liang/i;
+      var list = TTS.voices;
+      var pref = list.filter(function (v) { return g === "m" ? male.test(v.name) : !male.test(v.name); });
+      return (pref[0] || list[0]) || null;
+    },
+    available: function () { if (!TTS.voices.length) TTS.load(); return "speechSynthesis" in window; }
+  };
+  if ("speechSynthesis" in window) { TTS.load(); speechSynthesis.onvoiceschanged = TTS.load; }
+
+  var CURRENT = null;          // reproductor que suena ahora
+  function stopAll() { if (CURRENT) CURRENT.stop(); if ("speechSynthesis" in window) speechSynthesis.cancel(); }
+
+  /**
+   * Reproductor. opts: {id, lines: [{zh, v}], onLine(i|-1), label}
+   * Si el audio está grabado usa el MP3; si no, la voz del navegador.
+   */
+  function Player(opts) {
+    var self = this;
+    this.opts = opts;
+    this.rec = recorded(opts.id);
+    this.audio = null;
+    this.playing = false;
+    this.stopAt = null;
+    this.lineIdx = -1;
+
+    var btn = h("button", { class: "play", type: "button", "aria-label": "Reproducir", onclick: function () { self.toggle(); } }, icon("play", 30));
+    var bar = h("i");
+    var prog = h("div", { class: "prog", onclick: function (e) {
+      if (!self.rec || !self.audio || !self.audio.duration) return;
+      var r = e.currentTarget.getBoundingClientRect();
+      self.audio.currentTime = (e.clientX - r.left) / r.width * self.audio.duration;
+    } }, bar);
+    var timeL = h("span", { text: "0:00" });
+    var srcTag = h("span", { class: "src-tag" + (this.rec ? " rec" : ""), text: this.rec ? "Voz nativa grabada" : "Voz del navegador" });
+    var replay = h("button", { class: "icon-btn", type: "button", title: "Volver a empezar", "aria-label": "Volver a empezar", onclick: function () { self.play(true); } }, icon("replay", 18));
+    var chips = SPEEDS.map(function (sp) {
+      return h("button", { type: "button", class: "chip" + (S.settings.speed === sp.k ? " on" : ""), "data-k": sp.k, onclick: function () {
+        S.settings.speed = sp.k; persist();
+        self.el.querySelectorAll(".speeds .chip").forEach(function (c) { c.classList.toggle("on", c.getAttribute("data-k") === sp.k); });
+        var was = self.playing; self.stop(); self.audio = null; if (was) self.play(true);
+      } }, h("span", { class: "zh", text: sp.zh }), sp.es);
+    });
+    this.btn = btn; this.bar = bar; this.timeL = timeL;
+    this.el = h("div", { class: "player" + (opts.compact ? " compact" : "") },
+      h("div", { class: "player-main" }, btn,
+        h("div", { class: "track" }, prog, h("div", { class: "meta" }, h("span", { text: opts.label || "" }), h("span", null, srcTag, " ", timeL))),
+        replay),
+      h("div", { class: "speeds" }, h("span", { class: "lbl", text: "Velocidad" }), chips));
+  }
+  Player.prototype.speed = function () { return speedObj(S.settings.speed); };
+  Player.prototype.setPlaying = function (on) {
+    this.playing = on;
+    this.btn.classList.toggle("playing", on);
+    this.btn.innerHTML = "";
+    this.btn.appendChild(icon(on ? "pause" : "play", 30));
+    if (!on) { this.lineIdx = -1; if (this.opts.onLine) this.opts.onLine(-1); }
+  };
+  Player.prototype.ensureAudio = function () {
+    var sp = this.speed(), self = this;
+    if (this.audio && this.audio._file === sp.file) { this.audio.playbackRate = sp.rate; return this.audio; }
+    var a = new Audio("audio/" + sp.file + "/" + this.opts.id + ".mp3");
+    a._file = sp.file;
+    a.preload = "auto";
+    a.playbackRate = sp.rate;
+    a.addEventListener("timeupdate", function () {
+      if (a.duration) self.bar.style.width = (a.currentTime / a.duration * 100) + "%";
+      self.timeL.textContent = fmt(a.currentTime) + " / " + fmt(a.duration || 0);
+      var cues = self.cues();
+      if (cues && self.opts.onLine) {
+        var idx = 0;
+        for (var i = 0; i < cues.length; i++) if (a.currentTime + 0.05 >= cues[i]) idx = i;
+        if (idx !== self.lineIdx) { self.lineIdx = idx; self.opts.onLine(idx); }
+      }
+      if (self.stopAt !== null && a.currentTime >= self.stopAt) { a.pause(); self.stopAt = null; self.setPlaying(false); }
+    });
+    a.addEventListener("ended", function () { self.setPlaying(false); });
+    a.addEventListener("error", function () {
+      // El MP3 no está: se pasa a la voz del navegador.
+      self.rec = false; self.audio = null;
+      var tag = self.el.querySelector(".src-tag"); if (tag) { tag.textContent = "Voz del navegador"; tag.classList.remove("rec"); }
+      if (self.playing) { self.setPlaying(false); self.play(true); }
+    });
+    this.audio = a;
+    return a;
+  };
+  Player.prototype.cues = function () {
+    var m = manifest(); if (!m || !m[this.opts.id]) return null;
+    var e = m[this.opts.id][this.speed().file]; return e ? e.c : null;
+  };
+  Player.prototype.toggle = function () { if (this.playing) this.stop(); else this.play(false); };
+  Player.prototype.play = function (fromStart) {
+    if (CURRENT && CURRENT !== this) CURRENT.stop();
+    CURRENT = this;
+    this.stopAt = null;
+    if (this.rec) {
+      var a = this.ensureAudio();
+      if (fromStart || a.ended) a.currentTime = 0;
+      var p = a.play(); if (p && p.catch) p.catch(function () {});
+      this.setPlaying(true);
+    } else {
+      this.speakFrom(0, this.opts.lines.length);
+    }
+  };
+  Player.prototype.playLine = function (i) {
+    if (CURRENT && CURRENT !== this) CURRENT.stop();
+    CURRENT = this;
+    var cues = this.rec ? this.cues() : null;
+    if (this.rec && cues) {
+      var a = this.ensureAudio();
+      a.currentTime = cues[i];
+      this.stopAt = i + 1 < cues.length ? cues[i + 1] - 0.08 : null;
+      var p = a.play(); if (p && p.catch) p.catch(function () {});
+      this.setPlaying(true);
+    } else {
+      this.speakFrom(i, i + 1);
+    }
+  };
+  Player.prototype.speakFrom = function (from, to) {
+    var self = this;
+    if (!TTS.available()) { alert("Este navegador no tiene voz para leer en chino y los audios aún no están grabados."); return; }
+    speechSynthesis.cancel();
+    var sp = this.speed(), lines = this.opts.lines, total = to - from;
+    var voiceCount = TTS.voices.length;
+    this.setPlaying(true);
+    var i = from;
+    function next() {
+      if (!self.playing || i >= to) { self.setPlaying(false); self.bar.style.width = "0%"; return; }
+      var ln = lines[i];
+      var u = new SpeechSynthesisUtterance(ln.zh);
+      u.lang = "zh-CN";
+      var g = (ln.v || "f1").charAt(0);
+      var v = TTS.pick(g); if (v) u.voice = v;
+      u.rate = sp.tts;
+      // Con una sola voz disponible, el tono distingue a los personajes.
+      var n = +(ln.v || "f1").charAt(1) || 1;
+      u.pitch = voiceCount > 1 && !S.settings.voice ? 1 : (g === "m" ? 0.75 : 1.15) + (n - 1) * 0.12;
+      if (self.opts.onLine) { self.lineIdx = i; self.opts.onLine(i); }
+      self.bar.style.width = ((i - from) / total * 100) + "%";
+      self.timeL.textContent = (i - from + 1) + " / " + total;
+      u.onend = function () { i++; setTimeout(next, 350 / sp.tts); };
+      u.onerror = function () { self.setPlaying(false); };
+      speechSynthesis.speak(u);
+    }
+    next();
+  };
+  Player.prototype.stop = function () {
+    if (this.audio) this.audio.pause();
+    if (!this.rec && "speechSynthesis" in window) speechSynthesis.cancel();
+    this.stopAt = null;
+    if (this.playing) this.setPlaying(false);
+  };
+  function fmt(t) { t = Math.max(0, Math.round(t || 0)); return Math.floor(t / 60) + ":" + ("0" + t % 60).slice(-2); }
+
+  /** Reproduce una palabra o frase suelta (botones de altavoz). */
+  function speakOnce(zh, id) {
+    stopAll();
+    if (id && recorded(id)) {
+      var sp = speedObj(S.settings.speed === "muylento" ? "lento" : S.settings.speed);
+      var a = new Audio("audio/" + sp.file + "/" + id + ".mp3");
+      a.playbackRate = sp.rate;
+      a.play().catch(function () {});
+      CURRENT = { stop: function () { a.pause(); } };
+      return;
+    }
+    if (!TTS.available()) return;
+    var u = new SpeechSynthesisUtterance(zh);
+    u.lang = "zh-CN"; var v = TTS.pick("f"); if (v) u.voice = v;
+    u.rate = Math.max(0.55, speedObj(S.settings.speed).tts);
+    speechSynthesis.speak(u);
+  }
+  function wordAudioId(zh) { var v = D.vocab["v-" + zh]; return v ? v.au : null; }
+
+  // ======================================================================
+  // ventanita de palabra
+  // ======================================================================
+  var POP = null;
+  function closePop() {
+    if (POP) { POP.remove(); POP = null; }
+    document.querySelectorAll(".w.sel").forEach(function (x) { x.classList.remove("sel"); });
+  }
+  function showPop(anchor, info, mode) {
+    closePop();
+    anchor.classList.add("sel");
+    var temaTxt = info.t ? "Tema " + info.t : (info.num ? "Número" : "");
+    POP = h("div", { class: "pop", role: "dialog" },
+      h("button", { class: "icon-btn", type: "button", "aria-label": "Escuchar", onclick: function (e) { e.stopPropagation(); speakOnce(info.w, wordAudioId(info.w)); } }, icon("speaker", 18)),
+      mode === "py" ? h("div", { class: "pp", style: "font-size:24px", text: info.py }) : null,
+      h("div", { class: "pz", text: info.w }),
+      mode !== "py" ? h("div", { class: "pp", text: info.py }) : null,
+      h("div", { class: "pe", text: info.es || "—" }),
+      temaTxt ? h("div", { class: "pt", text: temaTxt }) : null);
+    document.body.appendChild(POP);
+    var r = anchor.getBoundingClientRect();
+    var top = window.scrollY + r.bottom + 8, left = window.scrollX + r.left;
+    left = Math.min(left, window.scrollX + document.documentElement.clientWidth - POP.offsetWidth - 12);
+    POP.style.top = top + "px"; POP.style.left = Math.max(12, left) + "px";
+  }
+  document.addEventListener("click", function (e) {
+    if (POP && !POP.contains(e.target) && !e.target.closest(".w")) closePop();
+  });
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape") closePop(); });
+
+  /**
+   * Pinta palabras clicables.
+   * mode "zh": hanzi (ventanita con pinyin + español) · "py": pinyin (ventanita con hanzi)
+   * ruby: añade encima el pinyin (zh) o el hanzi (py)
+   */
+  function renderWords(tokens, mode, ruby) {
+    var frag = [], sentenceStart = true;
+    tokens.forEach(function (t, i) {
+      if (t.p) {
+        var p = mode === "py" ? (PUNCT_PY[t.p] || t.p) : t.p;
+        frag.push(h("span", { class: "pu", text: p + (mode === "py" ? " " : "") }));
+        if (/[。？！.?!]/.test(t.p)) sentenceStart = true;
+        return;
+      }
+      var label = mode === "py" ? (sentenceStart ? capFirst(t.py) : t.py) : t.w;
+      sentenceStart = false;
+      var inner;
+      if (ruby) inner = h("ruby", null, label, h("rt", { text: mode === "py" ? t.w : t.py }));
+      else inner = label;
+      var clickable = !!(t.es || t.py) && !t.plain;
+      var span = h("span", { class: "w" + (clickable ? "" : " plain"), tabindex: clickable ? "0" : null }, inner);
+      if (clickable) {
+        span.addEventListener("click", function (e) { e.stopPropagation(); showPop(span, t, mode); });
+        span.addEventListener("keydown", function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); showPop(span, t, mode); } });
+      }
+      frag.push(span);
+      if (mode === "py") {
+        var nx = tokens[i + 1];
+        if (!nx || !nx.p) frag.push(" ");
+      }
+    });
+    return frag;
+  }
+
+  // ======================================================================
+  // campo de pinyin con ayuda para los tonos
+  // ======================================================================
+  function pinyinInput(opts) {
+    opts = opts || {};
+    var inp = h(opts.multiline ? "textarea" : "input", {
+      class: "inp py", type: "text", autocomplete: "off", autocapitalize: "off", spellcheck: "false",
+      placeholder: opts.placeholder || "Escribe en pinyin: nǐ hǎo  ·  o con números: ni3 hao3",
+      "aria-label": opts.label || "Respuesta en pinyin"
+    });
+    inp.addEventListener("input", function () {
+      if (!S.settings.autoTone) return;
+      var pos = inp.selectionStart, before = inp.value;
+      var conv = C.numbersToMarks(before.replace(/v/g, "ü").replace(/V/g, "Ü"));
+      if (conv !== before) {
+        var delta = conv.length - before.length;
+        inp.value = conv;
+        try { inp.setSelectionRange(pos + delta, pos + delta); } catch (e) { /* nada */ }
+      }
+    });
+    if (opts.onEnter) inp.addEventListener("keydown", function (e) { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); opts.onEnter(e); } });
+    var tones = [["ˉ", 1, "Primer tono (ā)"], ["ˊ", 2, "Segundo tono (á)"], ["ˇ", 3, "Tercer tono (ǎ)"], ["ˋ", 4, "Cuarto tono (à)"]];
+    var bar = h("div", { class: "tonebar" },
+      tones.map(function (t) {
+        return h("button", { type: "button", title: t[2], "aria-label": t[2], onmousedown: function (e) { e.preventDefault(); }, onclick: function () {
+          var r = C.toneAtCaret(inp.value, inp.selectionStart == null ? inp.value.length : inp.selectionStart, t[1]);
+          inp.value = r.value; inp.focus(); try { inp.setSelectionRange(r.caret, r.caret); } catch (e) { /* nada */ }
+        } }, t[0]);
+      }),
+      h("button", { type: "button", title: "ü", onmousedown: function (e) { e.preventDefault(); }, onclick: function () {
+        var p = inp.selectionStart == null ? inp.value.length : inp.selectionStart;
+        inp.value = inp.value.slice(0, p) + "ü" + inp.value.slice(p); inp.focus(); try { inp.setSelectionRange(p + 1, p + 1); } catch (e) { /* nada */ }
+      } }, "ü"),
+      h("span", { class: "hint", text: S.settings.autoTone ? "Tras la sílaba, escribe 1-4 (hao3 → hǎo) o pulsa un tono" : "Pulsa un tono tras escribir la sílaba" }));
+    return { input: inp, el: h("div", { class: "field" }, inp, bar) };
+  }
+
+  function marksView(marks, ign) {
+    return marks.map(function (m) {
+      var st = m.st === "tone" && ign ? "ok" : m.st;
+      return st ? h("span", { class: "syl " + st, text: m.text }) : m.text;
+    });
+  }
+  function stampText(level) { return level === "ok" ? "对" : level === "mid" ? "差一点" : "错"; }
+  function feedbackTitle(level, extra) {
+    if (level === "ok") return extra || "¡Correcto! 很好！";
+    if (level === "mid") return extra || "¡Casi! Revisa lo marcado.";
+    return extra || "No es correcto. Compara con la respuesta.";
+  }
+
+  function burst() {
+    if (window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    var colors = ["#b8322a", "#c9a227", "#e0594b", "#ffd978", "#2e7d6b"];
+    var b = h("div", { class: "burst" });
+    for (var i = 0; i < 36; i++) {
+      var ang = Math.random() * Math.PI * 2, dist = 120 + Math.random() * 220;
+      b.appendChild(h("i", { style: "background:" + colors[i % colors.length] + ";--x:" + Math.cos(ang) * dist + "px;--y:" + Math.sin(ang) * dist + "px" }));
+    }
+    document.body.appendChild(b);
+    setTimeout(function () { b.remove(); }, 1400);
+  }
+
+  function resultStamp(p) { return p >= 90 ? "优" : p >= 70 ? "好" : p >= 50 ? "中" : "加油"; }
+  function resultMsg(p) {
+    return p >= 90 ? "¡Excelente! 太好了！" : p >= 70 ? "¡Muy bien! 很好！" : p >= 50 ? "Vas bien. Repite los fallos para afianzar." : "¡Ánimo! 加油！ Repítelo a velocidad más lenta.";
+  }
+
+  // ======================================================================
+  // vistas
+  // ======================================================================
+  function setNav(route) {
+    document.querySelectorAll(".nav a").forEach(function (a) {
+      a.classList.toggle("on", a.getAttribute("data-r") === route);
+    });
+    document.querySelector(".nav").classList.remove("open");
+  }
+  function view(route, nodes) {
+    stopAll(); closePop();
+    setNav(route);
+    APP.innerHTML = "";
+    add(APP, h("div", { class: "fade-in" }, nodes));
+    window.scrollTo(0, 0);
+  }
+  function pageHead(bigZh, title, text) {
+    return h("div", { class: "page-h" }, h("div", { class: "big-zh", text: bigZh }), h("div", null, h("h1", { text: title }), text ? h("p", { html: text }) : null));
+  }
+  function backLink(href, text) { return h("a", { class: "back", href: href }, icon("back", 16), text); }
+  function exRow(href, num, title, sub, key) {
+    var b = best(key);
+    return h("a", { class: "card ex", href: href },
+      h("div", { class: "num", text: num }),
+      h("div", { class: "t" }, h("b", { text: title }), h("span", { text: sub })),
+      h("span", { class: "score " + scoreClass(b), text: b === undefined ? "Nuevo" : b + "%" }));
+  }
+  function avg(keys) {
+    if (!keys.length) return 0;
+    var s = 0; keys.forEach(function (k) { s += best(k) || 0; }); return Math.round(s / keys.length);
+  }
+  function modProgress(kind) {
+    if (kind === "D") return avg(D.dictados.map(function (d) { return "D:" + d.id; }));
+    if (kind === "L") return avg(D.listenings.map(function (l) { return "L:" + l.id; }));
+    if (kind === "R") return avg(D.lecturas.map(function (r) { return "R:" + r.id; }));
+    var ks = []; D.temas.forEach(function (t) { [1, 2, 3, 4].forEach(function (n) { ks.push("T:" + t.n + ":" + n); }); });
+    return avg(ks);
+  }
+
+  // ------------------------------------------------------------------ inicio
+  var LANTERN = '<svg viewBox="0 0 60 120"><defs><radialGradient id="lg" cx="50%" cy="45%" r="60%"><stop offset="0" stop-color="#ffcf6b"/><stop offset=".45" stop-color="#e8452f"/><stop offset="1" stop-color="#9c1c16"/></radialGradient></defs>' +
+    '<line x1="30" y1="0" x2="30" y2="20" stroke="#ffd978" stroke-width="2"/><rect x="20" y="18" width="20" height="7" rx="2" fill="#ffd978"/>' +
+    '<ellipse cx="30" cy="54" rx="27" ry="30" fill="url(#lg)"/><ellipse class="glow" cx="30" cy="52" rx="16" ry="20" fill="#ffe08a" opacity=".6"/>' +
+    '<ellipse cx="30" cy="54" rx="15" ry="30" fill="none" stroke="#7a130f" stroke-opacity=".45" stroke-width="1.5"/><line x1="30" y1="24" x2="30" y2="84" stroke="#7a130f" stroke-opacity=".45" stroke-width="1.5"/>' +
+    '<text x="30" y="62" text-anchor="middle" font-size="22" fill="#ffe9b0" font-family="Ma Shan Zheng, KaiTi, serif">福</text>' +
+    '<rect x="20" y="82" width="20" height="7" rx="2" fill="#ffd978"/><path d="M24 89v22M28 89v26M32 89v26M36 89v22" stroke="#ffd978" stroke-width="1.6" stroke-linecap="round"/></svg>';
+  var MOUNTAINS = '<svg class="hero-mountains" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M0 120 L0 80 Q80 40 160 70 T320 60 Q400 20 480 55 T640 50 Q720 10 800 50 T960 45 Q1060 15 1120 55 L1200 40 L1200 120Z" fill="#6e1410" opacity=".55"/><path d="M0 120 L0 95 Q120 60 240 90 T480 85 Q600 55 720 88 T960 80 Q1080 60 1200 85 L1200 120Z" fill="#5a0f0c" opacity=".7"/></svg>';
+
+  function viewHome() {
+    var rec = manifest() ? Object.keys(manifest()).length : 0;
+    var mods = [
+      { href: "#/dictado", ico: "pen", t: "Dictado", zh: "听写", wm: "听写", p: "Escucha frases y palabras y escríbelas en pinyin, con corrección sílaba a sílaba y de tonos.", k: "D", n: D.dictados.length + " dictados" },
+      { href: "#/listening", ico: "ear", t: "Listening", zh: "听力", wm: "听", p: "Diálogos con voces nativas a 4 velocidades y 5 preguntas en pinyin o español.", k: "L", n: D.listenings.length + " diálogos" },
+      { href: "#/lectura", ico: "book", t: "Lectura", zh: "阅读", wm: "读", p: "Textos en pinyin (nivel 1) y en hanzi (nivel 2). Toca cada palabra para ver su significado.", k: "R", n: D.lecturas.length + " lecturas" },
+      { href: "#/traduccion", ico: "swap", t: "Traducción", zh: "翻译", wm: "译", p: "Cuatro niveles: pinyin→español, español→pinyin, hanzi→español y español→hanzi.", k: "T", n: "15 temas × 4 niveles" }
+    ];
+    var lanterns = h("div", { class: "lanterns", "aria-hidden": "true" },
+      h("div", { class: "lantern", html: LANTERN }), h("div", { class: "lantern", html: LANTERN }), h("div", { class: "lantern", html: LANTERN }));
+    view("home", [
+      h("section", { class: "hero" },
+        lanterns,
+        h("h1", null, h("span", { class: "brush", text: "你好！" }), "Repasa todo el HSK 1"),
+        h("p", { text: "Dictados, listenings, lecturas y traducciones de los 15 temas del curso. Escucha a tu ritmo: cada audio tiene cuatro velocidades." }),
+        h("div", { class: "cta" },
+          h("a", { class: "btn", href: "#/dictado" }, icon("pen", 18), "Empezar por un dictado"),
+          h("a", { class: "btn ghost", href: "#temas" }, "Elegir un tema")),
+        h("div", { html: MOUNTAINS })),
+      h("div", { class: "sec-h" }, h("span", { class: "brush", text: "练习" }), h("h2", { text: "Tipos de ejercicio" })),
+      h("div", { class: "grid g4" }, mods.map(function (m) {
+        var p = modProgress(m.k);
+        return h("a", { class: "card mod", href: m.href },
+          h("span", { class: "wm", text: m.wm }),
+          h("div", { class: "ico" }, icon(m.ico, 24)),
+          h("h3", null, m.t, h("span", { class: "zh", text: m.zh })),
+          h("p", { text: m.p }),
+          h("div", { class: "bar" }, h("i", { style: "width:" + p + "%" })),
+          h("div", { class: "bar-l" }, h("span", { text: m.n }), h("span", { text: p + "%" })));
+      })),
+      h("div", { class: "sec-h", id: "temas" }, h("span", { class: "brush", text: "课文" }), h("h2", { text: "Repasar por tema" }),
+        h("p", { text: "Cada tema reúne sus dictados, listenings, lecturas y traducciones." })),
+      h("div", { class: "temas" }, D.temas.map(function (t) {
+        return h("a", { class: "tema", href: "#/tema/" + t.n },
+          h("span", { class: "n", text: CN_NUM[t.n] }),
+          h("div", null, h("b", { text: t.es }), h("span", { class: "zh", text: t.zh })));
+      })),
+      h("div", { class: "sec-h" }, h("span", { class: "brush", text: "声音" }), h("h2", { text: "Sobre el audio" })),
+      h("div", { class: "note" }, rec
+        ? h("span", null, h("b", { text: "Voces nativas grabadas: " }), rec + " audios en cuatro velocidades (muy lento, lento, medio y normal).")
+        : h("span", null, h("b", { text: "Aún no hay audios grabados. " }), "Mientras tanto se usa la voz china de tu navegador. Para grabar las voces neuronales, sigue las instrucciones del README del repositorio (pestaña Actions → «Grabar los audios»)."))
+    ]);
+  }
+
+  // ------------------------------------------------------------------- tema
+  function viewTema(n) {
+    var t = TEMA[n]; if (!t) return viewHome();
+    var dic = D.dictados.filter(function (d) { return d.tema === n; });
+    var ls = D.listenings.filter(function (l) { return l.tema === n; });
+    var rs = D.lecturas.filter(function (r) { return r.tema === n; });
+    var TR = trLevels();
+    view("tema", h("div", null,
+      backLink("#/", "Inicio"),
+      pageHead(CN_NUM[n], "Tema " + n + " · " + t.es, '<span class="zh" style="font-size:20px">' + t.zh + "</span>"),
+      h("div", { class: "group-h", text: "Dictado · 听写" }),
+      h("div", { class: "grid g3" }, dic.map(function (d) { return exRow("#/dictado/" + d.id, d.grupo === "vocabulario" ? "词" : "句", d.titulo, d.items.length + (d.grupo === "vocabulario" ? " palabras" : " frases"), "D:" + d.id); })),
+      h("div", { class: "group-h", text: "Listening · 听力" }),
+      h("div", { class: "grid g3" }, ls.map(function (l) { return exRow("#/listening/" + l.id, "听", l.titulo, l.lineas.length + " líneas · 5 preguntas", "L:" + l.id); })),
+      h("div", { class: "group-h", text: "Lectura · 阅读" }),
+      h("div", { class: "grid g3" }, rs.map(function (r) { return exRow("#/lectura/" + r.id, r.nivel === 1 ? "拼" : "汉", r.titulo, "Nivel " + r.nivel + (r.nivel === 1 ? " · pinyin" : " · hanzi"), "R:" + r.id); })),
+      h("div", { class: "group-h", text: "Traducción · 翻译" }),
+      h("div", { class: "grid g3" }, TR.map(function (L) { return exRow("#/traduccion/" + n + "/" + L.n, L.icon, "Nivel " + L.n + " · " + L.t, t.frases.length + " frases del tema", "T:" + n + ":" + L.n); }))
+    ));
+  }
+
+  // ---------------------------------------------------------------- dictado
+  function viewDictados() {
+    var groups = [
+      { k: "frases", t: "Frases de cada tema", d: "Todas las frases del curso, tema a tema." },
+      { k: "vocabulario", t: "Vocabulario de cada tema", d: "Palabra a palabra: ideal para afinar los tonos." },
+      { k: "especiales", t: "Dictados especiales", d: "Números, edades, precios, fechas, horas y teléfonos." }
+    ];
+    view("dictado", h("div", null,
+      pageHead("听写", "Dictado", "Escucha y escribe en <b>pinyin</b>. Puedes poner los tonos con marcas (<span class=\"py\">nǐ hǎo</span>) o con números (<span class=\"py\">ni3 hao3</span>), que se convierten solos. Las sílabas con el tono mal salen en <span class=\"syl tone\">naranja</span> y las que faltan o sobran, en <span class=\"syl miss\">rojo</span>."),
+      groups.map(function (g) {
+        var list = D.dictados.filter(function (d) { return d.grupo === g.k; });
+        return [h("div", { class: "group-h", text: g.t }),
+          h("div", { class: "grid g3" }, list.map(function (d) {
+            var num = d.tema ? CN_NUM[d.tema] : d.zh.slice(0, 1);
+            return exRow("#/dictado/" + d.id, num, d.titulo, (d.zh !== "词语" ? d.zh + " · " : "") + d.items.length + (g.k === "vocabulario" ? " palabras" : " frases"), "D:" + d.id);
+          }))];
+      })));
+  }
+
+  function runDictado(id, onlyIds) {
+    var dct = DICT[id]; if (!dct) return viewDictados();
+    var ids = onlyIds || dct.items;
+    var items = ids.map(item).filter(Boolean);
+    var idx = 0, results = [];
+    var wrap = h("div", { class: "ex-wrap" });
+    view("dictado", wrap);
+
+    function renderItem() {
+      var it = items[idx];
+      var checked = false, hinted = false;
+      var player = new Player({ id: it.au, lines: [{ zh: it.tts || it.zh, v: "f1" }], label: "Frase " + (idx + 1) + " de " + items.length });
+      var pin = pinyinInput({ onEnter: function () { checked ? next() : check(); } });
+      var fbBox = h("div");
+      var hintBox = h("div", { class: "muted", style: "margin-top:10px;min-height:1.4em" });
+      var checkBtn = h("button", { class: "btn", type: "button", onclick: function () { check(); } }, "Comprobar");
+      var hintBtn = h("button", { class: "btn soft sm", type: "button", onclick: function () {
+        hinted = true;
+        hintBox.innerHTML = "";
+        add(hintBox, ["Pista: ", h("span", { class: "zh", style: "font-size:22px;color:var(--ink)", text: it.zh }), "  (una respuesta con pista cuenta como media)"]);
+      } }, icon("bulb", 16), "Pista: ver hanzi");
+      var dots = h("div", { class: "dots" }, items.map(function (_, i) {
+        var r = results[i];
+        return h("i", { class: i === idx ? "cur" : r ? r.level : "" });
+      }));
+
+      function check() {
+        if (checked) return;
+        if (!pin.input.value.trim()) { pin.input.focus(); pin.input.classList.add("shake"); setTimeout(function () { pin.input.classList.remove("shake"); }, 400); return; }
+        checked = true;
+        var r = C.comparePinyin(it.py, pin.input.value, ignoreTones());
+        var score = hinted ? Math.min(r.score, 0.5) : r.score;
+        var level = levelOf(score);
+        results[idx] = { level: level, score: score, it: it, answer: pin.input.value };
+        pin.input.disabled = true;
+        var title = r.level === "mid" && r.lettersOk ? "Las sílabas están bien, pero revisa los tonos marcados." : null;
+        if (hinted && r.level === "ok") title = "Correcto (con pista).";
+        fbBox.innerHTML = "";
+        add(fbBox, h("div", { class: "fb " + level },
+          h("span", { class: "stamp", text: stampText(level) }),
+          h("h4", { text: feedbackTitle(level, title) }),
+          h("div", { class: "row" }, h("span", { class: "k", text: "Pinyin correcto" }), h("div", { class: "v py" }, marksView(r.marks, ignoreTones()))),
+          h("div", { class: "row" }, h("span", { class: "k", text: "Tu respuesta" }), h("div", { class: "v py", style: "font-size:16px", text: pin.input.value })),
+          h("div", { class: "row" }, h("span", { class: "k", text: "Hanzi" }), h("div", { class: "v zh" }, renderWords(segment(it.zh), "zh"))),
+          h("div", { class: "row" }, h("span", { class: "k", text: "Significado" }), h("div", { class: "v", style: "font-size:16px", text: it.es.join(" / ") })),
+          level !== "ok" ? h("button", { class: "link-btn", type: "button", onclick: function () {
+            results[idx].level = "ok"; results[idx].score = 1; this.textContent = "Marcada como correcta";
+          } }, "Mi respuesta también es correcta") : null));
+        checkBtn.textContent = idx + 1 < items.length ? "Siguiente →" : "Ver resultado";
+        checkBtn.onclick = next;
+        checkBtn.focus();
+      }
+      function next() { player.stop(); idx++; if (idx < items.length) renderItem(); else finish(); }
+
+      wrap.innerHTML = "";
+      add(wrap, [
+        h("div", { class: "ex-head" }, backLink("#/dictado", "Dictados"), dots,
+          h("h1", null, dct.titulo, h("span", { class: "zh", text: dct.zh }))),
+        h("div", { class: "card q-card" },
+          h("div", { class: "prompt" }, h("div", { class: "lbl", text: "Escucha y escribe en pinyin" })),
+          player.el,
+          h("div", { style: "height:16px" }),
+          pin.el, hintBox,
+          h("div", { class: "btn-row", style: "margin-top:16px" }, checkBtn, hintBtn,
+            h("span", { class: "muted", style: "font-size:13px;margin-left:auto" }, h("span", { class: "kbd", text: "Enter" }), " comprobar · ", h("span", { class: "kbd", text: "Mayús+Enter" }), " escuchar otra vez")),
+          fbBox)
+      ]);
+      pin.input.addEventListener("keydown", function (e) { if (e.key === "Enter" && e.shiftKey) { e.preventDefault(); player.play(true); } });
+      pin.input.focus();
+      setTimeout(function () { player.play(true); }, 250);
+    }
+
+    function finish() {
+      var total = results.reduce(function (s, r) { return s + (r ? r.score : 0); }, 0);
+      var p = pct(total / items.length);
+      if (!onlyIds) saveResult("D:" + id, p);
+      var wrong = results.filter(function (r) { return r.level !== "ok"; }).map(function (r) { return r.it.id; });
+      if (p >= 80) burst();
+      wrap.innerHTML = "";
+      add(wrap, [
+        h("div", { class: "ex-head" }, backLink("#/dictado", "Dictados"), h("h1", null, dct.titulo, h("span", { class: "zh", text: dct.zh }))),
+        h("div", { class: "card result" },
+          h("div", { class: "big-stamp", text: resultStamp(p) }),
+          h("div", { class: "pct", text: p + "%" }),
+          h("div", { class: "sub", text: resultMsg(p) }),
+          h("div", { class: "btn-row", style: "justify-content:center;margin-top:18px" },
+            wrong.length ? h("button", { class: "btn", type: "button", onclick: function () { runDictado(id, wrong); } }, "Repetir los " + wrong.length + " fallos") : null,
+            h("button", { class: "btn ghost", type: "button", onclick: function () { runDictado(id); } }, "Repetir todo"),
+            h("a", { class: "btn soft", href: "#/dictado" }, "Otros dictados")),
+          h("div", { class: "review" }, results.map(function (r) {
+            return h("div", { class: "it" }, h("span", { class: "m " + r.level, text: r.level === "ok" ? "✓" : r.level === "mid" ? "~" : "✗" }),
+              h("div", null, h("div", { class: "zh", text: r.it.zh }), h("div", { class: "py", text: r.it.py }),
+                r.level !== "ok" ? h("div", { class: "muted py", style: "font-size:14px", text: "Tú: " + r.answer }) : null),
+              h("button", { class: "icon-btn", style: "margin-left:auto", type: "button", "aria-label": "Escuchar", onclick: function () { speakOnce(r.it.tts || r.it.zh, r.it.au); } }, icon("speaker", 16)));
+          })))
+      ]);
+    }
+    renderItem();
+  }
+
+  // ------------------------------------------------------ preguntas (común)
+  function questionsBlock(qs, onDone) {
+    var fields = qs.map(function (q, i) {
+      var pin = q.lang === "py" ? pinyinInput({ placeholder: "Respuesta en pinyin", label: "Respuesta " + (i + 1) }) : null;
+      var inp = pin ? pin.input : h("input", { class: "inp", type: "text", autocomplete: "off", placeholder: "Respuesta en español", "aria-label": "Respuesta " + (i + 1) });
+      var res = h("div");
+      var card = h("div", { class: "card qq" },
+        h("div", { class: "qh" }, h("span", { class: "qn", text: i + 1 }), h("div", { class: "qt" }, q.q,
+          h("span", { class: "lang " + q.lang, text: q.lang === "py" ? "responde en pinyin" : "responde en español" }))),
+        pin ? pin.el : inp, res);
+      return { q: q, inp: inp, res: res, card: card, score: 0 };
+    });
+    var btn = h("button", { class: "btn", type: "button" }, "Corregir");
+    var done = false;
+    btn.addEventListener("click", function () {
+      if (done) return;
+      var empty = fields.filter(function (f) { return !f.inp.value.trim(); });
+      if (empty.length === fields.length) { fields[0].inp.focus(); return; }
+      done = true;
+      fields.forEach(function (f) {
+        var r = f.q.lang === "py" ? C.containsPinyin(f.inp.value, f.q.a, ignoreTones()) : C.matchKeywords(f.inp.value, f.q.a);
+        if (!f.inp.value.trim()) r = { level: "ko", score: 0 };
+        f.score = r.score;
+        f.inp.disabled = true;
+        f.res.className = "res " + r.level;
+        f.res.innerHTML = "";
+        add(f.res, [h("b", { text: r.level === "ok" ? "✓ Correcto." : r.level === "mid" ? "~ Casi (revisa los tonos)." : "✗" }),
+          h("span", { text: "Respuesta: " + f.q.r })]);
+        if (r.level !== "ok") {
+          add(f.res, [" ", h("button", { class: "link-btn", type: "button", onclick: function () {
+            f.score = 1; f.res.className = "res ok"; this.textContent = "Marcada como correcta"; this.disabled = true; update();
+          } }, "Mi respuesta es correcta")]);
+        }
+      });
+      btn.classList.add("hidden");
+      update();
+    });
+    var scoreBox = h("div");
+    function update() {
+      var total = fields.reduce(function (s, f) { return s + f.score; }, 0);
+      var p = pct(total / fields.length);
+      scoreBox.innerHTML = "";
+      add(scoreBox, h("div", { class: "fb " + (p >= 80 ? "ok" : p >= 50 ? "mid" : "ko") },
+        h("span", { class: "stamp", text: resultStamp(p) }),
+        h("h4", { text: "Resultado: " + p + "% · " + resultMsg(p) }),
+        h("div", { class: "muted", text: "Debajo tienes la transcripción/traducción para repasar." })));
+      onDone(p);
+    }
+    return { el: h("div", null, h("div", { class: "qs" }, fields.map(function (f) { return f.card; })), h("div", { class: "btn-row", style: "margin-top:16px" }, btn), scoreBox) };
+  }
+
+  // -------------------------------------------------------------- listening
+  function viewListenings() {
+    view("listening", h("div", null,
+      pageHead("听力", "Listening", "Escucha el diálogo (tantas veces como quieras y a la velocidad que prefieras) y responde a las <b>5 preguntas</b> en pinyin o en español. Después verás la transcripción con hanzi, pinyin y traducción, y podrás repetir cada frase."),
+      D.temas.map(function (t) {
+        var ls = D.listenings.filter(function (l) { return l.tema === t.n; });
+        if (!ls.length) return null;
+        return [h("div", { class: "group-h", text: "Tema " + t.n + " · " + t.es }),
+          h("div", { class: "grid g3" }, ls.map(function (l) { return exRow("#/listening/" + l.id, CN_NUM[t.n], l.titulo, l.escena, "L:" + l.id); }))];
+      })));
+  }
+
+  function runListening(id) {
+    var L = LIST[id]; if (!L) return viewListenings();
+    var lineEls = [];
+    var trBox = h("div", { class: "hidden" });
+    var player = new Player({
+      id: L.id, label: L.lineas.length + " líneas",
+      lines: L.lineas.map(function (ln) { return { zh: ln.tts || ln.zh, v: L.voces[ln.sp] }; }),
+      onLine: function (i) { lineEls.forEach(function (e, k) { e.classList.toggle("now", k === i); }); }
+    });
+    var show = { zh: true, py: true, es: true };
+    function transcript() {
+      trBox.innerHTML = "";
+      lineEls = [];
+      var toggles = h("div", { class: "chips", style: "margin-bottom:10px" }, [["zh", "汉字"], ["py", "Pinyin"], ["es", "Español"]].map(function (x) {
+        return h("button", { type: "button", class: "chip" + (show[x[0]] ? " on" : ""), onclick: function () { show[x[0]] = !show[x[0]]; transcript(); } }, x[1]);
+      }));
+      var lines = L.lineas.map(function (ln, i) {
+        var e = h("div", { class: "tr-line" },
+          h("div", { class: "tr-sp" }, h("button", { class: "icon-btn", type: "button", "aria-label": "Escuchar esta línea", onclick: function () { player.playLine(i); } }, icon("play", 14))),
+          h("div", { class: "tr-body" },
+            h("div", { class: "tr-sp", text: ln.sp }),
+            show.zh ? h("div", { class: "tr-zh" }, renderWords(segment(ln.zh), "zh")) : null,
+            show.py ? h("div", { class: "tr-py", text: ln.py }) : null,
+            show.es ? h("div", { class: "tr-es", text: ln.es }) : null));
+        lineEls.push(e);
+        return e;
+      });
+      add(trBox, h("div", { class: "card", style: "margin-top:18px" }, h("h3", { style: "margin:0 0 6px", text: "Transcripción · 听力原文" }),
+        h("p", { class: "muted", style: "margin:0 0 10px;font-size:14px", text: "Pulsa ▶ para oír una línea suelta. Toca un hanzi para ver su pinyin y significado." }), toggles, lines));
+    }
+    var qb = questionsBlock(L.preguntas, function (p) {
+      saveResult("L:" + id, p);
+      if (p >= 80) burst();
+      transcript(); trBox.classList.remove("hidden");
+    });
+    var persons = h("div", { class: "persons" }, Object.keys(L.personajes).map(function (sp) {
+      var g = L.personajes[sp];
+      return h("span", { class: "person" }, h("span", { class: "av " + g, text: sp.slice(0, 1) }), sp);
+    }));
+    var i = D.listenings.indexOf(L), nx = D.listenings[i + 1];
+    view("listening", h("div", { class: "ex-wrap" },
+      h("div", { class: "ex-head" }, backLink("#/listening", "Listenings"),
+        h("h1", null, L.titulo, h("span", { class: "zh", text: "第" + CN_NUM[L.tema] + "课" }))),
+      h("div", { class: "card q-card" },
+        h("div", { class: "note", style: "margin-bottom:12px" }, h("b", { text: "Situación: " }), L.escena),
+        persons,
+        player.el),
+      qb.el, trBox,
+      nx ? h("div", { class: "btn-row", style: "margin-top:20px;justify-content:flex-end" }, h("a", { class: "btn ghost", href: "#/listening/" + nx.id }, "Siguiente listening →")) : null));
+  }
+
+  // ----------------------------------------------------------------- lectura
+  var readLevel = 1;
+  function viewLecturas(level) {
+    if (level) readLevel = level;
+    var tabs = h("div", { class: "tabs" }, [1, 2].map(function (n) {
+      return h("button", { type: "button", class: "tab" + (readLevel === n ? " on" : ""), onclick: function () { viewLecturas(n); } },
+        h("span", { class: "brush", style: "font-size:30px;color:var(--red)", text: n === 1 ? "拼" : "汉" }),
+        h("span", null, "Nivel " + n, h("small", { text: n === 1 ? "Texto en pinyin" : "Texto en hanzi" })));
+    }));
+    var list = D.lecturas.filter(function (r) { return r.nivel === readLevel; });
+    view("lectura", h("div", null,
+      pageHead("阅读", "Comprensión lectora", "Lee el texto y toca (o haz clic en) cualquier palabra para ver su " + (readLevel === 1 ? "<b>hanzi</b>" : "<b>pinyin</b>") + " y su traducción. Luego responde a las <b>5 preguntas</b>."),
+      tabs,
+      h("div", { class: "grid g3" }, list.map(function (r) {
+        return exRow("#/lectura/" + r.id, CN_NUM[r.tema], r.titulo, "Tema " + r.tema + " · " + TEMA[r.tema].es, "R:" + r.id);
+      }))));
+  }
+
+  function runLectura(id) {
+    var R = READ[id]; if (!R) return viewLecturas();
+    readLevel = R.nivel;
+    var mode = R.nivel === 1 ? "py" : "zh";
+    var paras = tokensFromText(R.texto);
+    var titleTok = tokensFromText(R.titulo_zh)[0] || [];
+    var ruby = false;
+    var body = h("div", { class: "text-body lv" + R.nivel });
+    function paint() {
+      body.innerHTML = "";
+      paras.forEach(function (p) { add(body, h("p", null, renderWords(p, mode, ruby))); });
+    }
+    paint();
+    var trBox = h("div", { class: "hidden" }, h("div", { class: "card", style: "margin-top:18px" },
+      h("h3", { style: "margin:0 0 8px", text: "Traducción · 翻译" }), h("p", { style: "margin:0", text: R.es })));
+    var player = new Player({ id: R.id, label: "Texto completo", lines: paras.map(function (p) {
+      return { zh: p.map(function (t) { return t.p || t.w; }).join(""), v: R.tema % 2 ? "f2" : "m2" };
+    }) });
+    var listen = h("details", { style: "margin-top:16px" }, h("summary", { style: "cursor:pointer;font-weight:700;color:var(--ink-2)" }, "🔊 Escuchar el texto"), h("div", { style: "margin-top:10px" }, player.el));
+    var qb = questionsBlock(R.preguntas, function (p) { saveResult("R:" + id, p); if (p >= 80) burst(); trBox.classList.remove("hidden"); });
+    var same = D.lecturas.filter(function (r) { return r.nivel === R.nivel; });
+    var nx = same[same.indexOf(R) + 1];
+    view("lectura", h("div", { class: "ex-wrap" },
+      h("div", { class: "ex-head" }, backLink("#/lectura", "Lecturas"),
+        h("span", { class: "lang " + (R.nivel === 1 ? "py" : "es"), text: "Nivel " + R.nivel + (R.nivel === 1 ? " · pinyin" : " · hanzi") })),
+      h("article", { class: "card reading" },
+        h("h2", { text: R.titulo }),
+        h("div", { class: "ttl-zh " + (mode === "py" ? "py" : "zh"), style: "font-size:20px;color:var(--red)" }, renderWords(titleTok, mode)),
+        h("label", { class: "toggle", style: "margin-bottom:14px" }, h("input", { type: "checkbox", onchange: function (e) { ruby = e.target.checked; paint(); } }),
+          R.nivel === 1 ? "Mostrar hanzi encima" : "Mostrar pinyin encima"),
+        body, listen),
+      qb.el, trBox,
+      nx ? h("div", { class: "btn-row", style: "margin-top:20px;justify-content:flex-end" }, h("a", { class: "btn ghost", href: "#/lectura/" + nx.id }, "Siguiente lectura →")) : null));
+  }
+
+  // ------------------------------------------------------------- traducción
+  function trLevels() {
+    return [
+      { n: 1, t: "Pinyin → español", icon: "拼", from: "py", to: "es", d: "Lee la frase en pinyin y escríbela en español." },
+      { n: 2, t: "Español → pinyin", icon: "音", from: "es", to: "py", d: "Traduce al chino escribiendo en pinyin con tonos." },
+      { n: 3, t: "Hanzi → español", icon: "汉", from: "zh", to: "es", d: "Lee los caracteres y tradúcelos al español." },
+      { n: 4, t: "Español → hanzi", icon: "字", from: "es", to: "zh", d: "Construye la frase en hanzi con fichas o con el teclado chino." }
+    ];
+  }
+  var trSel = { tema: 0, nivel: 1 };
+  function viewTraduccion() {
+    var levels = trLevels();
+    var box = h("div");
+    function paint() {
+      box.innerHTML = "";
+      add(box, [
+        h("div", { class: "group-h", text: "1 · Elige el nivel" }),
+        h("div", { class: "grid g4" }, levels.map(function (L) {
+          return h("button", { type: "button", class: "tab" + (trSel.nivel === L.n ? " on" : ""), style: "width:100%", onclick: function () { trSel.nivel = L.n; paint(); } },
+            h("span", { class: "brush", style: "font-size:30px;color:var(--red)", text: L.icon }),
+            h("span", null, "Nivel " + L.n + " · " + L.t, h("small", { text: L.d })));
+        })),
+        h("div", { class: "group-h", text: "2 · Elige el tema" }),
+        h("div", { class: "grid g3" },
+          exRow("#/traduccion/0/" + trSel.nivel, "全", "Todo el curso (mezcla)", "10 frases al azar de los 15 temas", "T:0:" + trSel.nivel),
+          D.temas.map(function (t) {
+            return exRow("#/traduccion/" + t.n + "/" + trSel.nivel, CN_NUM[t.n], "Tema " + t.n + " · " + t.es, t.zh + " · " + t.frases.length + " frases", "T:" + t.n + ":" + trSel.nivel);
+          }))
+      ]);
+    }
+    paint();
+    view("traduccion", h("div", null,
+      pageHead("翻译", "Traducción", "Todas las frases del curso, organizadas por tema, en <b>cuatro niveles</b> de dificultad. En cada sesión salen hasta 10 frases del tema elegido."),
+      box));
+  }
+
+  function tileWords(zh) {
+    return segment(zh).filter(function (t) { return !t.p; }).map(function (t) { return t.w; });
+  }
+
+  function runTraduccion(tema, nivel, onlyIds) {
+    var L = trLevels()[nivel - 1]; if (!L) return viewTraduccion();
+    var pool = tema ? (TEMA[tema] ? TEMA[tema].frases : []) : [].concat.apply([], D.temas.map(function (t) { return t.frases; }));
+    // Frases de una sola sílaba o sin contenido no sirven para traducir al revés.
+    pool = pool.filter(function (f) { return C.parse(f.py).length >= 1; });
+    var items = onlyIds ? onlyIds.map(function (id) { return FRASE[id]; }) : shuffle(pool).slice(0, 10);
+    var idx = 0, results = [];
+    var wrap = h("div", { class: "ex-wrap" });
+    var title = tema ? "Tema " + tema + " · " + TEMA[tema].es : "Todo el curso";
+    view("traduccion", wrap);
+
+    function renderItem() {
+      var f = items[idx], checked = false, hinted = false;
+      var promptText = L.from === "py" ? f.py : L.from === "zh" ? f.zh : f.es[0];
+      var promptEl = h("div", { class: "big " + (L.from === "zh" ? "zh" : L.from === "py" ? "py" : "") });
+      if (L.from === "zh") add(promptEl, renderWords(segment(f.zh), "zh")); else promptEl.textContent = promptText;
+      var hintBox = h("div", { class: "muted", style: "min-height:1.4em;margin-top:8px;text-align:center" });
+      var getAnswer, answerEl, focusEl;
+      if (L.to === "es") {
+        var ta = h("textarea", { class: "inp", placeholder: "Escribe la traducción en español", "aria-label": "Traducción" });
+        ta.addEventListener("keydown", function (e) { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); checked ? next() : check(); } });
+        answerEl = ta; focusEl = ta; getAnswer = function () { return ta.value; };
+      } else if (L.to === "py") {
+        var pin = pinyinInput({ onEnter: function () { checked ? next() : check(); } });
+        answerEl = pin.el; focusEl = pin.input; getAnswer = function () { return pin.input.value; };
+      } else {
+        // fichas de hanzi o teclado
+        var words = tileWords(f.zh);
+        var distract = shuffle(uniq([].concat.apply([], (TEMA[f.tema].frases).map(function (o) { return tileWords(o.zh); }))).filter(function (w) { return words.indexOf(w) < 0; })).slice(0, 3);
+        var bankWords = shuffle(words.concat(distract));
+        var chosen = [];
+        var ansLine = h("div", { class: "tiles-answer", "aria-label": "Tu frase" });
+        var bank = h("div", { class: "tiles-bank" });
+        var kbInput = h("input", { class: "inp zh hidden", type: "text", placeholder: "Escribe con el teclado chino (pinyin → hanzi)", "aria-label": "Respuesta en hanzi" });
+        kbInput.addEventListener("keydown", function (e) { if (e.key === "Enter" && !e.isComposing) { e.preventDefault(); checked ? next() : check(); } });
+        var useKb = false;
+        var paintTiles = function () {
+          ansLine.innerHTML = ""; bank.innerHTML = "";
+          if (!chosen.length) add(ansLine, h("span", { class: "muted", style: "font-size:14px", text: "Toca las fichas en orden para formar la frase" }));
+          chosen.forEach(function (bi, k) {
+            add(ansLine, h("button", { type: "button", class: "tile", onclick: function () { if (checked) return; chosen.splice(k, 1); paintTiles(); } }, bankWords[bi]));
+          });
+          bankWords.forEach(function (w, bi) {
+            add(bank, h("button", { type: "button", class: "tile" + (chosen.indexOf(bi) >= 0 ? " used" : ""), onclick: function () { if (checked) return; chosen.push(bi); paintTiles(); } }, w));
+          });
+        };
+        paintTiles();
+        var tileWrap = h("div", null, ansLine, bank);
+        var kbToggle = h("button", { type: "button", class: "btn soft sm", style: "margin-top:12px", onclick: function () {
+          useKb = !useKb;
+          tileWrap.classList.toggle("hidden", useKb); kbInput.classList.toggle("hidden", !useKb);
+          this.lastChild.textContent = useKb ? "Usar fichas" : "Usar el teclado chino";
+          if (useKb) kbInput.focus();
+        } }, icon("keyboard", 16), h("span", { text: "Usar el teclado chino" }));
+        answerEl = h("div", null, tileWrap, kbInput, kbToggle);
+        focusEl = null;
+        getAnswer = function () { return useKb ? kbInput.value : chosen.map(function (bi) { return bankWords[bi]; }).join(""); };
+      }
+      var fbBox = h("div");
+      var checkBtn = h("button", { class: "btn", type: "button", onclick: function () { check(); } }, "Comprobar");
+      var hintBtn = h("button", { class: "btn soft sm", type: "button", onclick: function () {
+        hinted = true; hintBox.innerHTML = "";
+        if (L.from === "zh") add(hintBox, h("span", { class: "py", style: "font-size:18px;color:var(--ink)", text: f.py }));
+        else if (L.from === "py") add(hintBox, h("span", { class: "zh", style: "font-size:24px;color:var(--ink)" }, renderWords(segment(f.zh), "zh")), h("div", { style: "font-size:13px", text: "Toca cada hanzi para ver su significado" }));
+        else if (L.to === "py") add(hintBox, h("span", { class: "py", style: "font-size:18px;color:var(--ink)", text: f.py.split(/\s+/).map(function (w) { return w.charAt(0) + "…"; }).join(" ") }));
+        else add(hintBox, h("span", { class: "py", style: "font-size:18px;color:var(--ink)", text: f.py }));
+        add(hintBox, h("div", { style: "font-size:13px", text: "(con pista, la respuesta cuenta como media)" }));
+      } }, icon("bulb", 16), "Pista");
+      var dots = h("div", { class: "dots" }, items.map(function (_, i) { var r = results[i]; return h("i", { class: i === idx ? "cur" : r ? r.level : "" }); }));
+
+      function check() {
+        if (checked) return;
+        var ans = getAnswer();
+        if (!ans.trim()) { if (focusEl) focusEl.focus(); return; }
+        checked = true;
+        var r, marks = null;
+        if (L.to === "es") r = C.compareSpanish(ans, f.es);
+        else if (L.to === "py") {
+          var opts = [f.py].concat(f.altpy || []), bestR = null;
+          opts.forEach(function (o) { var x = C.comparePinyin(o, ans, ignoreTones()); if (!bestR || x.score > bestR.score) { bestR = x; bestR.exp = o; } });
+          r = bestR; marks = bestR.marks;
+        } else r = C.compareHanzi(ans, [f.zh].concat(f.altzh || []));
+        var score = hinted ? Math.min(r.score, 0.5) : r.score;
+        var level = levelOf(score);
+        results[idx] = { level: level, score: score, f: f, answer: ans };
+        var titles = {
+          es: { ok: "¡Bien traducido!", mid: "Parecido. Compara con la traducción y decide.", ko: "No coincide. Compara con la traducción." },
+          py: { ok: "¡Correcto!", mid: r.lettersOk ? "Las sílabas están bien, revisa los tonos." : "¡Casi! Revisa lo marcado.", ko: "No es correcto. Mira la frase correcta." },
+          zh: { ok: "¡Correcto! 对了！", mid: "¡Casi! Revisa el orden o algún carácter.", ko: "No es correcto. Mira la frase correcta." }
+        };
+        fbBox.innerHTML = "";
+        add(fbBox, h("div", { class: "fb " + level },
+          h("span", { class: "stamp", text: stampText(level) }),
+          h("h4", { text: titles[L.to][level] + (hinted ? " (con pista)" : "") }),
+          h("div", { class: "row" }, h("span", { class: "k", text: "Hanzi" }), h("div", { class: "v zh" }, renderWords(segment(f.zh), "zh"),
+            " ", h("button", { class: "icon-btn", style: "vertical-align:middle", type: "button", "aria-label": "Escuchar", onclick: function () { speakOnce(f.tts || f.zh, f.au); } }, icon("speaker", 16)))),
+          h("div", { class: "row" }, h("span", { class: "k", text: "Pinyin" }), h("div", { class: "v py" }, marks ? marksView(marks, ignoreTones()) : f.py)),
+          h("div", { class: "row" }, h("span", { class: "k", text: "Español" }), h("div", { class: "v", style: "font-size:17px", text: f.es.join("  /  ") })),
+          h("div", { class: "row" }, h("span", { class: "k", text: "Tu respuesta" }), h("div", { class: "v " + (L.to === "zh" ? "zh" : L.to === "py" ? "py" : ""), style: "font-size:16px", text: ans })),
+          level !== "ok" ? h("button", { class: "link-btn", type: "button", onclick: function () { results[idx].level = "ok"; results[idx].score = 1; this.textContent = "Marcada como correcta"; this.disabled = true; } }, "Mi respuesta también es correcta") : null));
+        checkBtn.textContent = idx + 1 < items.length ? "Siguiente →" : "Ver resultado";
+        checkBtn.onclick = next;
+        checkBtn.focus();
+      }
+      function next() { idx++; if (idx < items.length) renderItem(); else finish(); }
+
+      wrap.innerHTML = "";
+      add(wrap, [
+        h("div", { class: "ex-head" }, backLink("#/traduccion", "Traducción"), dots,
+          h("h1", null, "Nivel " + nivel + " · " + L.t, h("span", { class: "h1-sub", text: title }))),
+        h("div", { class: "card q-card" },
+          h("div", { class: "prompt" }, h("div", { class: "lbl", text: L.to === "es" ? "Traduce al español" : L.to === "py" ? "Tradúcelo al chino en pinyin" : "Tradúcelo al chino en hanzi" }), promptEl, hintBox),
+          answerEl,
+          h("div", { class: "btn-row", style: "margin-top:16px" }, checkBtn, hintBtn),
+          fbBox)
+      ]);
+      if (focusEl) focusEl.focus();
+    }
+    function finish() {
+      var total = results.reduce(function (s, r) { return s + r.score; }, 0);
+      var p = pct(total / items.length);
+      if (!onlyIds) saveResult("T:" + tema + ":" + nivel, p);
+      if (p >= 80) burst();
+      var wrong = results.filter(function (r) { return r.level !== "ok"; }).map(function (r) { return r.f.id; });
+      wrap.innerHTML = "";
+      add(wrap, [
+        h("div", { class: "ex-head" }, backLink("#/traduccion", "Traducción"), h("h1", null, "Nivel " + nivel + " · " + L.t, h("span", { class: "h1-sub", text: title }))),
+        h("div", { class: "card result" },
+          h("div", { class: "big-stamp", text: resultStamp(p) }),
+          h("div", { class: "pct", text: p + "%" }),
+          h("div", { class: "sub", text: resultMsg(p) }),
+          h("div", { class: "btn-row", style: "justify-content:center;margin-top:18px" },
+            wrong.length ? h("button", { class: "btn", type: "button", onclick: function () { runTraduccion(tema, nivel, wrong); } }, "Repetir los " + wrong.length + " fallos") : null,
+            h("button", { class: "btn ghost", type: "button", onclick: function () { runTraduccion(tema, nivel); } }, "Otras 10 frases"),
+            nivel < 4 ? h("a", { class: "btn soft", href: "#/traduccion/" + tema + "/" + (nivel + 1) }, "Subir al nivel " + (nivel + 1)) : null),
+          h("div", { class: "review" }, results.map(function (r) {
+            return h("div", { class: "it" }, h("span", { class: "m " + r.level, text: r.level === "ok" ? "✓" : r.level === "mid" ? "~" : "✗" }),
+              h("div", null, h("div", { class: "zh", text: r.f.zh }), h("div", { class: "py", text: r.f.py }), h("div", { class: "muted", style: "font-size:14px", text: r.f.es[0] }),
+                r.level !== "ok" ? h("div", { class: "muted", style: "font-size:14px", text: "Tú: " + r.answer }) : null));
+          })))
+      ]);
+    }
+    if (!items.length) return viewTraduccion();
+    renderItem();
+  }
+  function uniq(a) { return a.filter(function (x, i) { return a.indexOf(x) === i; }); }
+
+  // ------------------------------------------------------------ vocabulario
+  function viewVocab() {
+    var q = h("input", { class: "inp search", type: "search", placeholder: "Buscar: hanzi, pinyin o español", "aria-label": "Buscar" });
+    var box = h("div");
+    function paint() {
+      var s = q.value.trim().toLowerCase(), sp = C.stripMarks(s);
+      box.innerHTML = "";
+      D.temas.forEach(function (t) {
+        var words = Object.keys(D.dic).filter(function (w) {
+          var d = D.dic[w];
+          if (d[2] !== t.n) return false;
+          if (!s) return true;
+          return w.indexOf(s) >= 0 || C.stripMarks(d[0].toLowerCase()).replace(/\s/g, "").indexOf(sp.replace(/\s/g, "")) >= 0 || d[1].toLowerCase().indexOf(s) >= 0;
+        });
+        if (!words.length) return;
+        add(box, [h("div", { class: "group-h", text: "Tema " + t.n + " · " + t.es }),
+          h("div", { class: "card", style: "padding:6px 14px" }, h("table", { class: "vocab-t" }, h("tbody", null, words.map(function (w) {
+            var d = D.dic[w];
+            return h("tr", { style: "cursor:pointer", onclick: function () { speakOnce(w, wordAudioId(w)); } },
+              h("td", { class: "zh", text: w }), h("td", { class: "py", text: d[0] }), h("td", { text: d[1] }),
+              h("td", { style: "width:1%" }, icon("speaker", 16)));
+          }))))]);
+      });
+      if (!box.children.length) add(box, h("p", { class: "muted", text: "No hay resultados." }));
+    }
+    q.addEventListener("input", paint);
+    paint();
+    view("vocabulario", h("div", null,
+      pageHead("词语", "Vocabulario", "Todas las palabras del curso por tema. Toca una fila para oírla."),
+      q, box));
+  }
+
+  // ---------------------------------------------------------------- ajustes
+  function viewAjustes() {
+    function radio(name, val, title, sub) {
+      return h("label", { class: "opt" }, h("input", { type: "radio", name: name, checked: S.settings[name] === val, onchange: function () { S.settings[name] = val; persist(); if (name === "theme") applyTheme(); } }),
+        h("span", null, h("b", { text: title }), sub ? h("small", { text: sub }) : null));
+    }
+    TTS.load();
+    var voiceSel = h("select", { class: "inp", style: "font-size:16px", onchange: function (e) { S.settings.voice = e.target.value; persist(); } },
+      h("option", { value: "", text: "Automática" }),
+      TTS.voices.map(function (v) { return h("option", { value: v.name, selected: S.settings.voice === v.name, text: v.name + " (" + v.lang + ")" }); }));
+    var rec = manifest() ? Object.keys(manifest()).length : 0;
+    view("ajustes", h("div", { class: "settings" },
+      pageHead("设置", "Ajustes", "Se guardan en este navegador."),
+      h("div", { class: "grid g3" },
+        h("div", { class: "card" }, h("h3", { text: "Tonos" }),
+          radio("tones", "cuentan", "Los tonos cuentan", "Un tono mal = respuesta a medias (recomendado)."),
+          radio("tones", "ignorar", "Ignorar los tonos", "Solo se corrigen las letras. Los tonos se marcan, pero no restan.")),
+        h("div", { class: "card" }, h("h3", { text: "Velocidad por defecto" }),
+          SPEEDS.map(function (sp) { return radio("speed", sp.k, sp.es + " · " + sp.zh, null); })),
+        h("div", { class: "card" }, h("h3", { text: "Escribir pinyin" }),
+          h("label", { class: "toggle" }, h("input", { type: "checkbox", checked: S.settings.autoTone, onchange: function (e) { S.settings.autoTone = e.target.checked; persist(); } }),
+            "Convertir números en tonos al escribir (hao3 → hǎo, v → ü)")),
+        h("div", { class: "card" }, h("h3", { text: "Aspecto" }),
+          radio("theme", "auto", "Automático", "Como el sistema"), radio("theme", "light", "Claro", null), radio("theme", "dark", "Oscuro", null)),
+        h("div", { class: "card" }, h("h3", { text: "Voz" }),
+          h("p", { class: "muted", style: "margin:0;font-size:14px", text: rec ? "Hay " + rec + " audios grabados con voces nativas: se usan siempre que existen." : "Aún no hay audios grabados: se usa la voz del navegador." }),
+          h("label", null, h("div", { class: "muted", style: "font-size:13px;margin-bottom:4px", text: "Voz del navegador (para lo que no esté grabado)" }), voiceSel),
+          h("button", { class: "btn soft sm", type: "button", onclick: function () { speakOnce("你好！我叫李月，我是中国人。"); } }, icon("speaker", 16), "Probar la voz")),
+        h("div", { class: "card" }, h("h3", { text: "Progreso" }),
+          h("p", { class: "muted", style: "margin:0;font-size:14px", text: Object.keys(S.progress).length + " ejercicios hechos." }),
+          h("button", { class: "btn ghost sm", type: "button", onclick: function () {
+            if (confirm("¿Borrar todo el progreso guardado en este navegador?")) { S.progress = {}; persist(); viewAjustes(); }
+          } }, "Borrar el progreso")))));
+  }
+
+  // ======================================================================
+  // rutas
+  // ======================================================================
+  function route() {
+    var parts = (location.hash.replace(/^#\/?/, "") || "").split("/");
+    var r = parts[0];
+    if (r === "temas" || location.hash === "#temas") { viewHome(); var el = document.getElementById("temas"); if (el) el.scrollIntoView(); return; }
+    if (r === "dictado") return parts[1] ? runDictado(parts[1]) : viewDictados();
+    if (r === "listening") return parts[1] ? runListening(parts[1]) : viewListenings();
+    if (r === "lectura") return parts[1] ? runLectura(parts[1]) : viewLecturas();
+    if (r === "traduccion") return parts[1] !== undefined && parts[2] ? runTraduccion(+parts[1], +parts[2]) : viewTraduccion();
+    if (r === "tema") return viewTema(+parts[1]);
+    if (r === "vocabulario") return viewVocab();
+    if (r === "ajustes") return viewAjustes();
+    viewHome();
+  }
+  window.addEventListener("hashchange", route);
+  document.querySelector(".menu-btn").addEventListener("click", function () { document.querySelector(".nav").classList.toggle("open"); });
+  document.querySelector(".menu-btn").appendChild(icon("menu", 24));
+
+  // pétalos de ciruelo
+  (function petals() {
+    if (window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    var box = document.querySelector(".petals");
+    for (var i = 0; i < 9; i++) {
+      box.appendChild(h("span", { class: "petal", style: "left:" + (Math.random() * 100) + "%;animation-duration:" + (14 + Math.random() * 14) + "s;animation-delay:-" + (Math.random() * 20) + "s;--dx:" + (40 + Math.random() * 120) + "px;transform:scale(" + (0.6 + Math.random() * 0.6) + ")" }));
+    }
+  })();
+
+  route();
+})();

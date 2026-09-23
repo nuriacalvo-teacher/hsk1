@@ -1,0 +1,69 @@
+# Dictados temáticos (además de los de frases y vocabulario de cada tema)
+# Formato igual que frases.txt:
+#   # id | título en chino | título en español
+#   hanzi | pinyin | español [| tts=… ]
+
+# numeros | 数字 | Números del 0 al 99
+十一 | shíyī | once
+二十八 | èrshíbā | veintiocho
+三十五 | sānshíwǔ | treinta y cinco
+四十七 | sìshíqī | cuarenta y siete
+五十 | wǔshí | cincuenta
+六十九 | liùshíjiǔ | sesenta y nueve
+七十二 | qīshí'èr | setenta y dos
+八十八 | bāshíbā | ochenta y ocho
+九十六 | jiǔshíliù | noventa y seis
+十四 | shísì | catorce
+三十三 | sānshísān | treinta y tres
+九十九 | jiǔshíjiǔ | noventa y nueve
+
+# edades | 年龄 | Edades
+我今年十九岁。 | Wǒ jīnnián shíjiǔ suì. | Este año tengo diecinueve años.
+我女儿六岁了。 | Wǒ nǚ'ér liù suì le. | Mi hija tiene seis años.
+李老师今年四十五岁。 | Lǐ lǎoshī jīnnián sìshíwǔ suì. | La profesora Li tiene cuarenta y cinco años este año.
+我爸爸七十岁了。 | Wǒ bàba qīshí suì le. | Mi padre tiene setenta años.
+他儿子今年十二岁。 | Tā érzi jīnnián shí'èr suì. | Su hijo tiene doce años este año.
+你妈妈多大了？ | Nǐ māma duō dà le? | ¿Cuántos años tiene tu madre?
+她今年六十三岁了。 | Tā jīnnián liùshísān suì le. | Este año tiene sesenta y tres años.
+大卫二十二岁，是学生。 | Dàwèi èrshí'èr suì, shì xuésheng. | David tiene veintidós años y es estudiante.
+
+# precios | 多少钱 | Precios
+这个杯子九块。 | Zhège bēizi jiǔ kuài. | Esta taza cuesta nueve yuanes.
+那本书三十五块。 | Nà běn shū sānshíwǔ kuài. | Ese libro cuesta treinta y cinco yuanes.
+苹果多少钱？ | Píngguǒ duōshao qián? | ¿Cuánto cuestan las manzanas?
+米饭三块钱。 | Mǐfàn sān kuài qián. | El arroz cuesta tres yuanes.
+这个菜四十八块。 | Zhège cài sìshíbā kuài. | Este plato cuesta cuarenta y ocho yuanes.
+茶十二块，水三块。 | Chá shí'èr kuài, shuǐ sān kuài. | El té cuesta doce yuanes y el agua, tres.
+这些衣服九十九块。 | Zhèxiē yīfu jiǔshíjiǔ kuài. | Esta ropa cuesta noventa y nueve yuanes.
+这个杯子十六块钱。 | Zhège bēizi shíliù kuài qián. | Esta taza cuesta dieciséis yuanes.
+
+# fechas | 日期 | Fechas y días de la semana
+今天三月八号。 | Jīntiān sān yuè bā hào. | Hoy es ocho de marzo.
+明天星期五。 | Míngtiān xīngqīwǔ. | Mañana es viernes.
+昨天是十二月二十五号。 | Zuótiān shì shí'èr yuè èrshíwǔ hào. | Ayer fue veinticinco de diciembre.
+今天是六月一号，星期一。 | Jīntiān shì liù yuè yī hào, xīngqīyī. | Hoy es uno de junio, lunes.
+我星期六去北京。 | Wǒ xīngqīliù qù Běijīng. | El sábado voy a Pekín.
+十月一号是星期几？ | Shí yuè yī hào shì xīngqījǐ? | ¿Qué día de la semana es el uno de octubre?
+我们星期天去看电影。 | Wǒmen xīngqītiān qù kàn diànyǐng. | El domingo vamos a ver una película.
+他七月十四号回来。 | Tā qī yuè shísì hào huílai. | Vuelve el catorce de julio.
+今天二月二十八号，星期三。 | Jīntiān èr yuè èrshíbā hào, xīngqīsān. | Hoy es veintiocho de febrero, miércoles.
+我是二零零三年四月十一号来中国的。 | Wǒ shì èr líng líng sān nián sì yuè shíyī hào lái Zhōngguó de. | Vine a China el once de abril de 2003.
+
+# horas | 几点 | La hora
+现在八点。 | Xiànzài bā diǎn. | Son las ocho.
+现在上午九点十五分。 | Xiànzài shàngwǔ jiǔ diǎn shíwǔ fēn. | Son las nueve y cuarto de la mañana.
+中午十二点吃饭。 | Zhōngwǔ shí'èr diǎn chī fàn. | Comemos a las doce del mediodía.
+下午三点四十分。 | Xiàwǔ sān diǎn sìshí fēn. | Las tres y cuarenta de la tarde.
+我七点三十分去学校。 | Wǒ qī diǎn sānshí fēn qù xuéxiào. | Voy a la escuela a las siete y media.
+我们六点五分去看电影。 | Wǒmen liù diǎn wǔ fēn qù kàn diànyǐng. | Vamos a ver la película a las seis y cinco.
+爸爸下午五点五十分回家。 | Bàba xiàwǔ wǔ diǎn wǔshí fēn huí jiā. | Papá vuelve a casa a las cinco y cincuenta de la tarde.
+你几点睡觉？ | Nǐ jǐ diǎn shuì jiào? | ¿A qué hora te acuestas?
+我十一点睡觉。 | Wǒ shíyī diǎn shuì jiào. | Me acuesto a las once.
+飞机十点二十分来。 | Fēijī shí diǎn èrshí fēn lái. | El avión llega a las diez y veinte.
+
+# telefonos | 电话 | Números de teléfono
+我的电话是六二八五三零一九。 | Wǒ de diànhuà shì liù èr bā wǔ sān líng yāo jiǔ. | Mi teléfono es el 62853019. | tts=我的电话是六二八五三零幺九。
+李老师的电话是八九零七四四二六。 | Lǐ lǎoshī de diànhuà shì bā jiǔ líng qī sì sì èr liù. | El teléfono de la profesora Li es el 89074426.
+医院的电话是多少？ | Yīyuàn de diànhuà shì duōshao? | ¿Cuál es el teléfono del hospital?
+五九三一六八零二。 | Wǔ jiǔ sān yāo liù bā líng èr. | 59316802. | tts=五九三幺六八零二。
+请给我打电话：七七三五一二零八。 | Qǐng gěi wǒ dǎ diànhuà: qī qī sān wǔ yāo èr líng bā. | Llámame, por favor: 77351208. | tts=请给我打电话：七七三五幺二零八。

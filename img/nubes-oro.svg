@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300" fill="none" stroke="#ffd978" stroke-width="2.4" stroke-linecap="round">
+  <g transform="translate(20 30)">
+    <path d="M0 40 q0 -22 22 -22 q4 -18 24 -18 q22 0 26 20 q18 0 18 18 q0 16 -16 16 H14 q-14 0 -14 -14z"/>
+    <path d="M30 34 q0 -10 10 -10 q10 0 10 10 q0 6 -6 6"/>
+    <path d="M58 30 q8 -2 10 6"/>
+  </g>
+  <g transform="translate(170 160) scale(.9)">
+    <path d="M0 40 q0 -22 22 -22 q4 -18 24 -18 q22 0 26 20 q18 0 18 18 q0 16 -16 16 H14 q-14 0 -14 -14z"/>
+    <path d="M30 34 q0 -10 10 -10 q10 0 10 10 q0 6 -6 6"/>
+  </g>
+  <!-- rombo de celosía -->
+  <path d="M230 40 l14 14 l-14 14 l-14 -14z"/>
+  <path d="M60 220 l10 10 l-10 10 l-10 -10z"/>
+</svg>

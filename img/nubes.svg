@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="420" viewBox="0 0 420 420" fill="none" stroke="#b8322a" stroke-opacity="0.07" stroke-width="2" stroke-linecap="round">
+  <!-- 祥云 · nubes auspiciosas -->
+  <g transform="translate(40 60)">
+    <path d="M0 40 q0 -22 22 -22 q4 -18 24 -18 q22 0 26 20 q18 0 18 18 q0 16 -16 16 H14 q-14 0 -14 -14z"/>
+    <path d="M30 34 q0 -10 10 -10 q10 0 10 10 q0 6 -6 6"/>
+    <path d="M58 30 q8 -2 10 6"/>
+  </g>
+  <g transform="translate(250 210) scale(.8)">
+    <path d="M0 40 q0 -22 22 -22 q4 -18 24 -18 q22 0 26 20 q18 0 18 18 q0 16 -16 16 H14 q-14 0 -14 -14z"/>
+    <path d="M30 34 q0 -10 10 -10 q10 0 10 10 q0 6 -6 6"/>
+  </g>
+  <g transform="translate(90 300) scale(.6)">
+    <path d="M0 40 q0 -22 22 -22 q4 -18 24 -18 q22 0 26 20 q18 0 18 18 q0 16 -16 16 H14 q-14 0 -14 -14z"/>
+    <path d="M30 34 q0 -10 10 -10 q10 0 10 10 q0 6 -6 6"/>
+  </g>
+  <circle cx="330" cy="70" r="3" fill="#c9a227" fill-opacity=".12" stroke="none"/>
+  <circle cx="200" cy="140" r="2" fill="#c9a227" fill-opacity=".12" stroke="none"/>
+  <circle cx="370" cy="360" r="2.5" fill="#c9a227" fill-opacity=".12" stroke="none"/>
+</svg>

@@ -1,0 +1,1808 @@
+[
+ {
+  "id": "L01a",
+  "tema": 1,
+  "titulo": "Primer día de clase",
+  "escena": "La profesora Li entra en el aula el primer día de clase.",
+  "personajes": {
+   "李老师": "f",
+   "大卫": "m",
+   "李月": "f"
+  },
+  "lineas": [
+   {
+    "sp": "李老师",
+    "zh": "你们好！",
+    "py": "Nǐmen hǎo!",
+    "es": "¡Hola a todos!"
+   },
+   {
+    "sp": "大卫",
+    "zh": "老师好！",
+    "py": "Lǎoshī hǎo!",
+    "es": "¡Hola, profesora!"
+   },
+   {
+    "sp": "李老师",
+    "zh": "你好！你叫什么名字？",
+    "py": "Nǐ hǎo! Nǐ jiào shénme míngzi?",
+    "es": "¡Hola! ¿Cómo te llamas?"
+   },
+   {
+    "sp": "大卫",
+    "zh": "我叫大卫，我是美国人。",
+    "py": "Wǒ jiào Dàwèi, wǒ shì Měiguó rén.",
+    "es": "Me llamo David, soy estadounidense."
+   },
+   {
+    "sp": "李月",
+    "zh": "对不起，老师！",
+    "py": "Duìbuqǐ, lǎoshī!",
+    "es": "¡Perdón, profesora!"
+   },
+   {
+    "sp": "李老师",
+    "zh": "没关系。你是学生吗？",
+    "py": "Méi guānxi. Nǐ shì xuésheng ma?",
+    "es": "No pasa nada. ¿Eres estudiante?"
+   },
+   {
+    "sp": "李月",
+    "zh": "是，我是学生，我叫李月。",
+    "py": "Shì, wǒ shì xuésheng, wǒ jiào Lǐ Yuè.",
+    "es": "Sí, soy estudiante, me llamo Li Yue."
+   },
+   {
+    "sp": "李老师",
+    "zh": "李月，你是中国人吗？",
+    "py": "Lǐ Yuè, nǐ shì Zhōngguó rén ma?",
+    "es": "Li Yue, ¿eres china?"
+   },
+   {
+    "sp": "李月",
+    "zh": "是，我是中国人。",
+    "py": "Shì, wǒ shì Zhōngguó rén.",
+    "es": "Sí, soy china."
+   }
+  ],
+  "preguntas": [
+   {
+    "q": "¿Qué dice la profesora para saludar a toda la clase?",
+    "lang": "py",
+    "a": [
+     "nǐmen hǎo"
+    ],
+    "r": "Nǐmen hǎo! · 你们好！(¡Hola a todos!)"
+   },
+   {
+    "q": "¿De qué país es David?",
+    "lang": "es",
+    "a": [
+     "Estados Unidos",
+     "estadounidense",
+     "americano"
+    ],
+    "r": "De Estados Unidos: es estadounidense (我是美国人)."
+   },
+   {
+    "q": "¿Quién le pide perdón a la profesora?",
+    "lang": "py",
+    "a": [
+     "Lǐ Yuè"
+    ],
+    "r": "Lǐ Yuè · 李月 (对不起，老师！)."
+   },
+   {
+    "q": "¿Qué le contesta la profesora?",
+    "lang": "py",
+    "a": [
+     "méi guānxi"
+    ],
+    "r": "Méi guānxi · 没关系 (no pasa nada)."
+   },
+   {
+    "q": "¿Li Yue es profesora o estudiante?",
+    "lang": "es",
+    "a": [
+     "estudiante",
+     "alumna"
+    ],
+    "r": "Es estudiante (我是学生)."
+   }
+  ]
+ },
+ {
+  "id": "L01b",
+  "tema": 1,
+  "titulo": "¿Es usted profesor?",
+  "escena": "David ve a un chico en la puerta del aula y se acerca a saludarlo.",
+  "personajes": {
+   "大卫": "m",
+   "谢朋": "m",
+   "王老师": "f"
+  },
+  "lineas": [
+   {
+    "sp": "大卫",
+    "zh": "您好！您是老师吗？",
+    "py": "Nín hǎo! Nín shì lǎoshī ma?",
+    "es": "¡Hola! ¿Es usted profesor?"
+   },
+   {
+    "sp": "谢朋",
+    "zh": "你好！我不是老师，我是学生。",
+    "py": "Nǐ hǎo! Wǒ bú shì lǎoshī, wǒ shì xuésheng.",
+    "es": "¡Hola! No soy profesor, soy estudiante."
+   },
+   {
+    "sp": "大卫",
+    "zh": "对不起！",
+    "py": "Duìbuqǐ!",
+    "es": "¡Perdón!"
+   },
+   {
+    "sp": "谢朋",
+    "zh": "没关系。我叫谢朋，我是中国人。你叫什么名字？",
+    "py": "Méi guānxi. Wǒ jiào Xiè Péng, wǒ shì Zhōngguó rén. Nǐ jiào shénme míngzi?",
+    "es": "No pasa nada. Me llamo Xie Peng, soy chino. ¿Cómo te llamas?"
+   },
+   {
+    "sp": "大卫",
+    "zh": "我叫大卫，我是美国人。",
+    "py": "Wǒ jiào Dàwèi, wǒ shì Měiguó rén.",
+    "es": "Me llamo David, soy estadounidense."
+   },
+   {
+    "sp": "王老师",
+    "zh": "你们好！我是王老师。",
+    "py": "Nǐmen hǎo! Wǒ shì Wáng lǎoshī.",
+    "es": "¡Hola, chicos! Soy la profesora Wang."
+   },
+   {
+    "sp": "谢朋",
+    "zh": "王老师，您好！",
+    "py": "Wáng lǎoshī, nín hǎo!",
+    "es": "¡Buenos días, profesora Wang!"
+   },
+   {
+    "sp": "大卫",
+    "zh": "老师好！",
+    "py": "Lǎoshī hǎo!",
+    "es": "¡Hola, profesora!"
+   }
+  ],
+  "preguntas": [
+   {
+    "q": "¿Qué cree David al principio que es el chico?",
+    "lang": "es",
+    "a": [
+     "profesor"
+    ],
+    "r": "Cree que es profesor (您是老师吗？), pero es estudiante."
+   },
+   {
+    "q": "¿Qué dice David cuando se da cuenta de su error?",
+    "lang": "py",
+    "a": [
+     "duìbuqǐ"
+    ],
+    "r": "Duìbuqǐ! · 对不起！(¡Perdón!)"
+   },
+   {
+    "q": "¿Cómo se llama el chico?",
+    "lang": "py",
+    "a": [
+     "Xiè Péng"
+    ],
+    "r": "Xiè Péng · 谢朋."
+   },
+   {
+    "q": "¿De qué país es el chico?",
+    "lang": "es",
+    "a": [
+     "China",
+     "chino"
+    ],
+    "r": "Es chino (我是中国人)."
+   },
+   {
+    "q": "¿Cómo se llama la profesora que llega al final?",
+    "lang": "py",
+    "a": [
+     "Wáng"
+    ],
+    "r": "Wáng lǎoshī · 王老师 (la profesora Wang)."
+   }
+  ]
+ },
+ {
+  "id": "L02a",
+  "tema": 2,
+  "titulo": "Gracias y hasta luego",
+  "escena": "Al terminar la clase, David habla con la profesora Li y luego sale del aula.",
+  "personajes": {
+   "大卫": "m",
+   "李老师": "f",
+   "王方": "f"
+  },
+  "lineas": [
+   {
+    "sp": "大卫",
+    "zh": "李老师，谢谢您！",
+    "py": "Lǐ lǎoshī, xièxie nín!",
+    "es": "¡Profesora Li, muchas gracias!"
+   },
+   {
+    "sp": "李老师",
+    "zh": "不客气！再见！",
+    "py": "Bú kèqi! Zàijiàn!",
+    "es": "¡No hay de qué! ¡Adiós!"
+   },
+   {
+    "sp": "大卫",
+    "zh": "老师再见！",
+    "py": "Lǎoshī zàijiàn!",
+    "es": "¡Adiós, profesora!"
+   },
+   {
+    "sp": "王方",
+    "zh": "对不起！",
+    "py": "Duìbuqǐ!",
+    "es": "¡Perdón!"
+   },
+   {
+    "sp": "大卫",
+    "zh": "没关系。你是学生吗？",
+    "py": "Méi guānxi. Nǐ shì xuésheng ma?",
+    "es": "No pasa nada. ¿Eres estudiante?"
+   },
+   {
+    "sp": "王方",
+    "zh": "是，我是学生，我叫王方。你是中国人吗？",
+    "py": "Shì, wǒ shì xuésheng, wǒ jiào Wáng Fāng. Nǐ shì Zhōngguó rén ma?",
+    "es": "Sí, soy estudiante, me llamo Wang Fang. ¿Eres chino?"
+   },
+   {
+    "sp": "大卫",
+    "zh": "不是，我是美国人，我叫大卫。",
+    "py": "Bú shì, wǒ shì Měiguó rén, wǒ jiào Dàwèi.",
+    "es": "No, soy estadounidense, me llamo David."
+   },
+   {
+    "sp": "王方",
+    "zh": "大卫，再见！",
+    "py": "Dàwèi, zàijiàn!",
+    "es": "¡Adiós, David!"
+   },
+   {
+    "sp": "大卫",
+    "zh": "再见！",
+    "py": "Zàijiàn!",
+    "es": "¡Adiós!"
+   }
+  ],
+  "preguntas": [
+   {
+    "q": "¿Qué responde la profesora cuando David le da las gracias?",
+    "lang": "py",
+    "a": [
+     "bú kèqi"
+    ],
+    "r": "Bú kèqi! · 不客气！(¡No hay de qué!)"
+   },
+   {
+    "q": "¿Quién le pide perdón a David?",
+    "lang": "py",
+    "a": [
+     "Wáng Fāng"
+    ],
+    "r": "Wáng Fāng · 王方 (对不起！)."
+   },
+   {
+    "q": "¿Wang Fang es profesora o estudiante?",
+    "lang": "es",
+    "a": [
+     "estudiante",
+     "alumna"
+    ],
+    "r": "Es estudiante (我是学生)."
+   },
+   {
+    "q": "¿Es chino David? ¿De dónde es?",
+    "lang": "es",
+    "a": [
+     "Estados Unidos",
+     "estadounidense",
+     "americano"
+    ],
+    "r": "No, es estadounidense (我是美国人)."
+   },
+   {
+    "q": "¿Qué palabra usan para despedirse?",
+    "lang": "py",
+    "a": [
+     "zàijiàn"
+    ],
+    "r": "Zàijiàn! · 再见！(¡Adiós!)"
+   }
+  ]
+ },
+ {
+  "id": "L02b",
+  "tema": 2,
+  "titulo": "Buscando a la profesora",
+  "escena": "Li Xin busca a su profesora el primer día y pregunta a un señor en la puerta de la escuela.",
+  "personajes": {
+   "李心": "f",
+   "张先生": "m",
+   "王老师": "f"
+  },
+  "lineas": [
+   {
+    "sp": "李心",
+    "zh": "您好！您是王老师吗？",
+    "py": "Nín hǎo! Nín shì Wáng lǎoshī ma?",
+    "es": "¡Hola! ¿Es usted el profesor Wang?"
+   },
+   {
+    "sp": "张先生",
+    "zh": "不是，我不是老师。",
+    "py": "Bú shì, wǒ bú shì lǎoshī.",
+    "es": "No, no soy profesor."
+   },
+   {
+    "sp": "李心",
+    "zh": "对不起！",
+    "py": "Duìbuqǐ!",
+    "es": "¡Perdone!"
+   },
+   {
+    "sp": "张先生",
+    "zh": "没关系。",
+    "py": "Méi guānxi.",
+    "es": "No pasa nada."
+   },
+   {
+    "sp": "王老师",
+    "zh": "你好！我是王老师。你叫什么名字？",
+    "py": "Nǐ hǎo! Wǒ shì Wáng lǎoshī. Nǐ jiào shénme míngzi?",
+    "es": "¡Hola! Soy la profesora Wang. ¿Cómo te llamas?"
+   },
+   {
+    "sp": "李心",
+    "zh": "王老师好！我叫李心。",
+    "py": "Wáng lǎoshī hǎo! Wǒ jiào Lǐ Xīn.",
+    "es": "¡Hola, profesora Wang! Me llamo Li Xin."
+   },
+   {
+    "sp": "王老师",
+    "zh": "李心，你好！",
+    "py": "Lǐ Xīn, nǐ hǎo!",
+    "es": "¡Hola, Li Xin!"
+   },
+   {
+    "sp": "李心",
+    "zh": "谢谢您！再见！",
+    "py": "Xièxie nín! Zàijiàn!",
+    "es": "(Al señor) ¡Muchas gracias! ¡Adiós!"
+   },
+   {
+    "sp": "张先生",
+    "zh": "不谢！再见！",
+    "py": "Bú xiè! Zàijiàn!",
+    "es": "¡De nada! ¡Adiós!"
+   }
+  ],
+  "preguntas": [
+   {
+    "q": "¿A quién busca Li Xin?",
+    "lang": "py",
+    "a": [
+     "Wáng lǎoshī"
+    ],
+    "r": "Busca a Wáng lǎoshī · 王老师 (la profesora Wang)."
+   },
+   {
+    "q": "¿Es profesor el señor al que pregunta?",
+    "lang": "es",
+    "a": [
+     "no"
+    ],
+    "r": "No, no es profesor (我不是老师)."
+   },
+   {
+    "q": "¿Cómo se llama la estudiante?",
+    "lang": "py",
+    "a": [
+     "Lǐ Xīn"
+    ],
+    "r": "Lǐ Xīn · 李心."
+   },
+   {
+    "q": "¿Qué le dice Li Xin al señor antes de despedirse?",
+    "lang": "es",
+    "a": [
+     "gracias"
+    ],
+    "r": "Le da las gracias (谢谢您！) y se despide (再见！)."
+   },
+   {
+    "q": "¿Qué le contesta el señor?",
+    "lang": "py",
+    "a": [
+     "bú xiè"
+    ],
+    "r": "Bú xiè! · 不谢！(¡De nada!)"
+   }
+  ]
+ },
+ {
+  "id": "L03a",
+  "tema": 3,
+  "titulo": "¿Estudiante o profesor?",
+  "escena": "Xie Peng conoce a un chico extranjero en la cafetería de la escuela.",
+  "personajes": {
+   "谢朋": "m",
+   "大卫": "m",
+   "王方": "f"
+  },
+  "lineas": [
+   {
+    "sp": "谢朋",
+    "zh": "你好！我叫谢朋。你叫什么名字？",
+    "py": "Nǐ hǎo! Wǒ jiào Xiè Péng. Nǐ jiào shénme míngzi?",
+    "es": "¡Hola! Me llamo Xie Peng. ¿Cómo te llamas?"
+   },
+   {
+    "sp": "大卫",
+    "zh": "你好，我叫大卫。",
+    "py": "Nǐ hǎo, wǒ jiào Dàwèi.",
+    "es": "Hola, me llamo David."
+   },
+   {
+    "sp": "谢朋",
+    "zh": "大卫，你是美国人吗？",
+    "py": "Dàwèi, nǐ shì Měiguó rén ma?",
+    "es": "David, ¿eres estadounidense?"
+   },
+   {
+    "sp": "大卫",
+    "zh": "是，我是美国人。你是中国人吗？",
+    "py": "Shì, wǒ shì Měiguó rén. Nǐ shì Zhōngguó rén ma?",
+    "es": "Sí, soy estadounidense. ¿Tú eres chino?"
+   },
+   {
+    "sp": "谢朋",
+    "zh": "是，我是中国人，我是学生。你是学生吗？",
+    "py": "Shì, wǒ shì Zhōngguó rén, wǒ shì xuésheng. Nǐ shì xuésheng ma?",
+    "es": "Sí, soy chino y soy estudiante. ¿Tú eres estudiante?"
+   },
+   {
+    "sp": "大卫",
+    "zh": "我不是学生，我是老师。",
+    "py": "Wǒ bú shì xuésheng, wǒ shì lǎoshī.",
+    "es": "No soy estudiante, soy profesor."
+   },
+   {
+    "sp": "谢朋",
+    "zh": "您是老师！对不起！",
+    "py": "Nín shì lǎoshī! Duìbuqǐ!",
+    "es": "¡Es usted profesor! ¡Perdone!"
+   },
+   {
+    "sp": "大卫",
+    "zh": "没关系。",
+    "py": "Méi guānxi.",
+    "es": "No pasa nada."
+   },
+   {
+    "sp": "王方",
+    "zh": "大卫老师，您好！",
+    "py": "Dàwèi lǎoshī, nín hǎo!",
+    "es": "¡Hola, profesor David!"
+   },
+   {
+    "sp": "大卫",
+    "zh": "你好，王方！",
+    "py": "Nǐ hǎo, Wáng Fāng!",
+    "es": "¡Hola, Wang Fang!"
+   }
+  ],
+  "preguntas": [
+   {
+    "q": "¿Cómo se llama el chico que empieza la conversación?",
+    "lang": "py",
+    "a": [
+     "Xiè Péng"
+    ],
+    "r": "Xiè Péng · 谢朋."
+   },
+   {
+    "q": "¿De qué país es Xie Peng?",
+    "lang": "es",
+    "a": [
+     "China",
+     "chino"
+    ],
+    "r": "Es chino (我是中国人)."
+   },
+   {
+    "q": "¿David es estudiante? ¿Qué es?",
+    "lang": "es",
+    "a": [
+     "profesor"
+    ],
+    "r": "No, es profesor (我不是学生，我是老师)."
+   },
+   {
+    "q": "¿Qué dice Xie Peng al saber lo que es David?",
+    "lang": "py",
+    "a": [
+     "duìbuqǐ"
+    ],
+    "r": "Duìbuqǐ! · 对不起！(¡Perdone!)"
+   },
+   {
+    "q": "¿Cómo se llama la chica que saluda a David?",
+    "lang": "py",
+    "a": [
+     "Wáng Fāng"
+    ],
+    "r": "Wáng Fāng · 王方."
+   }
+  ]
+ },
+ {
+  "id": "L03b",
+  "tema": 3,
+  "titulo": "La profesora pasa lista",
+  "escena": "La profesora Wang conoce a sus nuevos estudiantes en la primera clase.",
+  "personajes": {
+   "王老师": "f",
+   "李心": "f",
+   "大卫": "m"
+  },
+  "lineas": [
+   {
+    "sp": "王老师",
+    "zh": "你们好！我是王老师。你是李月吗？",
+    "py": "Nǐmen hǎo! Wǒ shì Wáng lǎoshī. Nǐ shì Lǐ Yuè ma?",
+    "es": "¡Hola a todos! Soy la profesora Wang. ¿Tú eres Li Yue?"
+   },
+   {
+    "sp": "李心",
+    "zh": "不是，我不是李月，我叫李心。",
+    "py": "Bú shì, wǒ bú shì Lǐ Yuè, wǒ jiào Lǐ Xīn.",
+    "es": "No, no soy Li Yue, me llamo Li Xin."
+   },
+   {
+    "sp": "王老师",
+    "zh": "对不起，李心！你是中国人吗？",
+    "py": "Duìbuqǐ, Lǐ Xīn! Nǐ shì Zhōngguó rén ma?",
+    "es": "¡Perdona, Li Xin! ¿Eres china?"
+   },
+   {
+    "sp": "李心",
+    "zh": "是，我是中国人。",
+    "py": "Shì, wǒ shì Zhōngguó rén.",
+    "es": "Sí, soy china."
+   },
+   {
+    "sp": "王老师",
+    "zh": "你好！你叫什么名字？",
+    "py": "Nǐ hǎo! Nǐ jiào shénme míngzi?",
+    "es": "¡Hola! ¿Cómo te llamas?"
+   },
+   {
+    "sp": "大卫",
+    "zh": "老师好！我叫大卫。",
+    "py": "Lǎoshī hǎo! Wǒ jiào Dàwèi.",
+    "es": "¡Hola, profesora! Me llamo David."
+   },
+   {
+    "sp": "王老师",
+    "zh": "大卫，你是美国人吗？",
+    "py": "Dàwèi, nǐ shì Měiguó rén ma?",
+    "es": "David, ¿eres estadounidense?"
+   },
+   {
+    "sp": "大卫",
+    "zh": "是，我是美国人。",
+    "py": "Shì, wǒ shì Měiguó rén.",
+    "es": "Sí, soy estadounidense."
+   }
+  ],
+  "preguntas": [
+   {
+    "q": "¿Cómo se llama la profesora?",
+    "lang": "py",
+    "a": [
+     "Wáng lǎoshī"
+    ],
+    "r": "Wáng lǎoshī · 王老师 (la profesora Wang)."
+   },
+   {
+    "q": "¿Con qué nombre llama la profesora a la chica por error?",
+    "lang": "py",
+    "a": [
+     "Lǐ Yuè"
+    ],
+    "r": "La llama Lǐ Yuè · 李月."
+   },
+   {
+    "q": "¿Cómo se llama de verdad la chica?",
+    "lang": "py",
+    "a": [
+     "Lǐ Xīn"
+    ],
+    "r": "Lǐ Xīn · 李心."
+   },
+   {
+    "q": "¿Quién pide perdón en este diálogo?",
+    "lang": "es",
+    "a": [
+     "profesora",
+     "Wang"
+    ],
+    "r": "La profesora Wang (对不起，李心！)."
+   },
+   {
+    "q": "¿De qué país es David?",
+    "lang": "es",
+    "a": [
+     "Estados Unidos",
+     "estadounidense",
+     "americano"
+    ],
+    "r": "De Estados Unidos: es estadounidense (我是美国人)."
+   }
+  ]
+ },
+ {
+  "id": "L04a",
+  "tema": 4,
+  "titulo": "¿Quién es ella?",
+  "escena": "David y Wang Fang ven a dos personas en el patio de la escuela.",
+  "personajes": {
+   "大卫": "m",
+   "王方": "f"
+  },
+  "lineas": [
+   {
+    "sp": "大卫",
+    "zh": "王方，她是谁？",
+    "py": "Wáng Fāng, tā shì shéi?",
+    "es": "Wang Fang, ¿quién es ella?"
+   },
+   {
+    "sp": "王方",
+    "zh": "她是我的同学，她叫李月。",
+    "py": "Tā shì wǒ de tóngxué, tā jiào Lǐ Yuè.",
+    "es": "Es mi compañera de clase, se llama Li Yue."
+   },
+   {
+    "sp": "大卫",
+    "zh": "她是哪国人？",
+    "py": "Tā shì nǎ guó rén?",
+    "es": "¿De qué país es?"
+   },
+   {
+    "sp": "王方",
+    "zh": "她是中国人。",
+    "py": "Tā shì Zhōngguó rén.",
+    "es": "Es china."
+   },
+   {
+    "sp": "大卫",
+    "zh": "他呢？他是你同学吗？",
+    "py": "Tā ne? Tā shì nǐ tóngxué ma?",
+    "es": "¿Y él? ¿Es tu compañero de clase?"
+   },
+   {
+    "sp": "王方",
+    "zh": "他不是我同学，他是我朋友，他叫谢朋。",
+    "py": "Tā bú shì wǒ tóngxué, tā shì wǒ péngyou, tā jiào Xiè Péng.",
+    "es": "No es mi compañero, es mi amigo, se llama Xie Peng."
+   },
+   {
+    "sp": "大卫",
+    "zh": "他是学生吗？",
+    "py": "Tā shì xuésheng ma?",
+    "es": "¿Es estudiante?"
+   },
+   {
+    "sp": "王方",
+    "zh": "不是，他是汉语老师。",
+    "py": "Bú shì, tā shì Hànyǔ lǎoshī.",
+    "es": "No, es profesor de chino."
+   }
+  ],
+  "preguntas": [
+   {
+    "q": "¿Qué es la chica para Wang Fang?",
+    "lang": "es",
+    "a": [
+     "compañera"
+    ],
+    "r": "Es su compañera de clase (她是我的同学)."
+   },
+   {
+    "q": "¿Cómo se llama la chica?",
+    "lang": "py",
+    "a": [
+     "Lǐ Yuè"
+    ],
+    "r": "Lǐ Yuè · 李月."
+   },
+   {
+    "q": "¿Qué es el chico para Wang Fang?",
+    "lang": "es",
+    "a": [
+     "amigo"
+    ],
+    "r": "Es su amigo, no su compañero (他是我朋友)."
+   },
+   {
+    "q": "¿Cómo se llama el chico?",
+    "lang": "py",
+    "a": [
+     "Xiè Péng"
+    ],
+    "r": "Xiè Péng · 谢朋."
+   },
+   {
+    "q": "¿A qué se dedica el chico?",
+    "lang": "es",
+    "a": [
+     "profesor"
+    ],
+    "r": "Es profesor de chino (他是汉语老师)."
+   }
+  ]
+ },
+ {
+  "id": "L04b",
+  "tema": 4,
+  "titulo": "La amiga de David",
+  "escena": "David se encuentra con su profesora de chino cuando va con una amiga.",
+  "personajes": {
+   "大卫": "m",
+   "李老师": "f",
+   "李心": "f"
+  },
+  "lineas": [
+   {
+    "sp": "大卫",
+    "zh": "李老师，您好！",
+    "py": "Lǐ lǎoshī, nín hǎo!",
+    "es": "¡Hola, profesora Li!"
+   },
+   {
+    "sp": "李老师",
+    "zh": "你好，大卫！她是谁？",
+    "py": "Nǐ hǎo, Dàwèi! Tā shì shéi?",
+    "es": "¡Hola, David! ¿Quién es ella?"
+   },
+   {
+    "sp": "大卫",
+    "zh": "她是我的朋友，她叫李心。",
+    "py": "Tā shì wǒ de péngyou, tā jiào Lǐ Xīn.",
+    "es": "Es mi amiga, se llama Li Xin."
+   },
+   {
+    "sp": "李老师",
+    "zh": "李心，你好！你是大卫的同学吗？",
+    "py": "Lǐ Xīn, nǐ hǎo! Nǐ shì Dàwèi de tóngxué ma?",
+    "es": "¡Hola, Li Xin! ¿Eres compañera de clase de David?"
+   },
+   {
+    "sp": "李心",
+    "zh": "不是，我不是学生，我是老师。",
+    "py": "Bú shì, wǒ bú shì xuésheng, wǒ shì lǎoshī.",
+    "es": "No, no soy estudiante, soy profesora."
+   },
+   {
+    "sp": "李老师",
+    "zh": "你是哪国人？",
+    "py": "Nǐ shì nǎ guó rén?",
+    "es": "¿De qué país eres?"
+   },
+   {
+    "sp": "李心",
+    "zh": "我是中国人。您呢？",
+    "py": "Wǒ shì Zhōngguó rén. Nín ne?",
+    "es": "Soy china. ¿Y usted?"
+   },
+   {
+    "sp": "李老师",
+    "zh": "我是中国人，我是大卫的汉语老师。",
+    "py": "Wǒ shì Zhōngguó rén, wǒ shì Dàwèi de Hànyǔ lǎoshī.",
+    "es": "Soy china, soy la profesora de chino de David."
+   }
+  ],
+  "preguntas": [
+   {
+    "q": "¿Qué es Li Xin para David?",
+    "lang": "es",
+    "a": [
+     "amiga"
+    ],
+    "r": "Es su amiga (她是我的朋友)."
+   },
+   {
+    "q": "¿Cómo se llama la amiga de David?",
+    "lang": "py",
+    "a": [
+     "Lǐ Xīn"
+    ],
+    "r": "Lǐ Xīn · 李心."
+   },
+   {
+    "q": "¿Li Xin es estudiante o profesora?",
+    "lang": "es",
+    "a": [
+     "profesora"
+    ],
+    "r": "Es profesora (我不是学生，我是老师)."
+   },
+   {
+    "q": "¿De qué país es Li Xin?",
+    "lang": "py",
+    "a": [
+     "Zhōngguó"
+    ],
+    "r": "Zhōngguó rén · 中国人 (es china)."
+   },
+   {
+    "q": "¿Qué es la profesora Li para David?",
+    "lang": "py",
+    "a": [
+     "Hànyǔ lǎoshī"
+    ],
+    "r": "Tā shì Dàwèi de Hànyǔ lǎoshī · 她是大卫的汉语老师 (su profesora de chino)."
+   }
+  ]
+ },
+ {
+  "id": "L05a",
+  "tema": 5,
+  "titulo": "Las hijas de la profesora Li",
+  "escena": "La profesora Li le enseña a David una foto de su familia.",
+  "personajes": {
+   "大卫": "m",
+   "李老师": "f"
+  },
+  "lineas": [
+   {
+    "sp": "大卫",
+    "zh": "李老师，您家有几口人？",
+    "py": "Lǐ lǎoshī, nín jiā yǒu jǐ kǒu rén?",
+    "es": "Profesora Li, ¿cuántas personas hay en su familia?"
+   },
+   {
+    "sp": "李老师",
+    "zh": "我家有四口人。",
+    "py": "Wǒ jiā yǒu sì kǒu rén.",
+    "es": "En mi familia somos cuatro."
+   },
+   {
+    "sp": "大卫",
+    "zh": "她是谁？",
+    "py": "Tā shì shéi?",
+    "es": "¿Quién es ella?"
+   },
+   {
+    "sp": "李老师",
+    "zh": "她是我女儿，她叫李月。",
+    "py": "Tā shì wǒ nǚ'ér, tā jiào Lǐ Yuè.",
+    "es": "Es mi hija, se llama Li Yue."
+   },
+   {
+    "sp": "大卫",
+    "zh": "李月今年多大了？",
+    "py": "Lǐ Yuè jīnnián duō dà le?",
+    "es": "¿Cuántos años tiene Li Yue?"
+   },
+   {
+    "sp": "李老师",
+    "zh": "她今年二十二岁了，她是学生。",
+    "py": "Tā jīnnián èrshí'èr suì le, tā shì xuésheng.",
+    "es": "Este año cumple veintidós, es estudiante."
+   },
+   {
+    "sp": "大卫",
+    "zh": "她呢？",
+    "py": "Tā ne?",
+    "es": "¿Y ella?"
+   },
+   {
+    "sp": "李老师",
+    "zh": "她是我女儿李心，她今年九岁了。",
+    "py": "Tā shì wǒ nǚ'ér Lǐ Xīn, tā jīnnián jiǔ suì le.",
+    "es": "Es mi hija Li Xin, este año cumple nueve."
+   },
+   {
+    "sp": "大卫",
+    "zh": "李老师，您今年多大了？",
+    "py": "Lǐ lǎoshī, nín jīnnián duō dà le?",
+    "es": "Profesora Li, ¿y usted cuántos años tiene?"
+   },
+   {
+    "sp": "李老师",
+    "zh": "我今年四十八岁了。",
+    "py": "Wǒ jīnnián sìshíbā suì le.",
+    "es": "Este año cumplo cuarenta y ocho."
+   }
+  ],
+  "preguntas": [
+   {
+    "q": "¿Cuántas personas hay en la familia de la profesora Li?",
+    "lang": "py",
+    "a": [
+     "sì kǒu"
+    ],
+    "r": "Sì kǒu rén · 四口人 (cuatro personas)."
+   },
+   {
+    "q": "¿Cómo se llama la hija mayor?",
+    "lang": "py",
+    "a": [
+     "Lǐ Yuè"
+    ],
+    "r": "Lǐ Yuè · 李月."
+   },
+   {
+    "q": "¿Cuántos años tiene Li Yue?",
+    "lang": "es",
+    "a": [
+     "veintidós",
+     "22"
+    ],
+    "r": "Veintidós años (二十二岁)."
+   },
+   {
+    "q": "¿Cuántos años tiene Li Xin?",
+    "lang": "es",
+    "a": [
+     "nueve",
+     "9"
+    ],
+    "r": "Nueve años (九岁)."
+   },
+   {
+    "q": "¿Cuántos años tiene la profesora Li?",
+    "lang": "py",
+    "a": [
+     "sìshíbā"
+    ],
+    "r": "Sìshíbā suì · 四十八岁 (cuarenta y ocho años)."
+   }
+  ]
+ },
+ {
+  "id": "L05b",
+  "tema": 5,
+  "titulo": "¿Cuántos sois en casa?",
+  "escena": "Xie Peng y Wang Fang charlan sobre sus familias antes de clase.",
+  "personajes": {
+   "王方": "f",
+   "谢朋": "m"
+  },
+  "lineas": [
+   {
+    "sp": "王方",
+    "zh": "谢朋，你家有几口人？",
+    "py": "Xiè Péng, nǐ jiā yǒu jǐ kǒu rén?",
+    "es": "Xie Peng, ¿cuántas personas hay en tu familia?"
+   },
+   {
+    "sp": "谢朋",
+    "zh": "我家有三口人。你家呢？",
+    "py": "Wǒ jiā yǒu sān kǒu rén. Nǐ jiā ne?",
+    "es": "En mi familia somos tres. ¿Y en la tuya?"
+   },
+   {
+    "sp": "王方",
+    "zh": "我家有六口人。",
+    "py": "Wǒ jiā yǒu liù kǒu rén.",
+    "es": "En mi familia somos seis."
+   },
+   {
+    "sp": "谢朋",
+    "zh": "六口人！你今年多大了？",
+    "py": "Liù kǒu rén! Nǐ jīnnián duō dà le?",
+    "es": "¡Seis! ¿Cuántos años tienes?"
+   },
+   {
+    "sp": "王方",
+    "zh": "我今年十九岁。你呢？",
+    "py": "Wǒ jīnnián shíjiǔ suì. Nǐ ne?",
+    "es": "Tengo diecinueve años. ¿Y tú?"
+   },
+   {
+    "sp": "谢朋",
+    "zh": "我今年二十一岁了。",
+    "py": "Wǒ jīnnián èrshíyī suì le.",
+    "es": "Este año cumplo veintiuno."
+   },
+   {
+    "sp": "王方",
+    "zh": "李老师有女儿吗？",
+    "py": "Lǐ lǎoshī yǒu nǚ'ér ma?",
+    "es": "¿La profesora Li tiene una hija?"
+   },
+   {
+    "sp": "谢朋",
+    "zh": "有，她女儿今年三岁了。",
+    "py": "Yǒu, tā nǚ'ér jīnnián sān suì le.",
+    "es": "Sí, su hija tiene tres años."
+   },
+   {
+    "sp": "王方",
+    "zh": "李老师今年多大了？",
+    "py": "Lǐ lǎoshī jīnnián duō dà le?",
+    "es": "¿Cuántos años tiene la profesora Li?"
+   },
+   {
+    "sp": "谢朋",
+    "zh": "她今年三十五岁。",
+    "py": "Tā jīnnián sānshíwǔ suì.",
+    "es": "Tiene treinta y cinco años."
+   }
+  ],
+  "preguntas": [
+   {
+    "q": "¿Cuántas personas hay en la familia de Xie Peng?",
+    "lang": "es",
+    "a": [
+     "tres",
+     "3"
+    ],
+    "r": "Tres (我家有三口人)."
+   },
+   {
+    "q": "¿Cuántas personas hay en la familia de Wang Fang?",
+    "lang": "py",
+    "a": [
+     "liù kǒu"
+    ],
+    "r": "Liù kǒu rén · 六口人 (seis personas)."
+   },
+   {
+    "q": "¿Cuántos años tiene Wang Fang?",
+    "lang": "es",
+    "a": [
+     "diecinueve",
+     "19"
+    ],
+    "r": "Diecinueve años (十九岁)."
+   },
+   {
+    "q": "¿Cuántos años tiene Xie Peng?",
+    "lang": "py",
+    "a": [
+     "èrshíyī"
+    ],
+    "r": "Èrshíyī suì · 二十一岁 (veintiún años)."
+   },
+   {
+    "q": "¿Cuántos años tiene la profesora Li?",
+    "lang": "es",
+    "a": [
+     "treinta y cinco",
+     "35"
+    ],
+    "r": "Treinta y cinco años (三十五岁)."
+   }
+  ]
+ },
+ {
+  "id": "L06a",
+  "tema": 6,
+  "titulo": "¿Cómo se lee este carácter?",
+  "escena": "David y Li Yue hablan de comida china mientras estudian juntos.",
+  "personajes": {
+   "大卫": "m",
+   "李月": "f"
+  },
+  "lineas": [
+   {
+    "sp": "大卫",
+    "zh": "李月，中国菜好吃吗？",
+    "py": "Lǐ Yuè, Zhōngguó cài hǎochī ma?",
+    "es": "Li Yue, ¿está rica la comida china?"
+   },
+   {
+    "sp": "李月",
+    "zh": "中国菜很好吃！你会做中国菜吗？",
+    "py": "Zhōngguó cài hěn hǎochī! Nǐ huì zuò Zhōngguó cài ma?",
+    "es": "¡La comida china está muy rica! ¿Sabes cocinar comida china?"
+   },
+   {
+    "sp": "大卫",
+    "zh": "我不会做。你会做吗？",
+    "py": "Wǒ bú huì zuò. Nǐ huì zuò ma?",
+    "es": "No sé. ¿Y tú?"
+   },
+   {
+    "sp": "李月",
+    "zh": "我不会，我妈妈会做。",
+    "py": "Wǒ bú huì, wǒ māma huì zuò.",
+    "es": "Yo no, mi madre sí sabe."
+   },
+   {
+    "sp": "大卫",
+    "zh": "李月，这个字怎么读？",
+    "py": "Lǐ Yuè, zhège zì zěnme dú?",
+    "es": "Li Yue, ¿cómo se lee este carácter?"
+   },
+   {
+    "sp": "李月",
+    "zh": "这个字读“菜”，中国菜的菜。",
+    "py": "Zhège zì dú “cài”, Zhōngguó cài de cài.",
+    "es": "Este carácter se lee «cài», el cài de «comida china»."
+   },
+   {
+    "sp": "大卫",
+    "zh": "你会写这个字吗？",
+    "py": "Nǐ huì xiě zhège zì ma?",
+    "es": "¿Sabes escribir este carácter?"
+   },
+   {
+    "sp": "李月",
+    "zh": "会，我会写。你会写汉字吗？",
+    "py": "Huì, wǒ huì xiě. Nǐ huì xiě Hànzì ma?",
+    "es": "Sí, sé escribirlo. ¿Tú sabes escribir caracteres chinos?"
+   },
+   {
+    "sp": "大卫",
+    "zh": "我会说汉语，不会写汉字。",
+    "py": "Wǒ huì shuō Hànyǔ, bú huì xiě Hànzì.",
+    "es": "Sé hablar chino, pero no sé escribir caracteres."
+   }
+  ],
+  "preguntas": [
+   {
+    "q": "¿Qué opina Li Yue de la comida china?",
+    "lang": "es",
+    "a": [
+     "rica",
+     "buena",
+     "deliciosa",
+     "riquísima",
+     "buenísima"
+    ],
+    "r": "Que está muy rica (中国菜很好吃)."
+   },
+   {
+    "q": "¿Quién sabe cocinar comida china en la familia de Li Yue?",
+    "lang": "es",
+    "a": [
+     "madre",
+     "mamá"
+    ],
+    "r": "Su madre (我妈妈会做)."
+   },
+   {
+    "q": "¿Cómo se lee el carácter que pregunta David?",
+    "lang": "py",
+    "a": [
+     "cài"
+    ],
+    "r": "Cài · 菜, como en Zhōngguó cài (comida china)."
+   },
+   {
+    "q": "¿Sabe Li Yue escribir ese carácter?",
+    "lang": "es",
+    "a": [
+     "sí"
+    ],
+    "r": "Sí (会，我会写)."
+   },
+   {
+    "q": "¿Qué dice David que no sabe hacer?",
+    "lang": "py",
+    "a": [
+     "xiě Hànzì"
+    ],
+    "r": "Bú huì xiě Hànzì · 不会写汉字 (no sabe escribir caracteres chinos)."
+   }
+  ]
+ },
+ {
+  "id": "L06b",
+  "tema": 6,
+  "titulo": "La madre de David",
+  "escena": "En clase, la profesora Wang hace preguntas a David y a Wang Fang.",
+  "personajes": {
+   "王老师": "f",
+   "大卫": "m",
+   "王方": "f"
+  },
+  "lineas": [
+   {
+    "sp": "王老师",
+    "zh": "大卫，你会写汉字吗？",
+    "py": "Dàwèi, nǐ huì xiě Hànzì ma?",
+    "es": "David, ¿sabes escribir caracteres chinos?"
+   },
+   {
+    "sp": "大卫",
+    "zh": "会，我会写。",
+    "py": "Huì, wǒ huì xiě.",
+    "es": "Sí, sé escribirlos."
+   },
+   {
+    "sp": "王老师",
+    "zh": "你会写“口”吗？",
+    "py": "Nǐ huì xiě “kǒu” ma?",
+    "es": "¿Sabes escribir «kǒu»?"
+   },
+   {
+    "sp": "大卫",
+    "zh": "会，这个字我会写。",
+    "py": "Huì, zhège zì wǒ huì xiě.",
+    "es": "Sí, este carácter sé escribirlo."
+   },
+   {
+    "sp": "王老师",
+    "zh": "你妈妈会说汉语吗？",
+    "py": "Nǐ māma huì shuō Hànyǔ ma?",
+    "es": "¿Tu madre sabe hablar chino?"
+   },
+   {
+    "sp": "大卫",
+    "zh": "会，我妈妈是汉语老师。",
+    "py": "Huì, wǒ māma shì Hànyǔ lǎoshī.",
+    "es": "Sí, mi madre es profesora de chino."
+   },
+   {
+    "sp": "王老师",
+    "zh": "她会做中国菜吗？",
+    "py": "Tā huì zuò Zhōngguó cài ma?",
+    "es": "¿Sabe cocinar comida china?"
+   },
+   {
+    "sp": "大卫",
+    "zh": "她不会做。",
+    "py": "Tā bú huì zuò.",
+    "es": "No, no sabe."
+   },
+   {
+    "sp": "王方",
+    "zh": "大卫，你会做中国菜吗？",
+    "py": "Dàwèi, nǐ huì zuò Zhōngguó cài ma?",
+    "es": "David, ¿tú sabes cocinar comida china?"
+   },
+   {
+    "sp": "大卫",
+    "zh": "我不会。王方，你会做吗？",
+    "py": "Wǒ bú huì. Wáng Fāng, nǐ huì zuò ma?",
+    "es": "Yo no. Wang Fang, ¿tú sabes?"
+   },
+   {
+    "sp": "王方",
+    "zh": "我会做，我会做很多中国菜！",
+    "py": "Wǒ huì zuò, wǒ huì zuò hěn duō Zhōngguó cài!",
+    "es": "Sí, ¡sé cocinar muchos platos chinos!"
+   }
+  ],
+  "preguntas": [
+   {
+    "q": "¿Qué carácter le pregunta la profesora a David si sabe escribir?",
+    "lang": "py",
+    "a": [
+     "kǒu"
+    ],
+    "r": "Kǒu · 口."
+   },
+   {
+    "q": "¿Sabe hablar chino la madre de David?",
+    "lang": "es",
+    "a": [
+     "sí"
+    ],
+    "r": "Sí (会)."
+   },
+   {
+    "q": "¿En qué trabaja la madre de David?",
+    "lang": "es",
+    "a": [
+     "profesora"
+    ],
+    "r": "Es profesora de chino (我妈妈是汉语老师)."
+   },
+   {
+    "q": "¿Sabe la madre de David cocinar comida china?",
+    "lang": "es",
+    "a": [
+     "no"
+    ],
+    "r": "No (她不会做)."
+   },
+   {
+    "q": "¿Quién sabe cocinar muchos platos chinos?",
+    "lang": "py",
+    "a": [
+     "Wáng Fāng"
+    ],
+    "r": "Wáng Fāng · 王方 (我会做很多中国菜！)."
+   }
+  ]
+ },
+ {
+  "id": "L07a",
+  "tema": 7,
+  "titulo": "Mañana es sábado",
+  "escena": "Xie Peng le pregunta la fecha a Li Xin a la salida de clase.",
+  "personajes": {
+   "谢朋": "m",
+   "李心": "f"
+  },
+  "lineas": [
+   {
+    "sp": "谢朋",
+    "zh": "李心，请问，今天几号？",
+    "py": "Lǐ Xīn, qǐngwèn, jīntiān jǐ hào?",
+    "es": "Li Xin, perdona, ¿a qué día estamos hoy?"
+   },
+   {
+    "sp": "李心",
+    "zh": "今天十月八号。",
+    "py": "Jīntiān shí yuè bā hào.",
+    "es": "Hoy es ocho de octubre."
+   },
+   {
+    "sp": "谢朋",
+    "zh": "今天星期几？",
+    "py": "Jīntiān xīngqījǐ?",
+    "es": "¿Qué día de la semana es hoy?"
+   },
+   {
+    "sp": "李心",
+    "zh": "今天星期五。",
+    "py": "Jīntiān xīngqīwǔ.",
+    "es": "Hoy es viernes."
+   },
+   {
+    "sp": "谢朋",
+    "zh": "明天星期六，你去学校吗？",
+    "py": "Míngtiān xīngqīliù, nǐ qù xuéxiào ma?",
+    "es": "Mañana es sábado, ¿vas a la escuela?"
+   },
+   {
+    "sp": "李心",
+    "zh": "我去学校。",
+    "py": "Wǒ qù xuéxiào.",
+    "es": "Sí, voy a la escuela."
+   },
+   {
+    "sp": "谢朋",
+    "zh": "你去学校做什么？",
+    "py": "Nǐ qù xuéxiào zuò shénme?",
+    "es": "¿Qué vas a hacer en la escuela?"
+   },
+   {
+    "sp": "李心",
+    "zh": "我去学校看书。你呢？",
+    "py": "Wǒ qù xuéxiào kàn shū. Nǐ ne?",
+    "es": "Voy a leer a la escuela. ¿Y tú?"
+   },
+   {
+    "sp": "谢朋",
+    "zh": "我不去学校，我去朋友家。",
+    "py": "Wǒ bú qù xuéxiào, wǒ qù péngyou jiā.",
+    "es": "Yo no voy a la escuela, voy a casa de un amigo."
+   },
+   {
+    "sp": "李心",
+    "zh": "你朋友是谁？",
+    "py": "Nǐ péngyou shì shéi?",
+    "es": "¿Quién es tu amigo?"
+   },
+   {
+    "sp": "谢朋",
+    "zh": "他叫大卫，他是美国人。",
+    "py": "Tā jiào Dàwèi, tā shì Měiguó rén.",
+    "es": "Se llama David, es estadounidense."
+   }
+  ],
+  "preguntas": [
+   {
+    "q": "¿Qué fecha es hoy?",
+    "lang": "py",
+    "a": [
+     "shí yuè bā hào"
+    ],
+    "r": "Shí yuè bā hào · 十月八号 (ocho de octubre)."
+   },
+   {
+    "q": "¿Qué día de la semana es hoy?",
+    "lang": "es",
+    "a": [
+     "viernes"
+    ],
+    "r": "Viernes (星期五)."
+   },
+   {
+    "q": "¿Qué va a hacer Li Xin mañana en la escuela?",
+    "lang": "es",
+    "a": [
+     "leer",
+     "estudiar"
+    ],
+    "r": "Va a leer (看书)."
+   },
+   {
+    "q": "¿Adónde va Xie Peng mañana?",
+    "lang": "es",
+    "a": [
+     "casa amigo"
+    ],
+    "r": "A casa de un amigo (我去朋友家)."
+   },
+   {
+    "q": "¿Cómo se llama el amigo de Xie Peng?",
+    "lang": "py",
+    "a": [
+     "Dàwèi"
+    ],
+    "r": "Dàwèi · 大卫."
+   }
+  ]
+ },
+ {
+  "id": "L07b",
+  "tema": 7,
+  "titulo": "Domingo en casa",
+  "escena": "Una madre y su hija hablan por la mañana en casa.",
+  "personajes": {
+   "女儿": "f",
+   "妈妈": "f"
+  },
+  "lineas": [
+   {
+    "sp": "女儿",
+    "zh": "妈妈，今天几号？",
+    "py": "Māma, jīntiān jǐ hào?",
+    "es": "Mamá, ¿a qué día estamos hoy?"
+   },
+   {
+    "sp": "妈妈",
+    "zh": "今天五月二十号。",
+    "py": "Jīntiān wǔ yuè èrshí hào.",
+    "es": "Hoy es veinte de mayo."
+   },
+   {
+    "sp": "女儿",
+    "zh": "今天星期几？",
+    "py": "Jīntiān xīngqījǐ?",
+    "es": "¿Qué día de la semana es?"
+   },
+   {
+    "sp": "妈妈",
+    "zh": "今天星期日。",
+    "py": "Jīntiān xīngqīrì.",
+    "es": "Hoy es domingo."
+   },
+   {
+    "sp": "女儿",
+    "zh": "星期日！我去同学家看书。",
+    "py": "Xīngqīrì! Wǒ qù tóngxué jiā kàn shū.",
+    "es": "¡Domingo! Voy a casa de una compañera a leer."
+   },
+   {
+    "sp": "妈妈",
+    "zh": "你同学叫什么名字？",
+    "py": "Nǐ tóngxué jiào shénme míngzi?",
+    "es": "¿Cómo se llama tu compañera?"
+   },
+   {
+    "sp": "女儿",
+    "zh": "她叫王方。",
+    "py": "Tā jiào Wáng Fāng.",
+    "es": "Se llama Wang Fang."
+   },
+   {
+    "sp": "妈妈",
+    "zh": "明天星期一，你去学校吗？",
+    "py": "Míngtiān xīngqīyī, nǐ qù xuéxiào ma?",
+    "es": "Mañana es lunes, ¿vas a la escuela?"
+   },
+   {
+    "sp": "女儿",
+    "zh": "去，明天我去学校。妈妈再见！",
+    "py": "Qù, míngtiān wǒ qù xuéxiào. Māma zàijiàn!",
+    "es": "Sí, mañana voy a la escuela. ¡Adiós, mamá!"
+   },
+   {
+    "sp": "妈妈",
+    "zh": "再见！",
+    "py": "Zàijiàn!",
+    "es": "¡Adiós!"
+   }
+  ],
+  "preguntas": [
+   {
+    "q": "¿Qué fecha es hoy?",
+    "lang": "py",
+    "a": [
+     "wǔ yuè èrshí hào"
+    ],
+    "r": "Wǔ yuè èrshí hào · 五月二十号 (veinte de mayo)."
+   },
+   {
+    "q": "¿Qué día de la semana es hoy?",
+    "lang": "es",
+    "a": [
+     "domingo"
+    ],
+    "r": "Domingo (星期日)."
+   },
+   {
+    "q": "¿Adónde va hoy la hija?",
+    "lang": "es",
+    "a": [
+     "casa compañera",
+     "casa compañero",
+     "casa amiga"
+    ],
+    "r": "A casa de una compañera de clase, a leer (我去同学家看书)."
+   },
+   {
+    "q": "¿Cómo se llama la compañera?",
+    "lang": "py",
+    "a": [
+     "Wáng Fāng"
+    ],
+    "r": "Wáng Fāng · 王方."
+   },
+   {
+    "q": "¿Va la hija a la escuela mañana?",
+    "lang": "es",
+    "a": [
+     "sí"
+    ],
+    "r": "Sí, mañana es lunes y va a la escuela (去，明天我去学校)."
+   }
+  ]
+ },
+ {
+  "id": "L08a",
+  "tema": 8,
+  "titulo": "En la tienda de tazas",
+  "escena": "Wang Fang entra en la tienda del señor Zhang.",
+  "personajes": {
+   "王方": "f",
+   "张先生": "m"
+  },
+  "lineas": [
+   {
+    "sp": "王方",
+    "zh": "您好！请问，这个杯子多少钱？",
+    "py": "Nín hǎo! Qǐngwèn, zhège bēizi duōshao qián?",
+    "es": "¡Buenos días! Perdone, ¿cuánto cuesta esta taza?"
+   },
+   {
+    "sp": "张先生",
+    "zh": "这个杯子三十五块。",
+    "py": "Zhège bēizi sānshíwǔ kuài.",
+    "es": "Esta taza cuesta treinta y cinco yuanes."
+   },
+   {
+    "sp": "王方",
+    "zh": "那个杯子呢？",
+    "py": "Nàge bēizi ne?",
+    "es": "¿Y esa taza?"
+   },
+   {
+    "sp": "张先生",
+    "zh": "那个杯子十六块钱。",
+    "py": "Nàge bēizi shíliù kuài qián.",
+    "es": "Esa taza cuesta dieciséis yuanes."
+   },
+   {
+    "sp": "王方",
+    "zh": "我想买那个杯子。",
+    "py": "Wǒ xiǎng mǎi nàge bēizi.",
+    "es": "Quiero comprar esa taza."
+   },
+   {
+    "sp": "张先生",
+    "zh": "好。你想买茶吗？",
+    "py": "Hǎo. Nǐ xiǎng mǎi chá ma?",
+    "es": "Muy bien. ¿Quieres comprar té?"
+   },
+   {
+    "sp": "王方",
+    "zh": "这个茶多少钱？",
+    "py": "Zhège chá duōshao qián?",
+    "es": "¿Cuánto cuesta este té?"
+   },
+   {
+    "sp": "张先生",
+    "zh": "这个茶很好，五十块。",
+    "py": "Zhège chá hěn hǎo, wǔshí kuài.",
+    "es": "Este té es muy bueno, cuesta cincuenta yuanes."
+   },
+   {
+    "sp": "王方",
+    "zh": "我不买茶，谢谢您。",
+    "py": "Wǒ bù mǎi chá, xièxie nín.",
+    "es": "No voy a comprar té, gracias."
+   },
+   {
+    "sp": "张先生",
+    "zh": "不客气，再见！",
+    "py": "Bú kèqi, zàijiàn!",
+    "es": "De nada, ¡adiós!"
+   }
+  ],
+  "preguntas": [
+   {
+    "q": "¿Cuánto cuesta la primera taza?",
+    "lang": "es",
+    "a": [
+     "treinta y cinco",
+     "35"
+    ],
+    "r": "Treinta y cinco yuanes (三十五块)."
+   },
+   {
+    "q": "¿Cuánto cuesta la taza que compra Wang Fang?",
+    "lang": "py",
+    "a": [
+     "shíliù kuài"
+    ],
+    "r": "Shíliù kuài · 十六块 (dieciséis yuanes)."
+   },
+   {
+    "q": "¿Qué más le ofrece el señor Zhang?",
+    "lang": "es",
+    "a": [
+     "té"
+    ],
+    "r": "Té (你想买茶吗？)."
+   },
+   {
+    "q": "¿Cuánto cuesta el té?",
+    "lang": "py",
+    "a": [
+     "wǔshí kuài"
+    ],
+    "r": "Wǔshí kuài · 五十块 (cincuenta yuanes)."
+   },
+   {
+    "q": "¿Compra Wang Fang el té?",
+    "lang": "es",
+    "a": [
+     "no"
+    ],
+    "r": "No (我不买茶)."
+   }
+  ]
+ },
+ {
+  "id": "L08b",
+  "tema": 8,
+  "titulo": "¿Qué quieres comer?",
+  "escena": "David y Li Yue miran la carta en un restaurante y hablan de sus planes para la tarde.",
+  "personajes": {
+   "李月": "f",
+   "大卫": "m"
+  },
+  "lineas": [
+   {
+    "sp": "李月",
+    "zh": "大卫，你想吃什么？",
+    "py": "Dàwèi, nǐ xiǎng chī shénme?",
+    "es": "David, ¿qué quieres comer?"
+   },
+   {
+    "sp": "大卫",
+    "zh": "我想吃米饭。你呢？",
+    "py": "Wǒ xiǎng chī mǐfàn. Nǐ ne?",
+    "es": "Quiero comer arroz. ¿Y tú?"
+   },
+   {
+    "sp": "李月",
+    "zh": "我想吃这个菜。",
+    "py": "Wǒ xiǎng chī zhège cài.",
+    "es": "Yo quiero este plato."
+   },
+   {
+    "sp": "大卫",
+    "zh": "这个菜多少钱？",
+    "py": "Zhège cài duōshao qián?",
+    "es": "¿Cuánto cuesta ese plato?"
+   },
+   {
+    "sp": "李月",
+    "zh": "这个菜二十二块。你想喝什么？",
+    "py": "Zhège cài èrshí'èr kuài. Nǐ xiǎng hē shénme?",
+    "es": "Este plato cuesta veintidós yuanes. ¿Qué quieres beber?"
+   },
+   {
+    "sp": "大卫",
+    "zh": "我想喝茶。",
+    "py": "Wǒ xiǎng hē chá.",
+    "es": "Quiero beber té."
+   },
+   {
+    "sp": "李月",
+    "zh": "下午你想去哪儿？",
+    "py": "Xiàwǔ nǐ xiǎng qù nǎr?",
+    "es": "¿Adónde quieres ir esta tarde?"
+   },
+   {
+    "sp": "大卫",
+    "zh": "我想去商店买书。",
+    "py": "Wǒ xiǎng qù shāngdiàn mǎi shū.",
+    "es": "Quiero ir a la tienda a comprar un libro."
+   },
+   {
+    "sp": "李月",
+    "zh": "你想买什么书？",
+    "py": "Nǐ xiǎng mǎi shénme shū?",
+    "es": "¿Qué libro quieres comprar?"
+   },
+   {
+    "sp": "大卫",
+    "zh": "我想买汉语书。你下午去哪儿？",
+    "py": "Wǒ xiǎng mǎi Hànyǔ shū. Nǐ xiàwǔ qù nǎr?",
+    "es": "Quiero comprar un libro de chino. ¿Y tú adónde vas esta tarde?"
+   },
+   {
+    "sp": "李月",
+    "zh": "我去朋友家。",
+    "py": "Wǒ qù péngyou jiā.",
+    "es": "Voy a casa de una amiga."
+   }
+  ],
+  "preguntas": [
+   {
+    "q": "¿Qué quiere comer David?",
+    "lang": "py",
+    "a": [
+     "mǐfàn"
+    ],
+    "r": "Mǐfàn · 米饭 (arroz)."
+   },
+   {
+    "q": "¿Cuánto cuesta el plato que quiere Li Yue?",
+    "lang": "es",
+    "a": [
+     "veintidós",
+     "22"
+    ],
+    "r": "Veintidós yuanes (二十二块)."
+   },
+   {
+    "q": "¿Qué quiere beber David?",
+    "lang": "py",
+    "a": [
+     "chá"
+    ],
+    "r": "Chá · 茶 (té)."
+   },
+   {
+    "q": "¿Qué quiere comprar David esta tarde?",
+    "lang": "es",
+    "a": [
+     "libro",
+     "libros"
+    ],
+    "r": "Un libro de chino (汉语书), en la tienda."
+   },
+   {
+    "q": "¿Adónde va Li Yue esta tarde?",
+    "lang": "es",
+    "a": [
+     "casa amiga",
+     "casa amigo"
+    ],
+    "r": "A casa de una amiga (我去朋友家)."
+   }
+  ]
+ }
+]

@@ -1,0 +1,311 @@
+# Frases del curso HSK1 · base de los ejercicios de TRADUCCIÓN y de DICTADO
+#
+# Formato de cada tema:
+#   # número | título en chino | título en español
+# Formato de cada frase (separadores " | "):
+#   hanzi | pinyin | español [ / otra traducción válida / … ] [| opciones]
+# Opciones (opcionales, separadas por espacios en la última columna):
+#   tts=texto     texto que se envía a la voz si el hanzi lleva cifras que se
+#                 leerían mal (teléfonos, años)
+#   py=otro       otro pinyin válido (para "español → pinyin")
+#   zh=otro       otro hanzi válido (para "español → hanzi")
+
+# 1 | 你好 | Saludos y disculpas
+你好！ | Nǐ hǎo! | Hola.
+您好！ | Nín hǎo! | Hola (formal). / Buenos días (formal).
+你们好！ | Nǐmen hǎo! | Hola a todos. / Hola a vosotros.
+对不起！ | Duìbuqǐ! | Lo siento. / Perdón.
+没关系！ | Méi guānxi! | No pasa nada. / No importa.
+
+# 2 | 谢谢你 | Gracias y despedidas
+谢谢！ | Xièxie! | Gracias.
+不谢！ | Bú xiè! | De nada.
+谢谢你！ | Xièxie nǐ! | Gracias (a ti). / Te doy las gracias.
+不客气！ | Bú kèqi! | De nada. / No hay de qué.
+再见！ | Zàijiàn! | Adiós. / Hasta luego.
+
+# 3 | 你叫什么名字 | Nombre y nacionalidad
+你叫什么名字？ | Nǐ jiào shénme míngzi? | ¿Cómo te llamas? / ¿Cuál es tu nombre?
+我叫李月。 | Wǒ jiào Lǐ Yuè. | Me llamo Li Yue.
+你是老师吗？ | Nǐ shì lǎoshī ma? | ¿Eres profesor? / ¿Eres profesora?
+我不是老师，我是学生。 | Wǒ bú shì lǎoshī, wǒ shì xuésheng. | No soy profesor, soy estudiante. / No soy profesora, soy estudiante.
+你是中国人吗？ | Nǐ shì Zhōngguó rén ma? | ¿Eres chino? / ¿Eres china?
+我不是中国人，我是美国人。 | Wǒ bú shì Zhōngguó rén, wǒ shì Měiguó rén. | No soy chino, soy estadounidense. / No soy china, soy estadounidense.
+我叫李月，我是中国人，我是老师。 | Wǒ jiào Lǐ Yuè, wǒ shì Zhōngguó rén, wǒ shì lǎoshī. | Me llamo Li Yue, soy china y soy profesora.
+我叫大卫，我是美国人，我是学生。 | Wǒ jiào Dàwèi, wǒ shì Měiguó rén, wǒ shì xuésheng. | Me llamo David, soy estadounidense y soy estudiante.
+我叫李心。 | Wǒ jiào Lǐ Xīn. | Me llamo Li Xin.
+您是老师吗？ | Nín shì lǎoshī ma? | ¿Es usted profesor? / ¿Es usted profesora?
+是，我是老师。 | Shì, wǒ shì lǎoshī. | Sí, soy profesor. / Sí, soy profesora.
+你好，我叫大卫。 | Nǐ hǎo, wǒ jiào Dàwèi. | Hola, me llamo David.
+你是美国人吗？ | Nǐ shì Měiguó rén ma? | ¿Eres estadounidense?
+不是，我是中国人。 | Bú shì, wǒ shì Zhōngguó rén. | No, soy chino. / No, soy china.
+你是学生吗？ | Nǐ shì xuésheng ma? | ¿Eres estudiante?
+我不是学生，我是老师。 | Wǒ bú shì xuésheng, wǒ shì lǎoshī. | No soy estudiante, soy profesor. / No soy estudiante, soy profesora.
+
+# 4 | 她是我的汉语老师 | ¿Quién es? Amigos y compañeros
+她是谁？ | Tā shì shéi? | ¿Quién es ella?
+她是我的汉语老师，她叫李月。 | Tā shì wǒ de Hànyǔ lǎoshī, tā jiào Lǐ Yuè. | Es mi profesora de chino, se llama Li Yue. / Ella es mi profesora de chino, se llama Li Yue.
+你是哪国人？ | Nǐ shì nǎ guó rén? | ¿De qué país eres? / ¿De dónde eres?
+我是美国人。你呢？ | Wǒ shì Měiguó rén. Nǐ ne? | Soy estadounidense. ¿Y tú?
+我是中国人。 | Wǒ shì Zhōngguó rén. | Soy chino. / Soy china.
+他是谁？ | Tā shì shéi? | ¿Quién es él?
+他是我同学。 | Tā shì wǒ tóngxué. | Es mi compañero de clase. / Él es mi compañero de clase.
+她呢？她是你同学吗？ | Tā ne? Tā shì nǐ tóngxué ma? | ¿Y ella? ¿Es tu compañera de clase?
+她不是我同学，她是我朋友。 | Tā bú shì wǒ tóngxué, tā shì wǒ péngyou. | No es mi compañera de clase, es mi amiga. / Ella no es mi compañera, es mi amiga.
+他是我同学，他叫大卫。 | Tā shì wǒ tóngxué, tā jiào Dàwèi. | Es mi compañero de clase, se llama David.
+不是，她是我的汉语老师。 | Bú shì, tā shì wǒ de Hànyǔ lǎoshī. | No, es mi profesora de chino. / No, ella es mi profesora de chino.
+谁是李月？ | Shéi shì Lǐ Yuè? | ¿Quién es Li Yue?
+她是李月，她是我的中国朋友。 | Tā shì Lǐ Yuè, tā shì wǒ de Zhōngguó péngyou. | Ella es Li Yue, es mi amiga china.
+他是你的朋友吗？ | Tā shì nǐ de péngyou ma? | ¿Es tu amigo? / ¿Él es tu amigo?
+是，他是我的美国朋友。 | Shì, tā shì wǒ de Měiguó péngyou. | Sí, es mi amigo estadounidense.
+
+# 5 | 她女儿今年二十岁 | La familia y la edad
+你家有几口人？ | Nǐ jiā yǒu jǐ kǒu rén? | ¿Cuántas personas hay en tu familia? / ¿Cuántos sois en tu familia?
+我家有三口人。 | Wǒ jiā yǒu sān kǒu rén. | En mi familia somos tres. / En mi familia hay tres personas.
+你女儿几岁了？ | Nǐ nǚ'ér jǐ suì le? | ¿Cuántos años tiene tu hija?
+她今年四岁了。 | Tā jīnnián sì suì le. | Este año tiene cuatro años. / Ella tiene cuatro años este año.
+李老师多大了？ | Lǐ lǎoshī duō dà le? | ¿Qué edad tiene la profesora Li? / ¿Cuántos años tiene la profesora Li?
+她今年五十岁了。 | Tā jīnnián wǔshí suì le. | Este año tiene cincuenta años. / Ella tiene cincuenta años este año.
+她女儿呢？ | Tā nǚ'ér ne? | ¿Y su hija?
+她女儿今年二十岁。 | Tā nǚ'ér jīnnián èrshí suì. | Su hija tiene veinte años este año. / Este año su hija tiene veinte años.
+我家有四口人。 | Wǒ jiā yǒu sì kǒu rén. | En mi familia somos cuatro. / En mi familia hay cuatro personas.
+李老师的女儿几岁了？ | Lǐ lǎoshī de nǚ'ér jǐ suì le? | ¿Cuántos años tiene la hija de la profesora Li?
+她今年七岁了。 | Tā jīnnián qī suì le. | Este año tiene siete años. / Ella tiene siete años este año.
+他是老师吗？ | Tā shì lǎoshī ma? | ¿Es profesor? / ¿Él es profesor?
+不是，他是学生，他今年二十一岁。 | Bú shì, tā shì xuésheng, tā jīnnián èrshíyī suì. | No, es estudiante, este año tiene veintiún años.
+你今年多大了？ | Nǐ jīnnián duō dà le? | ¿Cuántos años tienes? / ¿Qué edad tienes este año?
+我今年三十八岁了。 | Wǒ jīnnián sānshíbā suì le. | Este año tengo treinta y ocho años. / Tengo treinta y ocho años.
+你的汉语老师是哪国人？ | Nǐ de Hànyǔ lǎoshī shì nǎ guó rén? | ¿De qué país es tu profesor de chino? / ¿De dónde es tu profesora de chino?
+他是中国人。 | Tā shì Zhōngguó rén. | Es chino. / Él es chino.
+
+# 6 | 我会说汉语 | Saber hacer: hablar, cocinar, escribir
+你会说汉语吗？ | Nǐ huì shuō Hànyǔ ma? | ¿Sabes hablar chino?
+我会说汉语。 | Wǒ huì shuō Hànyǔ. | Sé hablar chino.
+你妈妈会说汉语吗？ | Nǐ māma huì shuō Hànyǔ ma? | ¿Tu madre sabe hablar chino?
+她不会说。 | Tā bú huì shuō. | No sabe hablarlo. / Ella no sabe.
+中国菜好吃吗？ | Zhōngguó cài hǎochī ma? | ¿Está rica la comida china? / ¿La comida china está buena?
+中国菜很好吃。 | Zhōngguó cài hěn hǎochī. | La comida china está muy rica. / La comida china está muy buena.
+你会做中国菜吗？ | Nǐ huì zuò Zhōngguó cài ma? | ¿Sabes cocinar comida china? / ¿Sabes hacer comida china?
+我不会做。 | Wǒ bú huì zuò. | No sé cocinarla. / No sé hacerla.
+你会写汉字吗？ | Nǐ huì xiě Hànzì ma? | ¿Sabes escribir caracteres chinos?
+我会写。 | Wǒ huì xiě. | Sé escribirlos. / Sí, sé escribir.
+这个字怎么写？ | Zhège zì zěnme xiě? | ¿Cómo se escribe este carácter?
+对不起，这个字我会读，不会写。 | Duìbuqǐ, zhège zì wǒ huì dú, bú huì xiě. | Lo siento, este carácter sé leerlo, pero no escribirlo. / Perdón, sé leer este carácter pero no sé escribirlo.
+你妈妈会做中国菜吗？ | Nǐ māma huì zuò Zhōngguó cài ma? | ¿Tu madre sabe cocinar comida china?
+这个汉字怎么写？ | Zhège Hànzì zěnme xiě? | ¿Cómo se escribe este carácter chino?
+李老师会说汉语吗？ | Lǐ lǎoshī huì shuō Hànyǔ ma? | ¿La profesora Li sabe hablar chino?
+会，李老师是中国人。 | Huì, Lǐ lǎoshī shì Zhōngguó rén. | Sí, la profesora Li es china. / Sí, sabe; la profesora Li es china.
+我会说汉语，不会写汉字。 | Wǒ huì shuō Hànyǔ, bú huì xiě Hànzì. | Sé hablar chino, pero no sé escribir caracteres chinos.
+
+# 7 | 今天几号 | Fechas y días de la semana
+请问，今天几号？ | Qǐngwèn, jīntiān jǐ hào? | Disculpe, ¿qué día es hoy? / Perdone, ¿a qué estamos hoy?
+今天九月一号。 | Jīntiān jiǔ yuè yī hào. | Hoy es uno de septiembre. / Hoy es 1 de septiembre.
+今天星期几？ | Jīntiān xīngqījǐ? | ¿Qué día de la semana es hoy?
+星期三。 | Xīngqīsān. | Miércoles. / Es miércoles.
+昨天是几月几号？ | Zuótiān shì jǐ yuè jǐ hào? | ¿Qué fecha fue ayer? / ¿A qué día estábamos ayer?
+昨天是八月三十一号，星期二。 | Zuótiān shì bā yuè sānshíyī hào, xīngqī'èr. | Ayer fue 31 de agosto, martes. / Ayer fue martes, 31 de agosto.
+明天呢？ | Míngtiān ne? | ¿Y mañana?
+明天是九月二号，星期四。 | Míngtiān shì jiǔ yuè èr hào, xīngqīsì. | Mañana es 2 de septiembre, jueves. / Mañana es jueves, 2 de septiembre.
+明天星期六，你去学校吗？ | Míngtiān xīngqīliù, nǐ qù xuéxiào ma? | Mañana es sábado, ¿vas a la escuela?
+我去学校。 | Wǒ qù xuéxiào. | Voy a la escuela.
+你去学校做什么？ | Nǐ qù xuéxiào zuò shénme? | ¿Qué vas a hacer a la escuela? / ¿A qué vas a la escuela?
+我去学校看书。 | Wǒ qù xuéxiào kàn shū. | Voy a la escuela a leer.
+今天星期日。 | Jīntiān xīngqīrì. | Hoy es domingo.
+今天是几月几号？ | Jīntiān shì jǐ yuè jǐ hào? | ¿Qué fecha es hoy? / ¿A qué día estamos hoy?
+今天是十月五号。 | Jīntiān shì shí yuè wǔ hào. | Hoy es 5 de octubre. / Hoy es cinco de octubre.
+你的汉语老师多大了？ | Nǐ de Hànyǔ lǎoshī duō dà le? | ¿Cuántos años tiene tu profesora de chino? / ¿Qué edad tiene tu profesor de chino?
+她二十九岁。 | Tā èrshíjiǔ suì. | Tiene veintinueve años. / Ella tiene 29 años.
+明天你做什么？ | Míngtiān nǐ zuò shénme? | ¿Qué haces mañana? / ¿Qué vas a hacer mañana?
+我去同学家看书。 | Wǒ qù tóngxué jiā kàn shū. | Voy a casa de un compañero a leer. / Voy a casa de una compañera de clase a leer.
+我不会，我爸爸会。 | Wǒ bú huì, wǒ bàba huì. | Yo no sé, mi padre sí. / No sé; mi padre sí sabe.
+
+# 8 | 我想喝茶 | Querer, comprar y precios
+你想喝什么？ | Nǐ xiǎng hē shénme? | ¿Qué quieres beber? / ¿Qué quieres tomar?
+我想喝茶。 | Wǒ xiǎng hē chá. | Quiero beber té. / Quiero tomar té.
+你想吃什么？ | Nǐ xiǎng chī shénme? | ¿Qué quieres comer?
+我想吃米饭。 | Wǒ xiǎng chī mǐfàn. | Quiero comer arroz.
+下午你想做什么？ | Xiàwǔ nǐ xiǎng zuò shénme? | ¿Qué quieres hacer esta tarde? / ¿Qué quieres hacer por la tarde?
+下午我想去商店。 | Xiàwǔ wǒ xiǎng qù shāngdiàn. | Esta tarde quiero ir a la tienda. / Por la tarde quiero ir a la tienda.
+你想买什么？ | Nǐ xiǎng mǎi shénme? | ¿Qué quieres comprar?
+我想买一个杯子。 | Wǒ xiǎng mǎi yí ge bēizi. | Quiero comprar una taza. / Quiero comprar un vaso.
+你好！这个杯子多少钱？ | Nǐ hǎo! Zhège bēizi duōshao qián? | ¡Hola! ¿Cuánto cuesta esta taza? / Hola, ¿cuánto vale esta taza?
+二十八块。 | Èrshíbā kuài. | Veintiocho yuanes. / 28 yuanes.
+那个杯子多少钱？ | Nàge bēizi duōshao qián? | ¿Cuánto cuesta esa taza? / ¿Cuánto vale esa taza?
+那个杯子十八块钱。 | Nàge bēizi shíbā kuài qián. | Esa taza cuesta dieciocho yuanes. / Esa taza vale 18 yuanes.
+请问，这个杯子多少钱？ | Qǐngwèn, zhège bēizi duōshao qián? | Disculpe, ¿cuánto cuesta esta taza? / Perdone, ¿cuánto vale esta taza?
+二十五块。 | Èrshíwǔ kuài. | Veinticinco yuanes. / 25 yuanes.
+我喝茶，谢谢。 | Wǒ hē chá, xièxie. | Tomo té, gracias. / Yo bebo té, gracias.
+你好，这个菜多少钱？ | Nǐ hǎo, zhège cài duōshao qián? | Hola, ¿cuánto cuesta este plato?
+这个菜十八块。 | Zhège cài shíbā kuài. | Este plato cuesta dieciocho yuanes. / Este plato vale 18 yuanes.
+下午你想去哪儿？ | Xiàwǔ nǐ xiǎng qù nǎr? | ¿Adónde quieres ir esta tarde? / ¿Dónde quieres ir por la tarde?
+我想去商店买个杯子。 | Wǒ xiǎng qù shāngdiàn mǎi ge bēizi. | Quiero ir a la tienda a comprar una taza.
+明天你去学校吗？ | Míngtiān nǐ qù xuéxiào ma? | ¿Mañana vas a la escuela? / ¿Vas a la escuela mañana?
+不去，明天我去朋友家。 | Bú qù, míngtiān wǒ qù péngyou jiā. | No, mañana voy a casa de un amigo. / No voy; mañana voy a casa de una amiga.
+
+# 9 | 你儿子在哪儿工作 | ¿Dónde está? ¿Dónde trabaja?
+小猫在哪儿？ | Xiǎo māo zài nǎr? | ¿Dónde está el gatito?
+小猫在那儿。 | Xiǎo māo zài nàr. | El gatito está allí. / El gatito está ahí.
+小狗在哪儿？ | Xiǎo gǒu zài nǎr? | ¿Dónde está el perrito?
+小狗在椅子下面。 | Xiǎo gǒu zài yǐzi xiàmiàn. | El perrito está debajo de la silla.
+你在哪儿工作？ | Nǐ zài nǎr gōngzuò? | ¿Dónde trabajas?
+我在学校工作。 | Wǒ zài xuéxiào gōngzuò. | Trabajo en una escuela. / Trabajo en la escuela.
+你儿子在哪儿工作？ | Nǐ érzi zài nǎr gōngzuò? | ¿Dónde trabaja tu hijo?
+我儿子在医院工作，他是医生。 | Wǒ érzi zài yīyuàn gōngzuò, tā shì yīshēng. | Mi hijo trabaja en un hospital, es médico. / Mi hijo trabaja en el hospital, es médico.
+你爸爸在家吗？ | Nǐ bàba zài jiā ma? | ¿Está tu padre en casa? / ¿Tu padre está en casa?
+不在家。 | Bú zài jiā. | No está en casa.
+他在哪儿呢？ | Tā zài nǎr ne? | ¿Y dónde está? / ¿Dónde está él?
+他在医院。 | Tā zài yīyuàn. | Está en el hospital.
+我是学生，我不工作。 | Wǒ shì xuésheng, wǒ bù gōngzuò. | Soy estudiante, no trabajo.
+我的小狗在哪儿？ | Wǒ de xiǎo gǒu zài nǎr? | ¿Dónde está mi perrito?
+在那儿，椅子下面。 | Zài nàr, yǐzi xiàmiàn. | Allí, debajo de la silla. / Ahí, debajo de la silla.
+我的杯子呢？ | Wǒ de bēizi ne? | ¿Y mi taza? / ¿Dónde está mi taza?
+杯子在这儿。 | Bēizi zài zhèr. | La taza está aquí.
+你女儿在哪儿工作？ | Nǐ nǚ'ér zài nǎr gōngzuò? | ¿Dónde trabaja tu hija?
+她是老师，在学校工作。 | Tā shì lǎoshī, zài xuéxiào gōngzuò. | Es profesora, trabaja en una escuela. / Ella es profesora y trabaja en la escuela.
+请问，李老师在吗？ | Qǐngwèn, Lǐ lǎoshī zài ma? | Disculpe, ¿está la profesora Li? / Perdone, ¿está el profesor Li?
+不在，李老师在医院。 | Bú zài, Lǐ lǎoshī zài yīyuàn. | No está, la profesora Li está en el hospital. / No, el profesor Li está en el hospital.
+
+# 10 | 我能坐这儿吗 | ¿Qué hay? ¿Puedo…?
+桌子上有什么？ | Zhuōzi shang yǒu shénme? | ¿Qué hay sobre la mesa? / ¿Qué hay encima de la mesa?
+桌子上有一个电脑和一本书。 | Zhuōzi shang yǒu yí ge diànnǎo hé yì běn shū. | Sobre la mesa hay un ordenador y un libro. / Encima de la mesa hay un ordenador y un libro.
+杯子在哪儿？ | Bēizi zài nǎr? | ¿Dónde está la taza?
+杯子在桌子里。 | Bēizi zài zhuōzi li. | La taza está dentro de la mesa. / La taza está en el cajón de la mesa.
+前面那个人叫什么名字？ | Qiánmiàn nàge rén jiào shénme míngzi? | ¿Cómo se llama esa persona de delante? / ¿Cómo se llama la persona de delante?
+她叫王方，在医院工作。 | Tā jiào Wáng Fāng, zài yīyuàn gōngzuò. | Se llama Wang Fang y trabaja en el hospital. / Ella se llama Wang Fang, trabaja en un hospital.
+后面那个人呢？他叫什么名字？ | Hòumiàn nàge rén ne? Tā jiào shénme míngzi? | ¿Y la persona de detrás? ¿Cómo se llama?
+他叫谢朋，在商店工作。 | Tā jiào Xiè Péng, zài shāngdiàn gōngzuò. | Se llama Xie Peng y trabaja en la tienda. / Él se llama Xie Peng, trabaja en una tienda.
+这儿有人吗？ | Zhèr yǒu rén ma? | ¿Hay alguien aquí? / ¿Está ocupado?
+没有。 | Méiyǒu. | No. / No hay nadie.
+我能坐这儿吗？ | Wǒ néng zuò zhèr ma? | ¿Puedo sentarme aquí?
+请坐。 | Qǐng zuò. | Siéntate, por favor. / Siéntese, por favor.
+你的桌子上面有什么？ | Nǐ de zhuōzi shàngmiàn yǒu shénme? | ¿Qué hay encima de tu mesa?
+你的椅子下面有什么？ | Nǐ de yǐzi xiàmiàn yǒu shénme? | ¿Qué hay debajo de tu silla?
+你好，我能坐这儿吗？ | Nǐ hǎo, wǒ néng zuò zhèr ma? | Hola, ¿puedo sentarme aquí?
+好，请坐。 | Hǎo, qǐng zuò. | Vale, siéntate, por favor. / Bien, siéntate.
+你的杯子呢？ | Nǐ de bēizi ne? | ¿Y tu taza? / ¿Dónde está tu taza?
+在那儿，桌子里面。 | Zài nàr, zhuōzi lǐmiàn. | Allí, dentro de la mesa. / Ahí, en el cajón de la mesa.
+你的桌子上有什么？ | Nǐ de zhuōzi shang yǒu shénme? | ¿Qué hay sobre tu mesa?
+一个电脑和一本书。 | Yí ge diànnǎo hé yì běn shū. | Un ordenador y un libro.
+你后面那个人是谁？ | Nǐ hòumiàn nàge rén shì shéi? | ¿Quién es la persona que está detrás de ti? / ¿Quién es esa persona de detrás de ti?
+她叫李月，是我的汉语老师。 | Tā jiào Lǐ Yuè, shì wǒ de Hànyǔ lǎoshī. | Se llama Li Yue, es mi profesora de chino.
+你前面那个人是李朋吗？ | Nǐ qiánmiàn nàge rén shì Lǐ Péng ma? | ¿La persona que está delante de ti es Li Peng? / ¿Es Li Peng la persona de delante de ti?
+不是，我后面那个人是李朋。 | Bú shì, wǒ hòumiàn nàge rén shì Lǐ Péng. | No, la persona que está detrás de mí es Li Peng.
+
+# 11 | 现在几点 | La hora y cuándo
+现在几点？ | Xiànzài jǐ diǎn? | ¿Qué hora es? / ¿Qué hora es ahora?
+现在十点十分。 | Xiànzài shí diǎn shí fēn. | Son las diez y diez. / Ahora son las diez y diez.
+中午几点吃饭？ | Zhōngwǔ jǐ diǎn chī fàn? | ¿A qué hora se come al mediodía? / ¿A qué hora coméis al mediodía?
+十二点吃饭。 | Shí'èr diǎn chī fàn. | Comemos a las doce. / Se come a las doce.
+爸爸什么时候回家？ | Bàba shénme shíhou huí jiā? | ¿Cuándo vuelve papá a casa? / ¿A qué hora vuelve papá a casa?
+下午五点。 | Xiàwǔ wǔ diǎn. | A las cinco de la tarde.
+我们什么时候去看电影？ | Wǒmen shénme shíhou qù kàn diànyǐng? | ¿Cuándo vamos a ver la película? / ¿Cuándo vamos al cine?
+六点三十分。 | Liù diǎn sānshí fēn. | A las seis y media. / A las seis y treinta.
+我星期一去北京。 | Wǒ xīngqīyī qù Běijīng. | Voy a Pekín el lunes. / El lunes voy a Pekín.
+你想在北京住几天？ | Nǐ xiǎng zài Běijīng zhù jǐ tiān? | ¿Cuántos días quieres quedarte en Pekín?
+住三天。 | Zhù sān tiān. | Me quedo tres días. / Tres días.
+星期五前能回家吗？ | Xīngqīwǔ qián néng huí jiā ma? | ¿Puedes volver a casa antes del viernes?
+能。 | Néng. | Sí, puedo. / Sí.
+下午三点你去学校吗？ | Xiàwǔ sān diǎn nǐ qù xuéxiào ma? | ¿Vas a la escuela a las tres de la tarde?
+不去学校，我在家。 | Bú qù xuéxiào, wǒ zài jiā. | No voy a la escuela, estoy en casa.
+你什么时候回北京？ | Nǐ shénme shíhou huí Běijīng? | ¿Cuándo vuelves a Pekín?
+星期五前。 | Xīngqīwǔ qián. | Antes del viernes.
+中午你工作吗？ | Zhōngwǔ nǐ gōngzuò ma? | ¿Trabajas al mediodía?
+不工作，你十二点来吧。 | Bù gōngzuò, nǐ shí'èr diǎn lái ba. | No, no trabajo; ven a las doce. / No trabajo, ven a las doce.
+你中午去吃饭吗？ | Nǐ zhōngwǔ qù chī fàn ma? | ¿Vas a comer al mediodía?
+我不去，没有时间。 | Wǒ bú qù, méiyǒu shíjiān. | No voy, no tengo tiempo.
+大卫去看电影吗？ | Dàwèi qù kàn diànyǐng ma? | ¿David va a ver la película? / ¿David va al cine?
+他不想去。 | Tā bù xiǎng qù. | No quiere ir. / Él no quiere ir.
+
+# 12 | 明天天气怎么样 | El tiempo y la salud
+昨天北京的天气怎么样？ | Zuótiān Běijīng de tiānqì zěnmeyàng? | ¿Qué tiempo hizo ayer en Pekín? / ¿Cómo estuvo el tiempo ayer en Pekín?
+太热了。 | Tài rè le. | Hizo demasiado calor. / Hace demasiado calor.
+明天呢？明天天气怎么样？ | Míngtiān ne? Míngtiān tiānqì zěnmeyàng? | ¿Y mañana? ¿Qué tiempo hará mañana?
+明天天气很好，不冷不热。 | Míngtiān tiānqì hěn hǎo, bù lěng bú rè. | Mañana hará muy buen tiempo, ni frío ni calor.
+今天会下雨吗？ | Jīntiān huì xià yǔ ma? | ¿Va a llover hoy? / ¿Lloverá hoy?
+今天不会下雨。 | Jīntiān bú huì xià yǔ. | Hoy no va a llover. / Hoy no lloverá.
+王小姐今天会来吗？ | Wáng xiǎojiě jīntiān huì lái ma? | ¿Vendrá hoy la señorita Wang? / ¿La señorita Wang va a venir hoy?
+不会来，天气太冷了。 | Bú huì lái, tiānqì tài lěng le. | No vendrá, hace demasiado frío. / No va a venir, hace demasiado frío.
+你身体怎么样？ | Nǐ shēntǐ zěnmeyàng? | ¿Qué tal estás de salud? / ¿Cómo estás de salud?
+我身体不太好。天气太热了，不爱吃饭。 | Wǒ shēntǐ bú tài hǎo. Tiānqì tài rè le, bú ài chī fàn. | No estoy muy bien. Hace demasiado calor, no tengo ganas de comer. / No me encuentro muy bien. Hace demasiado calor y no tengo apetito.
+你多吃些水果，多喝水。 | Nǐ duō chī xiē shuǐguǒ, duō hē shuǐ. | Come más fruta y bebe más agua.
+谢谢你，医生。 | Xièxie nǐ, yīshēng. | Gracias, doctor. / Gracias, doctora.
+下午会不会下雨？ | Xiàwǔ huì bu huì xià yǔ? | ¿Lloverá por la tarde o no? / ¿Va a llover esta tarde?
+不会。 | Bú huì. | No. / No va a llover.
+昨天天气怎么样？ | Zuótiān tiānqì zěnmeyàng? | ¿Qué tiempo hizo ayer? / ¿Cómo estuvo el tiempo ayer?
+不冷不热。 | Bù lěng bú rè. | Ni frío ni calor.
+王小姐身体怎么样？ | Wáng xiǎojiě shēntǐ zěnmeyàng? | ¿Qué tal está de salud la señorita Wang?
+她很好，谢谢。 | Tā hěn hǎo, xièxie. | Está muy bien, gracias.
+你什么时候去学校？ | Nǐ shénme shíhou qù xuéxiào? | ¿Cuándo vas a la escuela?
+太热了，我一会儿去。 | Tài rè le, wǒ yíhuìr qù. | Hace demasiado calor, iré dentro de un rato. / Hace mucho calor, voy dentro de un rato.
+医生说什么？ | Yīshēng shuō shénme? | ¿Qué ha dicho el médico? / ¿Qué dice el médico?
+多喝水，多吃水果。 | Duō hē shuǐ, duō chī shuǐguǒ. | Bebe más agua y come más fruta.
+
+# 13 | 他在学做中国菜呢 | ¿Qué estás haciendo?
+喂，你在做什么呢？ | Wèi, nǐ zài zuò shénme ne? | ¿Diga? ¿Qué estás haciendo? / Hola, ¿qué estás haciendo?
+我在看书呢。 | Wǒ zài kàn shū ne. | Estoy leyendo.
+大卫也在看书吗？ | Dàwèi yě zài kàn shū ma? | ¿David también está leyendo?
+他没看书，他在学做中国菜呢。 | Tā méi kàn shū, tā zài xué zuò Zhōngguó cài ne. | No está leyendo, está aprendiendo a cocinar comida china.
+昨天上午你在做什么呢？ | Zuótiān shàngwǔ nǐ zài zuò shénme ne? | ¿Qué estabas haciendo ayer por la mañana?
+我在睡觉呢。你呢？ | Wǒ zài shuì jiào ne. Nǐ ne? | Estaba durmiendo. ¿Y tú?
+我在家看电视呢。你喜欢看电视吗？ | Wǒ zài jiā kàn diànshì ne. Nǐ xǐhuan kàn diànshì ma? | Estaba en casa viendo la televisión. ¿Te gusta ver la televisión?
+我不喜欢看电视，我喜欢看电影。 | Wǒ bù xǐhuan kàn diànshì, wǒ xǐhuan kàn diànyǐng. | No me gusta ver la televisión, me gusta ver películas.
+82304155，这是李老师的电话吗？ | Bā èr sān líng sì yāo wǔ wǔ, zhè shì Lǐ lǎoshī de diànhuà ma? | 82304155, ¿es este el teléfono de la profesora Li? / ¿El 82304155 es el teléfono del profesor Li? | tts=八二三零四幺五五，这是李老师的电话吗？
+不是。她的电话是82304156。 | Bú shì. Tā de diànhuà shì bā èr sān líng sì yāo wǔ liù. | No. Su teléfono es el 82304156. | tts=不是。她的电话是八二三零四幺五六。
+好，我现在给她打电话。 | Hǎo, wǒ xiànzài gěi tā dǎ diànhuà. | Vale, ahora la llamo. / Bien, la llamo ahora mismo.
+她在工作呢，你下午打吧。 | Tā zài gōngzuò ne, nǐ xiàwǔ dǎ ba. | Está trabajando, llama por la tarde. / Ella está trabajando, llámala por la tarde.
+今天我们去哪儿吃饭？ | Jīntiān wǒmen qù nǎr chī fàn? | ¿Dónde vamos a comer hoy? / Hoy, ¿adónde vamos a comer?
+在家吃吧。 | Zài jiā chī ba. | Comamos en casa. / Vamos a comer en casa.
+昨天下午你在家做什么呢？ | Zuótiān xiàwǔ nǐ zài jiā zuò shénme ne? | ¿Qué estabas haciendo ayer por la tarde en casa?
+我和朋友在看书呢。 | Wǒ hé péngyou zài kàn shū ne. | Estaba leyendo con unos amigos. / Mis amigos y yo estábamos leyendo.
+你喜欢喝茶吗？ | Nǐ xǐhuan hē chá ma? | ¿Te gusta el té? / ¿Te gusta beber té?
+我喜欢喝水。 | Wǒ xǐhuan hē shuǐ. | Me gusta beber agua. / Me gusta el agua.
+今天天气怎么样？ | Jīntiān tiānqì zěnmeyàng? | ¿Qué tiempo hace hoy?
+在下雨呢。 | Zài xià yǔ ne. | Está lloviendo.
+你在看电视吗？ | Nǐ zài kàn diànshì ma? | ¿Estás viendo la televisión?
+我没看电视，我在学习呢。 | Wǒ méi kàn diànshì, wǒ zài xuéxí ne. | No estoy viendo la televisión, estoy estudiando.
+
+# 14 | 她买了不少衣服 | ¿Qué hiciste? ¿Qué compraste?
+昨天上午你去哪儿了？ | Zuótiān shàngwǔ nǐ qù nǎr le? | ¿Adónde fuiste ayer por la mañana? / ¿Dónde fuiste ayer por la mañana?
+我去商店买东西了。 | Wǒ qù shāngdiàn mǎi dōngxi le. | Fui a la tienda a comprar cosas. / Fui de compras a la tienda.
+你买什么了？ | Nǐ mǎi shénme le? | ¿Qué compraste? / ¿Qué has comprado?
+我买了一点儿苹果。 | Wǒ mǎile yìdiǎnr píngguǒ. | Compré unas pocas manzanas. / Compré algunas manzanas.
+你看见张先生了吗？ | Nǐ kànjiàn Zhāng xiānsheng le ma? | ¿Has visto al señor Zhang? / ¿Viste al señor Zhang?
+看见了，他去学开车了。 | Kànjiàn le, tā qù xué kāi chē le. | Sí, lo vi; se fue a aprender a conducir. / Sí, lo he visto, ha ido a aprender a conducir.
+他什么时候能回来？ | Tā shénme shíhou néng huílai? | ¿Cuándo podrá volver? / ¿Cuándo puede volver?
+四十分钟后回来。 | Sìshí fēnzhōng hòu huílai. | Vuelve dentro de cuarenta minutos. / Volverá en 40 minutos.
+王方的衣服太漂亮了！ | Wáng Fāng de yīfu tài piàoliang le! | ¡La ropa de Wang Fang es preciosa! / ¡Qué bonita es la ropa de Wang Fang!
+是啊，她买了不少衣服。 | Shì a, tā mǎile bùshǎo yīfu. | Sí, se ha comprado bastante ropa. / Sí, compró mucha ropa.
+我没买，这些都是王方的东西。 | Wǒ méi mǎi, zhèxiē dōu shì Wáng Fāng de dōngxi. | Yo no compré nada, todas estas cosas son de Wang Fang. / No he comprado nada, todo esto es de Wang Fang.
+昨天下午你去商店了吗？ | Zuótiān xiàwǔ nǐ qù shāngdiàn le ma? | ¿Fuiste a la tienda ayer por la tarde?
+我去了。 | Wǒ qù le. | Sí, fui. / Fui.
+我没买水果，你呢？ | Wǒ méi mǎi shuǐguǒ, nǐ ne? | Yo no compré fruta, ¿y tú?
+你看见小王了吗？ | Nǐ kànjiàn Xiǎo Wáng le ma? | ¿Has visto a Xiao Wang? / ¿Viste a Xiao Wang?
+看见了，他开车去学校了。 | Kànjiàn le, tā kāi chē qù xuéxiào le. | Sí, lo vi; ha ido a la escuela en coche. / Sí, fue a la escuela conduciendo.
+你的衣服太漂亮了！ | Nǐ de yīfu tài piàoliang le! | ¡Tu ropa es preciosa! / ¡Qué ropa tan bonita!
+谢谢，我喜欢买漂亮的衣服。 | Xièxie, wǒ xǐhuan mǎi piàoliang de yīfu. | Gracias, me gusta comprar ropa bonita.
+这些东西是王老师的吗？ | Zhèxiē dōngxi shì Wáng lǎoshī de ma? | ¿Estas cosas son de la profesora Wang? / ¿Son del profesor Wang estas cosas?
+是，这些都是她的东西。 | Shì, zhèxiē dōu shì tā de dōngxi. | Sí, todas estas cosas son suyas. / Sí, todo esto es suyo.
+
+# 15 | 我是坐飞机来的 | ¿Cuándo, dónde y cómo fue?
+你和李小姐是什么时候认识的？ | Nǐ hé Lǐ xiǎojiě shì shénme shíhou rènshi de? | ¿Cuándo os conocisteis tú y la señorita Li?
+我们是2011年9月认识的。 | Wǒmen shì èr líng yī yī nián jiǔ yuè rènshi de. | Nos conocimos en septiembre de 2011. | tts=我们是二零一一年九月认识的。
+你们在哪儿认识的？ | Nǐmen zài nǎr rènshi de? | ¿Dónde os conocisteis?
+我们是在学校认识的，她是我大学同学。 | Wǒmen shì zài xuéxiào rènshi de, tā shì wǒ dàxué tóngxué. | Nos conocimos en la escuela, es mi compañera de universidad. / Nos conocimos en la universidad; ella es compañera mía de la universidad.
+你们是怎么来饭店的？ | Nǐmen shì zěnme lái fàndiàn de? | ¿Cómo habéis venido al restaurante? / ¿Cómo vinisteis al restaurante?
+我们是坐出租车来的。 | Wǒmen shì zuò chūzūchē lái de. | Hemos venido en taxi. / Vinimos en taxi.
+李先生呢？ | Lǐ xiānsheng ne? | ¿Y el señor Li?
+他是和朋友一起开车来的。 | Tā shì hé péngyou yìqǐ kāi chē lái de. | Él ha venido en coche con un amigo. / Vino conduciendo con un amigo.
+很高兴认识您！李小姐。 | Hěn gāoxìng rènshi nín! Lǐ xiǎojiě. | ¡Encantado de conocerla, señorita Li! / Mucho gusto en conocerla, señorita Li.
+认识你我也很高兴！ | Rènshi nǐ wǒ yě hěn gāoxìng! | ¡Yo también estoy muy contenta de conocerte! / ¡Encantada de conocerte yo también!
+听张先生说，您是坐飞机来北京的？ | Tīng Zhāng xiānsheng shuō, nín shì zuò fēijī lái Běijīng de? | El señor Zhang me ha dicho que ha venido usted a Pekín en avión, ¿no? / He oído al señor Zhang que vino usted a Pekín en avión.
+是的。 | Shì de. | Sí. / Así es.
+你们是怎么认识的？ | Nǐmen shì zěnme rènshi de? | ¿Cómo os conocisteis?
+我们是大学同学。 | Wǒmen shì dàxué tóngxué. | Somos compañeros de universidad. / Fuimos compañeros de universidad.
+你的衣服是在哪儿买的？ | Nǐ de yīfu shì zài nǎr mǎi de? | ¿Dónde compraste tu ropa? / ¿Dónde has comprado la ropa?
+在一个小商店买的。 | Zài yí ge xiǎo shāngdiàn mǎi de. | La compré en una tienda pequeña. / En una tienda pequeña.
+小王回家了吗？ | Xiǎo Wáng huí jiā le ma? | ¿Xiao Wang ha vuelto a casa? / ¿Ha vuelto Xiao Wang a casa?
+我看见他开车回家了。 | Wǒ kànjiàn tā kāi chē huí jiā le. | Lo vi volver a casa en coche. / Lo he visto volver a casa conduciendo.
+我很高兴你来我们学校。 | Wǒ hěn gāoxìng nǐ lái wǒmen xuéxiào. | Me alegro de que vengas a nuestra escuela. / Me alegra que vengas a nuestra escuela.
+我也很高兴。 | Wǒ yě hěn gāoxìng. | Yo también estoy muy contento. / Yo también estoy muy contenta.
+你想什么时候去？ | Nǐ xiǎng shénme shíhou qù? | ¿Cuándo quieres ir?
+明天吧，小王是今天去的。 | Míngtiān ba, Xiǎo Wáng shì jīntiān qù de. | Mañana; Xiao Wang fue hoy. / Mejor mañana, Xiao Wang ha ido hoy.

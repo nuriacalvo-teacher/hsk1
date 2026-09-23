@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>HSK1 · Repaso de chino</title>
+  <meta name="description" content="Repaso del HSK 1: dictados, listenings con voces nativas a varias velocidades, lecturas en pinyin y hanzi y traducciones por tema.">
+  <meta name="theme-color" content="#b8322a">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Sans:wght@400;600;700&family=Noto+Serif+SC:wght@400;600&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <div class="petals" aria-hidden="true"></div>
+
+  <header class="top">
+    <div class="top-in">
+      <a class="logo" href="#/">
+        <span class="seal">汉</span>
+        <span class="logo-t"><b>HSK1 · Repaso</b><span>汉语水平考试 一级</span></span>
+      </a>
+      <button class="menu-btn" type="button" aria-label="Menú"></button>
+      <nav class="nav" aria-label="Secciones">
+        <a href="#/" data-r="home">Inicio</a>
+        <a href="#/dictado" data-r="dictado"><span class="zh">听写</span>Dictado</a>
+        <a href="#/listening" data-r="listening"><span class="zh">听力</span>Listening</a>
+        <a href="#/lectura" data-r="lectura"><span class="zh">阅读</span>Lectura</a>
+        <a href="#/traduccion" data-r="traduccion"><span class="zh">翻译</span>Traducción</a>
+        <a href="#/vocabulario" data-r="vocabulario"><span class="zh">词语</span>Vocabulario</a>
+        <a href="#/ajustes" data-r="ajustes"><span class="zh">设置</span>Ajustes</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="app" aria-live="polite">
+    <p style="text-align:center;padding:60px 0" class="muted">Cargando… 请稍等</p>
+  </main>
+
+  <footer class="foot">
+    <div class="brush">学而时习之，不亦说乎</div>
+    <div>«Aprender y repasar a menudo, ¿no es un placer?» — Confucio</div>
+  </footer>
+
+  <script src="js/datos.js"></script>
+  <script src="audio/manifest.js" onerror="window.HSK_AUDIO=null"></script>
+  <script src="js/corrector.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,242 @@
+# Diccionario HSK1 · una palabra por línea
+# hanzi <TAB> pinyin <TAB> español <TAB> tema en que aparece
+# Las palabras compuestas (你好, 中国人…) van también, para que el texto se
+# pueda trocear en palabras y cada una sea clicable.
+你	nǐ	tú	1
+好	hǎo	bien, bueno	1
+你好	nǐ hǎo	hola	1
+您	nín	usted	1
+您好	nín hǎo	hola (formal)	1
+你们	nǐmen	vosotros	1
+你们好	nǐmen hǎo	hola a todos	1
+对不起	duìbuqǐ	lo siento, perdón	1
+没关系	méi guānxi	no pasa nada	1
+谢谢	xièxie	gracias	2
+不	bù	no	2
+不谢	bú xiè	de nada	2
+不客气	bú kèqi	de nada, no hay de qué	2
+再见	zàijiàn	adiós, hasta luego	2
+叫	jiào	llamarse	3
+什么	shénme	qué	3
+名字	míngzi	nombre	3
+我	wǒ	yo	3
+是	shì	ser	3
+老师	lǎoshī	profesor, profesora	3
+吗	ma	(partícula de pregunta)	3
+学生	xuésheng	estudiante	3
+人	rén	persona	3
+中国	Zhōngguó	China	3
+中国人	Zhōngguó rén	chino, china (persona)	3
+美国	Měiguó	Estados Unidos	3
+美国人	Měiguó rén	estadounidense	3
+她	tā	ella	4
+他	tā	él	4
+谁	shéi	quién	4
+的	de	de (posesivo)	4
+汉语	Hànyǔ	chino (idioma)	4
+哪	nǎ	qué, cuál	4
+国	guó	país	4
+呢	ne	¿y…? (partícula)	4
+同学	tóngxué	compañero de clase	4
+朋友	péngyou	amigo, amiga	4
+家	jiā	casa, familia	5
+有	yǒu	tener, haber	5
+口	kǒu	(clasificador de miembros de la familia)	5
+女儿	nǚ'ér	hija	5
+几	jǐ	cuántos	5
+岁	suì	años (de edad)	5
+了	le	(partícula de cambio o acción terminada)	5
+今年	jīnnián	este año	5
+多	duō	mucho; cuán	5
+大	dà	grande; mayor	5
+多大	duō dà	qué edad	5
+零	líng	cero	5
+一	yī	uno	5
+二	èr	dos	5
+三	sān	tres	5
+四	sì	cuatro	5
+五	wǔ	cinco	5
+六	liù	seis	5
+七	qī	siete	5
+八	bā	ocho	5
+九	jiǔ	nueve	5
+十	shí	diez	5
+会	huì	saber (hacer algo); poder que ocurra	6
+说	shuō	hablar, decir	6
+妈妈	māma	mamá, madre	6
+菜	cài	plato, comida	6
+中国菜	Zhōngguó cài	comida china	6
+很	hěn	muy	6
+好吃	hǎochī	rico, sabroso	6
+做	zuò	hacer; cocinar	6
+写	xiě	escribir	6
+汉字	Hànzì	carácter chino	6
+字	zì	carácter, letra	6
+怎么	zěnme	cómo	6
+读	dú	leer (en voz alta)	6
+这个	zhège	este, esta	6
+请	qǐng	por favor; invitar	7
+请问	qǐngwèn	disculpe, una pregunta	7
+今天	jīntiān	hoy	7
+号	hào	día (del mes)	7
+月	yuè	mes	7
+星期	xīngqī	semana	7
+星期几	xīngqījǐ	qué día de la semana	7
+星期一	xīngqīyī	lunes	7
+星期二	xīngqī'èr	martes	7
+星期三	xīngqīsān	miércoles	7
+星期四	xīngqīsì	jueves	7
+星期五	xīngqīwǔ	viernes	7
+星期六	xīngqīliù	sábado	7
+星期日	xīngqīrì	domingo	7
+星期天	xīngqītiān	domingo	7
+昨天	zuótiān	ayer	7
+明天	míngtiān	mañana (día)	7
+去	qù	ir	7
+学校	xuéxiào	escuela	7
+看	kàn	mirar, ver; leer	7
+书	shū	libro	7
+看书	kàn shū	leer (libros)	7
+想	xiǎng	querer; pensar	8
+喝	hē	beber	8
+茶	chá	té	8
+吃	chī	comer	8
+米饭	mǐfàn	arroz	8
+下午	xiàwǔ	tarde	8
+商店	shāngdiàn	tienda	8
+买	mǎi	comprar	8
+个	ge	(clasificador general)	8
+一个	yí ge	un, una	8
+杯子	bēizi	taza, vaso	8
+这	zhè	esto, este	8
+那	nà	eso, ese; entonces	8
+那个	nàge	ese, esa	8
+多少	duōshao	cuánto	8
+钱	qián	dinero	8
+块	kuài	yuan (moneda)	8
+哪儿	nǎr	dónde	8
+小	xiǎo	pequeño	9
+猫	māo	gato	9
+小猫	xiǎo māo	gatito	9
+狗	gǒu	perro	9
+小狗	xiǎo gǒu	perrito	9
+在	zài	estar en; en	9
+那儿	nàr	allí	9
+这儿	zhèr	aquí	9
+椅子	yǐzi	silla	9
+下面	xiàmiàn	debajo	9
+工作	gōngzuò	trabajar; trabajo	9
+儿子	érzi	hijo	9
+医院	yīyuàn	hospital	9
+医生	yīshēng	médico	9
+爸爸	bàba	papá, padre	9
+桌子	zhuōzi	mesa	10
+上	shàng	sobre, encima; subir	10
+上面	shàngmiàn	encima	10
+电脑	diànnǎo	ordenador	10
+和	hé	y, con	10
+本	běn	(clasificador de libros)	10
+一本	yì běn	un (libro)	10
+里	lǐ	dentro	10
+里面	lǐmiàn	dentro	10
+前面	qiánmiàn	delante	10
+后面	hòumiàn	detrás	10
+没有	méiyǒu	no tener, no haber	10
+没	méi	no (pasado); no tener	10
+能	néng	poder	10
+坐	zuò	sentarse; ir en (transporte)	10
+现在	xiànzài	ahora	11
+点	diǎn	hora (en punto)	11
+分	fēn	minuto	11
+中午	zhōngwǔ	mediodía	11
+饭	fàn	comida, arroz	11
+吃饭	chī fàn	comer	11
+时候	shíhou	momento, tiempo	11
+什么时候	shénme shíhou	cuándo	11
+回	huí	volver	11
+回家	huí jiā	volver a casa	11
+我们	wǒmen	nosotros	11
+电影	diànyǐng	película	11
+住	zhù	vivir, alojarse	11
+天	tiān	día	11
+前	qián	antes	11
+北京	Běijīng	Pekín	11
+时间	shíjiān	tiempo (disponible)	11
+来	lái	venir	11
+天气	tiānqì	tiempo (clima)	12
+怎么样	zěnmeyàng	qué tal, cómo	12
+太	tài	demasiado	12
+热	rè	caluroso, calor	12
+冷	lěng	frío	12
+下雨	xià yǔ	llover	12
+雨	yǔ	lluvia	12
+小姐	xiǎojiě	señorita	12
+身体	shēntǐ	cuerpo, salud	12
+爱	ài	amar, encantar	12
+些	xiē	algunos	12
+水果	shuǐguǒ	fruta	12
+水	shuǐ	agua	12
+一会儿	yíhuìr	un rato	12
+喂	wèi	¿diga? (al teléfono)	13
+也	yě	también	13
+学	xué	aprender, estudiar	13
+学习	xuéxí	estudiar	13
+上午	shàngwǔ	mañana (antes del mediodía)	13
+睡觉	shuì jiào	dormir	13
+电视	diànshì	televisión	13
+喜欢	xǐhuan	gustar	13
+电话	diànhuà	teléfono	13
+给	gěi	a, para; dar	13
+打	dǎ	hacer (una llamada); golpear	13
+打电话	dǎ diànhuà	llamar por teléfono	13
+吧	ba	(partícula de sugerencia)	13
+东西	dōngxi	cosas	14
+一点儿	yìdiǎnr	un poco	14
+苹果	píngguǒ	manzana	14
+看见	kànjiàn	ver	14
+先生	xiānsheng	señor	14
+开	kāi	conducir; abrir	14
+车	chē	coche	14
+开车	kāi chē	conducir	14
+回来	huílai	volver	14
+分钟	fēnzhōng	minuto	14
+后	hòu	después	14
+衣服	yīfu	ropa	14
+漂亮	piàoliang	bonito, guapo	14
+啊	a	(partícula exclamativa)	14
+少	shǎo	poco	14
+不少	bùshǎo	bastante, no poco	14
+这些	zhèxiē	estos, estas	14
+那些	nàxiē	esos, esas	14
+都	dōu	todo, todos	14
+认识	rènshi	conocer	15
+年	nián	año	15
+大学	dàxué	universidad	15
+饭店	fàndiàn	restaurante, hotel	15
+出租车	chūzūchē	taxi	15
+一起	yìqǐ	juntos	15
+高兴	gāoxìng	contento	15
+听	tīng	escuchar, oír	15
+飞机	fēijī	avión	15
+是的	shì de	sí, así es	15
+火车站	huǒchēzhàn	estación de tren	15
+# Nombres propios
+李	Lǐ	Li (apellido)	3
+王	Wáng	Wang (apellido)	10
+张	Zhāng	Zhang (apellido)	14
+李月	Lǐ Yuè	Li Yue (nombre)	3
+大卫	Dàwèi	David	3
+李心	Lǐ Xīn	Li Xin (nombre)	3
+王方	Wáng Fāng	Wang Fang (nombre)	10
+谢朋	Xiè Péng	Xie Peng (nombre)	10
+李朋	Lǐ Péng	Li Peng (nombre)	10
+小王	Xiǎo Wáng	Xiao Wang	14
+小李	Xiǎo Lǐ	Xiao Li	14
+小张	Xiǎo Zhāng	Xiao Zhang	14
+王老师	Wáng lǎoshī	profesor(a) Wang	14
+李老师	Lǐ lǎoshī	profesor(a) Li	5
+张先生	Zhāng xiānsheng	señor Zhang	14
+李先生	Lǐ xiānsheng	señor Li	15
+王先生	Wáng xiānsheng	señor Wang	15
+王小姐	Wáng xiǎojiě	señorita Wang	12
+李小姐	Lǐ xiǎojiě	señorita Li	15
