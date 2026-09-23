@@ -43,6 +43,19 @@ cada alumno.
 - **Hanzi:** no se tienen en cuenta la puntuación ni los espacios, y
   `28块` = `二十八块`.
 
+### Sonido
+
+- **Música de fondo** en los menús: guzheng sobre la escala pentatónica
+  china, con un bordón suave y campanillas. Se genera en el navegador y
+  nunca se repite igual. **Se para al entrar en un ejercicio** y vuelve al
+  salir. Se quita o se pone con el botón ♪ de la cabecera. En **Ajustes**
+  también se cambia el volumen.
+- **Efectos:** hay un sonido para el acierto (arpegio ascendente), otro para
+  el «casi» y otro para el fallo (bloque de madera). Al terminar, suena un
+  gong con escala ascendente si has aprobado (≥ 50 %; con ≥ 80 % es más
+  largo) y un gong grave con escala descendente si has suspendido. Se pueden
+  probar y desactivar en **Ajustes**.
+
 ### ¿Hace falta instalar un teclado chino?
 
 **No.** Toda la app se puede hacer con el teclado normal del ordenador o del
@@ -133,6 +146,7 @@ index.html            la app (una sola página)
 css/estilos.css       diseño
 js/app.js             pantallas y ejercicios
 js/corrector.js       corrección de pinyin, español y hanzi
+js/sonido.js          música de fondo y efectos (Web Audio, sin ficheros)
 js/datos.js           contenidos (generado por tools/build_data.py)
 audio/                audios grabados + manifest.js
 data/                 contenidos editables

@@ -70,7 +70,7 @@
   // almacenamiento (solo en este navegador)
   // ======================================================================
   var KEY = "hsk1-repaso-v1";
-  var S = { settings: { tones: "cuentan", speed: "lento", autoTone: true, theme: "auto", voice: "" }, progress: {} };
+  var S = { settings: { tones: "cuentan", speed: "lento", autoTone: true, theme: "auto", voice: "", music: true, sfx: true, musicVol: 0.5 }, progress: {} };
   try {
     var saved = JSON.parse(localStorage.getItem(KEY) || "null");
     if (saved) { S.settings = Object.assign(S.settings, saved.settings || {}); S.progress = saved.progress || {}; }
@@ -89,6 +89,9 @@
     else document.documentElement.setAttribute("data-theme", t);
   }
   applyTheme();
+  var SND = window.Sonido || { sfx: function () {}, setMode: function () {}, setPrefs: function () {}, isPlaying: function () { return false; } };
+  function syncSound() { SND.setPrefs({ music: S.settings.music, sfx: S.settings.sfx, musicVol: S.settings.musicVol }); paintMusicBtn(); }
+  function resultSound(p) { SND.sfx(p >= 80 ? "excelente" : p >= 50 ? "aprobado" : "suspenso"); }
 
   // ======================================================================
   // índices de datos
@@ -540,6 +543,7 @@
     function pick(i) {
       var e = list[i]; if (!e) return;
       outText += e.w;
+      SND.sfx("tick");
       var s = letters();
       inp.value = s.indexOf(e.key) === 0 ? s.slice(e.key.length) : "";
       paintOut(); paintCands(); inp.focus();
@@ -760,6 +764,7 @@
         var score = hinted ? Math.min(r.score, 0.5) : r.score;
         var level = levelOf(score);
         results[idx] = { level: level, score: score, it: it, answer: pin.input.value };
+        SND.sfx(level);
         pin.input.disabled = true;
         var title = r.level === "mid" && r.lettersOk ? "Las sílabas están bien, pero revisa los tonos marcados." : null;
         if (hinted && r.level === "ok") title = "Correcto (con pista).";
@@ -772,7 +777,7 @@
           h("div", { class: "row" }, h("span", { class: "k", text: "Hanzi" }), h("div", { class: "v zh" }, renderWords(segment(it.zh), "zh"))),
           h("div", { class: "row" }, h("span", { class: "k", text: "Significado" }), h("div", { class: "v", style: "font-size:16px", text: it.es.join(" / ") })),
           level !== "ok" ? h("button", { class: "link-btn", type: "button", onclick: function () {
-            results[idx].level = "ok"; results[idx].score = 1; this.textContent = "Marcada como correcta";
+            results[idx].level = "ok"; results[idx].score = 1; SND.sfx("ok"); this.textContent = "Marcada como correcta";
           } }, "Mi respuesta también es correcta") : null));
         checkBtn.textContent = idx + 1 < items.length ? "Siguiente →" : "Ver resultado";
         checkBtn.onclick = next;
@@ -802,6 +807,7 @@
       var total = results.reduce(function (s, r) { return s + (r ? r.score : 0); }, 0);
       var p = pct(total / items.length);
       if (!onlyIds) saveResult("D:" + id, p);
+      resultSound(p);
       var wrong = results.filter(function (r) { return r.level !== "ok"; }).map(function (r) { return r.it.id; });
       if (p >= 80) burst();
       wrap.innerHTML = "";
@@ -856,15 +862,17 @@
           h("span", { text: "Respuesta: " + f.q.r })]);
         if (r.level !== "ok") {
           add(f.res, [" ", h("button", { class: "link-btn", type: "button", onclick: function () {
-            f.score = 1; f.res.className = "res ok"; this.textContent = "Marcada como correcta"; this.disabled = true; update();
+            f.score = 1; f.res.className = "res ok"; SND.sfx("ok"); this.textContent = "Marcada como correcta"; this.disabled = true; update(true);
           } }, "Mi respuesta es correcta")]);
         }
       });
       btn.classList.add("hidden");
       update();
+      var tot = fields.reduce(function (s2, f2) { return s2 + f2.score; }, 0);
+      resultSound(pct(tot / fields.length));
     });
     var scoreBox = h("div");
-    function update() {
+    function update(silent) {
       var total = fields.reduce(function (s, f) { return s + f.score; }, 0);
       var p = pct(total / fields.length);
       scoreBox.innerHTML = "";
@@ -1077,7 +1085,7 @@
             add(ansLine, h("button", { type: "button", class: "tile", onclick: function () { if (checked) return; chosen.splice(k, 1); paintTiles(); } }, bankWords[bi]));
           });
           bankWords.forEach(function (w, bi) {
-            add(bank, h("button", { type: "button", class: "tile" + (chosen.indexOf(bi) >= 0 ? " used" : ""), onclick: function () { if (checked) return; chosen.push(bi); paintTiles(); } }, w));
+            add(bank, h("button", { type: "button", class: "tile" + (chosen.indexOf(bi) >= 0 ? " used" : ""), onclick: function () { if (checked) return; chosen.push(bi); SND.sfx("tick"); paintTiles(); } }, w));
           });
         };
         paintTiles();
@@ -1135,6 +1143,7 @@
         var score = hinted ? Math.min(r.score, 0.5) : r.score;
         var level = levelOf(score);
         results[idx] = { level: level, score: score, f: f, answer: ans };
+        SND.sfx(level);
         var titles = {
           es: { ok: "¡Bien traducido!", mid: "Parecido. Compara con la traducción y decide.", ko: "No coincide. Compara con la traducción." },
           py: { ok: "¡Correcto!", mid: r.lettersOk ? "Las sílabas están bien, revisa los tonos." : "¡Casi! Revisa lo marcado.", ko: "No es correcto. Mira la frase correcta." },
@@ -1149,7 +1158,7 @@
           h("div", { class: "row" }, h("span", { class: "k", text: "Pinyin" }), h("div", { class: "v py" }, marks ? marksView(marks, ignoreTones()) : f.py)),
           h("div", { class: "row" }, h("span", { class: "k", text: "Español" }), h("div", { class: "v", style: "font-size:17px", text: f.es.join("  /  ") })),
           h("div", { class: "row" }, h("span", { class: "k", text: "Tu respuesta" }), h("div", { class: "v " + (L.to === "zh" ? "zh" : L.to === "py" ? "py" : ""), style: "font-size:16px", text: ans })),
-          level !== "ok" ? h("button", { class: "link-btn", type: "button", onclick: function () { results[idx].level = "ok"; results[idx].score = 1; this.textContent = "Marcada como correcta"; this.disabled = true; } }, "Mi respuesta también es correcta") : null));
+          level !== "ok" ? h("button", { class: "link-btn", type: "button", onclick: function () { results[idx].level = "ok"; results[idx].score = 1; SND.sfx("ok"); this.textContent = "Marcada como correcta"; this.disabled = true; } }, "Mi respuesta también es correcta") : null));
         checkBtn.textContent = idx + 1 < items.length ? "Siguiente →" : "Ver resultado";
         checkBtn.onclick = next;
         checkBtn.focus();
@@ -1172,6 +1181,7 @@
       var total = results.reduce(function (s, r) { return s + r.score; }, 0);
       var p = pct(total / items.length);
       if (!onlyIds) saveResult("T:" + tema + ":" + nivel, p);
+      resultSound(p);
       if (p >= 80) burst();
       var wrong = results.filter(function (r) { return r.level !== "ok"; }).map(function (r) { return r.f.id; });
       wrap.innerHTML = "";
@@ -1301,6 +1311,17 @@
           h("label", { class: "toggle" }, h("input", { type: "checkbox", checked: S.settings.autoTone, onchange: function (e) { S.settings.autoTone = e.target.checked; persist(); } }),
             "Convertir números en tonos al escribir (hao3 → hǎo, v → ü)"),
           h("a", { class: "btn soft sm", href: "#/teclado" }, icon("keyboard", 16), "Cómo escribir pinyin y hanzi")),
+        h("div", { class: "card" }, h("h3", { text: "Sonido" }),
+          h("label", { class: "toggle" }, h("input", { type: "checkbox", checked: S.settings.music, onchange: function (e) { S.settings.music = e.target.checked; persist(); syncSound(); } }),
+            "Música de fondo en los menús (se para en los ejercicios)"),
+          h("label", null, h("div", { class: "muted", style: "font-size:13px;margin-bottom:4px", text: "Volumen de la música" }),
+            h("input", { type: "range", min: "0.1", max: "1", step: "0.05", value: S.settings.musicVol, style: "width:100%;accent-color:var(--red)", oninput: function (e) { S.settings.musicVol = +e.target.value; persist(); syncSound(); } })),
+          h("label", { class: "toggle" }, h("input", { type: "checkbox", checked: S.settings.sfx, onchange: function (e) { S.settings.sfx = e.target.checked; persist(); syncSound(); if (S.settings.sfx) SND.sfx("ok"); } }),
+            "Efectos de acierto, fallo y resultado"),
+          h("div", { class: "btn-row" }, ["ok", "mid", "ko", "excelente", "suspenso"].map(function (k) {
+            var lbl = { ok: "Acierto", mid: "Casi", ko: "Fallo", excelente: "Aprobado", suspenso: "Suspenso" }[k];
+            return h("button", { type: "button", class: "btn soft sm", onclick: function () { SND.sfx(k); } }, "▶ " + lbl);
+          }))),
         h("div", { class: "card" }, h("h3", { text: "Aspecto" }),
           radio("theme", "auto", "Automático", "Como el sistema"), radio("theme", "light", "Claro", null), radio("theme", "dark", "Oscuro", null)),
         h("div", { class: "card" }, h("h3", { text: "Voz" }),
@@ -1320,6 +1341,8 @@
   function route() {
     var parts = (location.hash.replace(/^#\/?/, "") || "").split("/");
     var r = parts[0];
+    var exercise = (/^(dictado|listening|lectura)$/.test(r) && parts[1]) || (r === "traduccion" && parts[1] !== undefined && parts[2]);
+    SND.setMode(exercise ? "exercise" : "menu");
     if (r === "temas" || location.hash === "#temas") { viewHome(); var el = document.getElementById("temas"); if (el) el.scrollIntoView(); return; }
     if (r === "dictado") return parts[1] ? runDictado(parts[1]) : viewDictados();
     if (r === "listening") return parts[1] ? runListening(parts[1]) : viewListenings();
@@ -1334,6 +1357,16 @@
   window.addEventListener("hashchange", route);
   document.querySelector(".menu-btn").addEventListener("click", function () { document.querySelector(".nav").classList.toggle("open"); });
   document.querySelector(".menu-btn").appendChild(icon("menu", 24));
+  var musicBtn = document.querySelector(".music-btn");
+  function paintMusicBtn() {
+    if (!musicBtn) return;
+    musicBtn.classList.toggle("off", !S.settings.music);
+    musicBtn.title = S.settings.music ? "Quitar la música de fondo" : "Poner música de fondo";
+    musicBtn.setAttribute("aria-label", musicBtn.title);
+    musicBtn.setAttribute("aria-pressed", S.settings.music ? "true" : "false");
+  }
+  if (musicBtn) musicBtn.addEventListener("click", function () { S.settings.music = !S.settings.music; persist(); syncSound(); });
+  syncSound();
 
   // pétalos de ciruelo
   (function petals() {

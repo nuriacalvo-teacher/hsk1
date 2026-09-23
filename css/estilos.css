@@ -142,10 +142,20 @@ a { color: var(--red); }
 .nav a:hover { background: var(--paper-2); }
 .nav a.on { background: var(--red); color: #fff; }
 .nav a.on .zh { color: #ffe9b8; }
+.music-btn {
+  order: 3; flex: none; width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--line);
+  background: var(--card); color: var(--red); display: grid; place-items: center; cursor: pointer; margin-left: 6px;
+}
+.music-btn .slash { display: none; }
+.music-btn.off { color: var(--ink-3); }
+.music-btn.off .slash { display: inline; }
+.music-btn:not(.off) svg { animation: bob 2.4s ease-in-out infinite; }
+@keyframes bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-2px); } }
 .menu-btn { display: none; margin-left: auto; background: none; border: 0; padding: 8px; border-radius: 10px; cursor: pointer; }
 
 @media (max-width: 900px) {
-  .menu-btn { display: block; }
+  .menu-btn { display: block; margin-left: 4px; order: 4; }
+  .music-btn { margin-left: auto; }
   .nav {
     display: none; position: absolute; left: 0; right: 0; top: 100%;
     flex-direction: column; background: var(--card); padding: 10px 16px 16px;
