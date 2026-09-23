@@ -20,7 +20,7 @@ normal.
 - **En internet (recomendado):** activa GitHub Pages una sola vez en
   **Settings → Pages → Source: Deploy from a branch → `main` / `(root)` → Save**.
   Al cabo de un minuto la app queda en
-  `https://nuriacalvo-teacher.github.io/hsk1-repaso/`.
+  `https://nuriacalvo-teacher.github.io/hsk1/`.
 - **En tu ordenador:** descarga el repositorio y abre `index.html` con el
   navegador. No hace falta instalar nada.
 
